@@ -1,815 +1,815 @@
 {
   "Files": [
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/obj/Debug/net6.0/scopedcss/projectbundle/Niveau.bundle.scp.css",
-      "PackagePath": "staticwebassets/Niveau.bundle.scp.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Niveau.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Niveau.bundle.scp.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/css/style.css",
-      "PackagePath": "staticwebassets/UserLTE/css/style.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\css\\style.css",
+      "PackagePath": "staticwebassets\\UserLTE\\css\\style.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/css/style.min.css",
-      "PackagePath": "staticwebassets/UserLTE/css/style.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\UserLTE\\css\\style.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/carousel-1.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/carousel-1.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\carousel-1.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\carousel-1.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/carousel-2.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/carousel-2.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\carousel-2.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\carousel-2.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-1.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-1.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-1.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-1.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-2.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-2.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-2.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-2.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-3.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-3.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-3.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-3.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-4.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-4.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-4.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-4.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-5.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-5.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-5.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-5.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/cat-6.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/cat-6.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\cat-6.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\cat-6.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/offer-1.png",
-      "PackagePath": "staticwebassets/UserLTE/img/offer-1.png"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\offer-1.png",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\offer-1.png"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/offer-2.png",
-      "PackagePath": "staticwebassets/UserLTE/img/offer-2.png"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\offer-2.png",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\offer-2.png"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/payments.png",
-      "PackagePath": "staticwebassets/UserLTE/img/payments.png"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\payments.png",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\payments.png"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-1.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-1.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-1.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-1.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-2.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-2.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-2.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-2.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-3.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-3.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-3.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-3.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-4.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-4.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-4.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-4.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-5.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-5.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-5.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-5.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-6.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-6.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-6.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-6.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-7.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-7.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-7.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-7.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/product-8.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/product-8.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\product-8.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\product-8.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/user.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/user.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\user.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-1.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-1.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-1.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-1.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-2.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-2.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-2.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-2.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-3.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-3.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-3.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-3.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-4.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-4.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-4.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-4.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-5.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-5.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-5.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-5.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-6.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-6.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-6.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-6.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-7.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-7.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-7.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-7.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/img/vendor-8.jpg",
-      "PackagePath": "staticwebassets/UserLTE/img/vendor-8.jpg"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\img\\vendor-8.jpg",
+      "PackagePath": "staticwebassets\\UserLTE\\img\\vendor-8.jpg"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/js/main.js",
-      "PackagePath": "staticwebassets/UserLTE/js/main.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\js\\main.js",
+      "PackagePath": "staticwebassets\\UserLTE\\js\\main.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/easing/easing.js",
-      "PackagePath": "staticwebassets/UserLTE/lib/easing/easing.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\easing\\easing.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/easing/easing.min.js",
-      "PackagePath": "staticwebassets/UserLTE/lib/easing/easing.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\easing\\easing.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/LICENSE",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/ajax-loader.gif",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/ajax-loader.gif"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.carousel.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.carousel.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.carousel.min.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.carousel.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.theme.default.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.theme.default.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.theme.default.min.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.theme.default.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.theme.green.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.theme.green.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.theme.green.min.css",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.theme.green.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/assets/owl.video.play.png",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/assets/owl.video.play.png"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/owl.carousel.js",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/owl.carousel.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/lib/owlcarousel/owl.carousel.min.js",
-      "PackagePath": "staticwebassets/UserLTE/lib/owlcarousel/owl.carousel.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\UserLTE\\lib\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/mail/contact.js",
-      "PackagePath": "staticwebassets/UserLTE/mail/contact.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\mail\\contact.js",
+      "PackagePath": "staticwebassets\\UserLTE\\mail\\contact.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/mail/contact.php",
-      "PackagePath": "staticwebassets/UserLTE/mail/contact.php"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\mail\\contact.php",
+      "PackagePath": "staticwebassets\\UserLTE\\mail\\contact.php"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/mail/jqBootstrapValidation.min.js",
-      "PackagePath": "staticwebassets/UserLTE/mail/jqBootstrapValidation.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\mail\\jqBootstrapValidation.min.js",
+      "PackagePath": "staticwebassets\\UserLTE\\mail\\jqBootstrapValidation.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_alert.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_alert.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_alert.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_badge.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_badge.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_badge.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_breadcrumb.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_breadcrumb.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_breadcrumb.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_button-group.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_button-group.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_button-group.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_buttons.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_buttons.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_buttons.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_card.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_card.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_card.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_carousel.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_carousel.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_carousel.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_close.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_close.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_close.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_code.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_code.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_code.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_code.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_custom-forms.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_custom-forms.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_custom-forms.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_dropdown.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_dropdown.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_dropdown.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_forms.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_forms.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_forms.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_functions.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_functions.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_functions.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_grid.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_grid.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_grid.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_images.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_images.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_images.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_input-group.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_input-group.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_input-group.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_input-group.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_jumbotron.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_jumbotron.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_jumbotron.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_list-group.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_list-group.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_list-group.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_media.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_media.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_media.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_media.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_mixins.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_mixins.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_mixins.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_modal.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_modal.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_modal.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_nav.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_nav.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_nav.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_navbar.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_navbar.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_navbar.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_pagination.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_pagination.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_pagination.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_popover.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_popover.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_popover.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_print.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_print.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_print.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_print.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_progress.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_progress.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_progress.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_reboot.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_reboot.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_reboot.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_root.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_root.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_root.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_spinners.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_spinners.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_spinners.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_tables.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_tables.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_tables.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_toasts.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_toasts.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_toasts.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_tooltip.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_tooltip.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_tooltip.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_transitions.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_transitions.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_transitions.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_type.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_type.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_type.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_utilities.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_utilities.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_utilities.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/_variables.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/_variables.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\_variables.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/bootstrap-grid.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/bootstrap-grid.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/bootstrap-reboot.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/bootstrap-reboot.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/bootstrap.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/bootstrap.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\bootstrap.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_alert.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_alert.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_background-variant.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_background-variant.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_background-variant.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_badge.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_badge.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_badge.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_border-radius.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_border-radius.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_box-shadow.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_box-shadow.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_breakpoints.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_breakpoints.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_buttons.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_buttons.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_caret.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_caret.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_clearfix.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_clearfix.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_deprecate.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_deprecate.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_float.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_float.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_float.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_forms.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_forms.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_gradients.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_gradients.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_grid-framework.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_grid-framework.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_grid-framework.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_grid.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_grid.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_hover.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_hover.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_hover.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_image.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_image.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_image.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_list-group.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_list-group.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_lists.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_lists.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_nav-divider.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_nav-divider.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_nav-divider.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_pagination.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_pagination.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_reset-text.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_reset-text.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_resize.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_resize.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_screen-reader.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_screen-reader.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_screen-reader.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_size.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_size.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_size.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_table-row.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_table-row.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_table-row.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_text-emphasis.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_text-emphasis.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-emphasis.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_text-hide.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_text-hide.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-hide.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_text-truncate.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_text-truncate.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_transition.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_transition.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/mixins/_visibility.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/mixins/_visibility.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\mixins\\_visibility.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_align.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_align.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_align.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_background.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_background.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_background.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_borders.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_borders.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_borders.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_clearfix.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_clearfix.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_clearfix.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_display.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_display.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_display.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_embed.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_embed.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_embed.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_flex.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_flex.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_flex.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_float.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_float.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_float.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_interactions.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_interactions.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_interactions.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_interactions.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_overflow.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_overflow.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_overflow.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_position.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_position.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_position.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_screenreaders.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_screenreaders.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_screenreaders.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_shadows.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_shadows.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_shadows.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_sizing.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_sizing.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_sizing.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_spacing.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_spacing.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_spacing.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_stretched-link.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_stretched-link.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_stretched-link.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_text.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_text.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_text.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/utilities/_visibility.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/utilities/_visibility.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\utilities\\_visibility.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/bootstrap/scss/vendor/_rfs.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/bootstrap/scss/vendor/_rfs.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/UserLTE/scss/style.scss",
-      "PackagePath": "staticwebassets/UserLTE/scss/style.scss"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\UserLTE\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\UserLTE\\scss\\style.scss"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/js/site.js",
-      "PackagePath": "staticwebassets/js/site.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/LICENSE",
-      "PackagePath": "staticwebassets/lib/bootstrap"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation/LICENSE.md",
-      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation/dist/additional-methods.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
-      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery/LICENSE.txt",
-      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery/dist/jquery.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery/dist/jquery.min.js",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/wwwroot/lib/jquery/dist/jquery.min.map",
-      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.Niveau.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Niveau.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.build.Niveau.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Niveau.props",
       "PackagePath": "build\\Niveau.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.Niveau.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Niveau.props",
       "PackagePath": "buildMultiTargeting\\Niveau.props"
     },
     {
-      "Id": "obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.Niveau.props",
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Niveau.props",
       "PackagePath": "buildTransitive\\Niveau.props"
     }
   ],
