@@ -8,6 +8,9 @@ using Niveau.Areas.Admin.Models.Repositories;
 using Niveau.Models;
 using Niveau.Areas.Admin.Models;
 using Niveau.Models.ShoppingCart.ShoppingCart;
+using NiveauOther;
+using Newtonsoft.Json.Linq;
+using Niveau.Others;
 
 namespace Niveau.Areas.User.Controllers
 {
@@ -101,11 +104,63 @@ namespace Niveau.Areas.User.Controllers
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             HttpContext.Session.Remove("Cart");
+
             return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
+            // lúc này nếu thanh toán thất bại thì phương thức thanh toán sẽ auto là tiền mặt khi nhận hàng.
         }
         public IActionResult OrderCompleted()
         {
             return View();
         }
+
+        public ActionResult Payment(int tongTien)
+        {
+            //thông số yêu cầu cần gửi tới hệ thống MoMo
+            string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
+            string partnerCode = "MOMOOJOI20210710";
+            string accessKey = "iPXneGmrJH0G8FOP";
+            string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
+            string orderInfo = "Thanh toán online";
+            string returnUrl = "https://localhost:7030";
+            string notifyurl = "https://Home/SavePayment"; // Địa chỉ URL mà MoMo sẽ gửi kết quả thanh toán đến. 
+            string amount = tongTien.ToString();
+            string orderid = DateTime.Now.Ticks.ToString(); //mã đơn hàng
+            string requestId = DateTime.Now.Ticks.ToString();
+            string extraData = "";
+
+            string rawHash = "partnerCode=" +
+                partnerCode + "&accessKey=" +
+                accessKey + "&requestId=" +
+                requestId + "&amount=" +
+                amount + "&orderId=" +
+                orderid + "&orderInfo=" +
+                orderInfo + "&returnUrl=" +
+                returnUrl + "&notifyUrl=" +
+                notifyurl + "&extraData=" +
+                extraData;
+
+            MoMoSecurity crypto = new MoMoSecurity();
+            string signature = crypto.signSHA256(rawHash, serectkey);
+
+            //build body json request
+            JObject message = new JObject
+            {
+                { "partnerCode", partnerCode },
+                { "accessKey", accessKey },
+                { "requestId", requestId },
+                { "amount",amount },
+                { "orderId", orderid },
+                { "orderInfo", orderInfo },
+                { "returnUrl", returnUrl },
+                { "notifyUrl", notifyurl },
+                { "extraData", extraData },
+                { "requestType", "captureMoMoWallet" },
+                { "signature", signature }
+            };
+            string responseFromMomo = PaymentRequest.sendPaymentRequest(endpoint, message.ToString());
+            JObject jmessage = JObject.Parse(responseFromMomo);
+            return Redirect(jmessage.GetValue("payUrl").ToString());
+        }
+
     }
 }

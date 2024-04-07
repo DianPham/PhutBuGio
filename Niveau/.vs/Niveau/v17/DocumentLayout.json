@@ -1,0 +1,405 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\PhutBuGio\\Niveau\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\user\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\others\\momosecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\others\\momosecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\others\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\others\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\migrations\\20240407041119_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\migrations\\20240407041119_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\views\\employees\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\views\\employees\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\views\\employees\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\views\\employees\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\adminactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\adminactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|f:\\phutbugio\\niveau\\sang6_tuan6ef\\models\\shoppingcart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\models\\shoppingcart\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs*",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:27:05.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentRequest.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Others\\PaymentRequest.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Others\\PaymentRequest.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Others\\PaymentRequest.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Others\\PaymentRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:19:50.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MoMoSecurity.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Others\\MoMoSecurity.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Others\\MoMoSecurity.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Others\\MoMoSecurity.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Others\\MoMoSecurity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:19:05.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240407041119_Create.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Migrations\\20240407041119_Create.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Migrations\\20240407041119_Create.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Migrations\\20240407041119_Create.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Migrations\\20240407041119_Create.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:11:20.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SD.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\SD.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\SD.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\SD.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\SD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:10:28.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAL8AAAAAAAAAAAA7wM8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDMAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\appsettings.json",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\appsettings.json",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\appsettings.json",
+              "RelativeToolTip": "Sang6_Tuan6EF\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\ApplicationUser.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Program.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Program.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Program.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ManageNav.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Details.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Details.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Details.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Details.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAGMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Delete.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Delete.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Employees\\Delete.cshtml",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwFQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminActivity.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\AdminActivity.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\AdminActivity.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\AdminActivity.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\AdminActivity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwCcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\CartItem.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\CartItem.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\CartItem.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Order.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Models\\ShoppingCart\\Order.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Models\\ShoppingCart\\Order.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Models\\ShoppingCart\\Order.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Models\\ShoppingCart\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Models\\ShoppingCart\\CartItem.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Models\\ShoppingCart\\CartItem.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Models\\ShoppingCart\\CartItem.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Models\\ShoppingCart\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\OrderDetail.cs",
+              "ToolTip": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\OrderDetail.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T04:04:04.488Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
