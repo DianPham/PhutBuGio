@@ -104,7 +104,7 @@ namespace Niveau.Areas.User.Controllers
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
             HttpContext.Session.Remove("Cart");
-
+            Payment(((int)order.TotalPrice));
             return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
             // lúc này nếu thanh toán thất bại thì phương thức thanh toán sẽ auto là tiền mặt khi nhận hàng.
         }
