@@ -1,0 +1,20 @@
+﻿@model Niveau.Areas.Admin.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Account Details</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Id</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
+        <!-- Add more details if needed -->
+    </dl>
+</div>
+
+

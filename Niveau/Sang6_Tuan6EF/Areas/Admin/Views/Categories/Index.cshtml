@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Niveau.Areas.Admin.Models.Products.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <a href="@Url.Action("Create")" class="btn btn-primary m-2">Create New</a>
+        <a asp-controller="Products" asp-action="List" class="btn btn-primary m-2">Product</a>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>
+
+                    <a asp-action="Display" asp-route-id="@product.Id">View</a> |
+
+                    <a asp-action="Update" asp-route-id="@product.Id">Edit</a> |
+
+                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

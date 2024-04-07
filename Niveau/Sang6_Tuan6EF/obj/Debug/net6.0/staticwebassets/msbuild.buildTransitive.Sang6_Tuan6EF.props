@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Sang6_Tuan6EF.props" />
+</Project>
