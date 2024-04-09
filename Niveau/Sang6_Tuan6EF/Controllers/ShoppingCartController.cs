@@ -51,11 +51,11 @@ namespace Niveau.Controllers
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new
 ShoppingCart();
-            if (cart == null || !cart.Items.Any())
+/*            if (cart == null || !cart.Items.Any())
             {
                 // Xử lý giỏ hàng trống...
                 return RedirectToAction("Index", "Home");
-            }
+            }*/
             return View(cart);
         }
         public IActionResult RemoveFromCart(int productId)
