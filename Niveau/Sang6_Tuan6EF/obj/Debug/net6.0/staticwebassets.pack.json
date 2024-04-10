@@ -9913,6 +9913,14 @@
       "PackagePath": "staticwebassets\\images\\QuanKaki.jpg"
     },
     {
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\images\\watch1.jpg",
+      "PackagePath": "staticwebassets\\images\\watch1.jpg"
+    },
+    {
+      "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\images\\watch2.jpg",
+      "PackagePath": "staticwebassets\\images\\watch2.jpg"
+    },
+    {
       "Id": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

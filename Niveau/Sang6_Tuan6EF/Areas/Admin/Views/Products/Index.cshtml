@@ -291,12 +291,12 @@
                                 <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                     <h6 class="text-truncate mb-3">@product.Name</h6>
                                     <div class="d-flex justify-content-center">
-                                        <h6>$@product.Price</h6><h6 class="text-muted ml-2"><del>$@product.Price</del></h6>
+                                        <h6>$@product.Price</h6><h6 class="text-muted ml-2"><del>$@(product.Price + product.Price / 5)</del></h6>
                                     </div>
                                 </div>
                                 <div class="card-footer d-flex justify-content-between bg-light border">
-                                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1" asp-controller="Products" asp-action="Details" asp-route-id="@product.Id"></i>View Detail</a>
-                                    <a href="" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                    <a asp-controller="Products" asp-action="Details" asp-route-id="@product.Id" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
+                                    <a asp-area="User" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="Id" asp-route-quantity="1" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                 </div>
                             </div>
                         </div>

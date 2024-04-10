@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w/oHeKVpYioAo14iwxYqrB9GK2fC1CANp5+xEzl8zb0=",
+  "Hash": "6boqorNRNJO4PYiYnRcPDm2+hJbrckRq5i0VMdkwPz8=",
   "Source": "Niveau",
   "BasePath": "_content/Niveau",
   "Mode": "Default",
@@ -39812,6 +39812,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\QuanKaki.jpg"
+    },
+    {
+      "Identity": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\images\\watch1.jpg",
+      "SourceId": "Niveau",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\",
+      "BasePath": "_content/Niveau",
+      "RelativePath": "images/watch1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\watch1.jpg"
+    },
+    {
+      "Identity": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\images\\watch2.jpg",
+      "SourceId": "Niveau",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\",
+      "BasePath": "_content/Niveau",
+      "RelativePath": "images/watch2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\watch2.jpg"
     },
     {
       "Identity": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\js\\site.js",
