@@ -28,6 +28,7 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectio
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddScoped<IProductsRepository, EFProductsRepository>();
 builder.Services.AddScoped<ICategoriesRepository, EFCategoriesRepository>();
+builder.Services.AddScoped<IAccountsRepository, EFAccountsRepository>();
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders()
 .AddDefaultUI()
