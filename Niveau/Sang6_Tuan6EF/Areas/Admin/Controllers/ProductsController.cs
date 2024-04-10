@@ -135,8 +135,7 @@ namespace Niveau.Areas.Admin.Controllers
             }
             if (ModelState.IsValid)
             {
-                var existingProduct = await
-                _productRepository.GetByIdAsync(id); // Giả định có phương thức GetByIdAsync
+                var existingProduct = await _productRepository.GetByIdAsync(id); // Giả định có phương thức GetByIdAsync
                                                      // Giữ nguyên thông tin hình ảnh nếu không có hình mới được
 
                 if (imageUrl == null)
