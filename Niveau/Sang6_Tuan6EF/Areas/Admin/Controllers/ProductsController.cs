@@ -45,7 +45,7 @@ namespace Niveau.Areas.Admin.Controllers
         // Xử lý thêm sản phẩm mới
         [Authorize(Roles = "Admin, Employee")]
         [HttpPost]
-        public async Task<IActionResult> Create(Product product, IFormFile imageUrl, List<IFormFile> imageUrls)
+        public async Task<IActionResult> Create(Product product, IFormFile imageUrl, List<IFormFile> Images)
         {
             if (ModelState.IsValid)
             {
@@ -54,14 +54,14 @@ namespace Niveau.Areas.Admin.Controllers
                     // Lưu hình ảnh đại diện
                     product.ImageUrl = await SaveImage(imageUrl);
                 }
-                if (imageUrls != null)
+                if (Images != null)
                 {
                     product.Images = new List<ProductImage>();
-                    foreach (var file in imageUrls)
+                    foreach (var file in Images)
                     {
                         ProductImage image = new ProductImage();
                         image.Product = product;
-                        image.ProductId = product.Images.Max(i => i.ProductId) + 1;
+                        image.ProductId = product.Images.Select(item => item.Id).DefaultIfEmpty(0).Max() + 1;
                         // Lưu các hình ảnh khác
                         product.Images.Add(await SaveImage(file, image));
                     }
@@ -112,6 +112,7 @@ namespace Niveau.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
+
             if (product == null)
             {
                 return NotFound();

@@ -6,7 +6,7 @@ using Niveau.Areas.Admin.Models.Repositories;
 namespace Niveau.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+    /*[Authorize(Roles = SD.Role_Admin)]*/
     public class AccountsController : Controller
     {
         private readonly IAccountsRepository _repository;

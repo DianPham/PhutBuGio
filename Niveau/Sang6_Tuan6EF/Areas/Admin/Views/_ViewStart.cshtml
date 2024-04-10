@@ -1,3 +1,4 @@
 ﻿@{
-    Layout = "_Layout";
+    Layout = //User.IsInRole("Admin") ? "/Areas/Admin/Views/Shared/_AdminLayout.cshtml" : "/Areas/Admin/Views/Shared/_EmployeeLayout.cshtml";
+            "/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }

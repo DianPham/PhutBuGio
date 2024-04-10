@@ -125,6 +125,7 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         // GET: Admin/Employees/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Employees == null)
