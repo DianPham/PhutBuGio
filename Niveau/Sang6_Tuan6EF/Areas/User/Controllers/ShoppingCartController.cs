@@ -2,17 +2,17 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
-using Niveau.Extentions;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
-using Niveau.Models;
 using Niveau.Areas.Admin.Models;
-using Niveau.Models.ShoppingCart.ShoppingCart;
+using Niveau.Areas.User.Models.ShoppingCart;
+using Niveau.Areas.User.Models;
+using Niveau.Areas.User.Extentions;
 
 namespace Niveau.Areas.User.Controllers
 {
     [Area("User")]
-    [Authorize]
+    [Authorize] 
     public class ShoppingCartController : Controller
     {
         private readonly IProductsRepository _productRepository;

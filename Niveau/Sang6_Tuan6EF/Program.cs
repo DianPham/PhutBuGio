@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models.Repositories;
-using Niveau.Models;
 using Niveau.Areas.Admin.Models;
+using Niveau.Areas.User.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,12 +59,12 @@ app.UseEndpoints(endpoints =>
         pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
     endpoints.MapControllerRoute(
-       name: "employer",
+       name: "employee",
        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
    );
     endpoints.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}"
+        pattern: "{area:exists=User}/{controller=Home}/{action=Index}/{id?}"
     );
 });
 app.Run();

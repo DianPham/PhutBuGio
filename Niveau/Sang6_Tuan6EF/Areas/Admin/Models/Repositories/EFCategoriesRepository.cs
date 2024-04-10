@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Niveau.Models;
 using Niveau.Areas.Admin.Models.Products;
+using Niveau.Areas.User.Models;
 
 namespace Niveau.Areas.Admin.Models.Repositories
 {

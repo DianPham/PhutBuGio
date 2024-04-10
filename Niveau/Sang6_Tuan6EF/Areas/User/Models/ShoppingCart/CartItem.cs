@@ -1,4 +1,4 @@
-﻿namespace Niveau.Areas.User.Models.ShoppingCart.ShoppingCart
+﻿namespace Niveau.Areas.User.Models.ShoppingCart
 {
     public class CartItem
     {

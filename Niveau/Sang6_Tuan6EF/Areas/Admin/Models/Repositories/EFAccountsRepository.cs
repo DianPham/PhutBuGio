@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Niveau.Models;
+using Niveau.Areas.User.Models;
 
 namespace Niveau.Areas.Admin.Models.Repositories
 {
@@ -14,17 +14,17 @@ namespace Niveau.Areas.Admin.Models.Repositories
 
         public async Task<IEnumerable<ApplicationUser>> GetAllAsync()
         {
-            return await _context.Users.ToListAsync();
+            return await _context.Accounts.ToListAsync();
         }
 
-        public async Task<ApplicationUser> GetByIdAsync(int id)
+        public async Task<ApplicationUser> GetByIdAsync(string id)
         {
-            return await _context.Users.FindAsync(id);
+            return await _context.Accounts.FindAsync(id);
         }
 
         public async Task AddAsync(ApplicationUser account)
         {
-            _context.Users.Add(account);
+            _context.Accounts.Add(account);
             await _context.SaveChangesAsync();
         }
 
@@ -34,12 +34,12 @@ namespace Niveau.Areas.Admin.Models.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(string id)
         {
-            var account = await _context.Users.FindAsync(id);
+            var account = await _context.Accounts.FindAsync(id);
             if (account != null)
             {
-                _context.Users.Remove(account);
+                _context.Accounts.Remove(account);
                 await _context.SaveChangesAsync();
             }
         }

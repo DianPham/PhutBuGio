@@ -24,7 +24,7 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         // GET: Account/Details/5
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(string id)
         {
             var account = await _repository.GetByIdAsync(id);
             if (account == null)
@@ -54,7 +54,7 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         // GET: Account/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(string id)
         {
             var account = await _repository.GetByIdAsync(id);
             if (account == null)
@@ -83,7 +83,7 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         // GET: Account/Delete/5
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(string id)
         {
             var account = await _repository.GetByIdAsync(id);
             if (account == null)
@@ -96,7 +96,7 @@ namespace Niveau.Areas.Admin.Controllers
         // POST: Account/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var account = await _repository.GetByIdAsync(id);
             if (account == null)

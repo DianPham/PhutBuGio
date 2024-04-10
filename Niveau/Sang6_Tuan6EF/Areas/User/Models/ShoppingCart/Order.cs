@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Niveau.Areas.Admin.Models;
 
-namespace Niveau.Areas.User.Models.ShoppingCart.ShoppingCart
+namespace Niveau.Areas.User.Models.ShoppingCart
 {
     public class Order
     {

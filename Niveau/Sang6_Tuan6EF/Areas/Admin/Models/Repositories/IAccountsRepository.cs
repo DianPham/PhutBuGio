@@ -3,10 +3,10 @@
     public interface IAccountsRepository
     {
         Task<IEnumerable<ApplicationUser>> GetAllAsync();
-        Task<ApplicationUser> GetByIdAsync(int id);
+        Task<ApplicationUser> GetByIdAsync(string id);
         Task AddAsync(ApplicationUser account);
         Task UpdateAsync(ApplicationUser account);
-        Task DeleteAsync(int id);
+        Task DeleteAsync(string id);
     }
 
 }

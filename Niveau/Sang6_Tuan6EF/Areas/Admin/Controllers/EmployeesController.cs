@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models;
 using Niveau.Areas.Admin.Models.Employees;
-using Niveau.Models;
+using Niveau.Areas.User.Models;
 
 namespace Niveau.Areas.Admin.Controllers
 {
