@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations.Schema;
-using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.User.Models.ShoppingCart
 {

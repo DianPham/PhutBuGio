@@ -1653,3 +1653,4 @@ D:\Sales-Website\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.pdb
 D:\Sales-Website\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.genruntimeconfig.cache
 D:\Sales-Website\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\ref\Niveau.dll
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\scopedcss\Areas\User\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\bin\Debug\net6.0\Boxed.AspNetCore.dll

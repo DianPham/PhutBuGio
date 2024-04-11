@@ -1,48 +1,111 @@
-﻿@model IEnumerable<Niveau.Areas.Admin.Models.ApplicationUser>
+﻿@model IEnumerable<Niveau.Areas.Admin.Models.Accounts.AccountViewModel>
 @using Microsoft.AspNetCore.Identity
 @using Niveau.Areas.Admin.Models
+@using Niveau.Areas.Admin.Models.Accounts;
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@inject RoleManager<IdentityRole> UserRole
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Account List</h2>
+<div class="row px-xl-5">
+    <div class="col">
+        <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+            <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Description</a>
+            <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Information</a>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab-pane-1">
+                <h4 class="mb-3">Staff</h4>
+                <table class="table">
+                    <a asp-area="Admin" asp-page="/Account/Register" class="btn btn-primary">Create New</a>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th></th>
+                            <!-- Add more columns if needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var account in Model)
+                        {
+                            if ((account.Roles.FirstOrDefault() == "Admin") || (account.Roles.FirstOrDefault() == "Employee"))
+                            {
+                                <tr>
+                                    <td>@account.User.Id</td>
+                                    <td>@account.User.FirstName</td>
+                                    <td>@account.User.LastName</td>
+                                    <td>@account.User.Email</td>
+                                    <td>@account.Roles.FirstOrDefault()</td>
+                                    <td>
 
-<table class="table">
-    <a asp-area="Admin" asp-page="/Account/Register" class="btn btn-primary">Create New</a>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Email</th>
-            <th></th>
-            <!-- Add more columns if needed -->
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var account in Model)
-        {
-            <tr>
-                <td>@account.Id</td>
-                <td>@account.FirstName</td>
-                <td>@account.LastName</td>
-                <td>@account.Email</td>
-                <td>
+                                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.User.Id">View</a> |
 
-                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.Id">View</a> |
+                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id">Edit</a> |
 
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.Id">Edit</a> |
+                                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id">Delete</a>
 
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.Id">Delete</a>
+                                    </td>
+                                    <!-- Add more columns if needed -->
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
 
-                </td>
-                <!-- Add more columns if needed -->
-            </tr>
-        }
-    </tbody>
-</table>
+            </div>
+            <div class="tab-pane fade" id="tab-pane-2">
+                <h4 class="mb-3">User</h4>
+                <table class="table">
+                    <a asp-area="Admin" asp-page="/Account/Register" class="btn btn-primary">Create New</a>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th></th>
+                            <!-- Add more columns if needed -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var account in Model)
+                        {
+                            if (account.Roles.FirstOrDefault() == "User")
+                            {
+                                <tr>
+                                    <td>@account.User.Id</td>
+                                    <td>@account.User.FirstName</td>
+                                    <td>@account.User.LastName</td>
+                                    <td>@account.User.Email</td>
+                                    <td>@account.Roles.FirstOrDefault()</td>
+                                    <td>
+
+                                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.User.Id">View</a> |
+
+                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id">Edit</a> |
+
+                                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id">Delete</a>
+
+                                    </td>
+                                    <!-- Add more columns if needed -->
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
 

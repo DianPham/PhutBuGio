@@ -1,26 +1,41 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 using Niveau.Areas.Admin.Models.Repositories;
 
 namespace Niveau.Areas.Admin.Controllers
 {
+
     [Area("Admin")]
     [Authorize(Roles = SD.Role_Admin)]
     public class AccountsController : Controller
     {
         private readonly IAccountsRepository _repository;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public AccountsController(IAccountsRepository repository)
+        public AccountsController(IAccountsRepository repository, UserManager<ApplicationUser> userManager)
         {
             _repository = repository;
+            _userManager = userManager;
         }
 
         // GET: Account
         public async Task<IActionResult> Index()
         {
-            var accounts = await _repository.GetAllAsync();
-            return View(accounts);
+            //var accounts = await _repository.GetAllAsync();
+
+            var accountsViewModel = new List<AccountViewModel>();
+
+            foreach (var user in _userManager.Users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                accountsViewModel.Add(new AccountViewModel { User = user, Roles = roles });
+            }
+
+            return View(accountsViewModel);
+            //return View(accounts);
         }
 
         // GET: Account/Details/5
@@ -35,23 +50,7 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         // GET: Account/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Account/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ApplicationUser account)
-        {
-            if (ModelState.IsValid)
-            {
-                await _repository.AddAsync(account);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(account);
-        }
+        
 
         // GET: Account/Edit/5
         public async Task<IActionResult> Edit(string id)

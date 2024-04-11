@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models.Repositories;
-using Niveau.Areas.Admin.Models;
 using Niveau.Areas.User.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 var builder = WebApplication.CreateBuilder(args);
 

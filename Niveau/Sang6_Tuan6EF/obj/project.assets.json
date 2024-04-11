@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Boxed.AspNetCore/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Boxed.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Boxed.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -4081,6 +4097,23 @@
     }
   },
   "libraries": {
+    "Boxed.AspNetCore/9.0.1": {
+      "sha512": "Mfs/mOTx4DJiQeJam3dbl2xGk6dKCXn5J834V3X4WPk7MsTQG4btOL4lDJoRG3LrndrO+CoSchxQjpAzwy1sgQ==",
+      "type": "package",
+      "path": "boxed.aspnetcore/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Boxed.AspNetCore.md",
+        "Icon-256x256.png",
+        "boxed.aspnetcore.9.0.1.nupkg.sha512",
+        "boxed.aspnetcore.nuspec",
+        "lib/net6.0/Boxed.AspNetCore.dll",
+        "lib/net6.0/Boxed.AspNetCore.xml",
+        "lib/net7.0/Boxed.AspNetCore.dll",
+        "lib/net7.0/Boxed.AspNetCore.xml"
+      ]
+    },
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -11451,6 +11484,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Boxed.AspNetCore >= 9.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.28",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.28",
       "Microsoft.EntityFrameworkCore >= 6.0.28",
@@ -11500,6 +11534,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Boxed.AspNetCore": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.28, )"

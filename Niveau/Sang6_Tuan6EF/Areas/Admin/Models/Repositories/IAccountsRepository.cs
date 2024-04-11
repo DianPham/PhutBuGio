@@ -1,4 +1,6 @@
-﻿namespace Niveau.Areas.Admin.Models.Repositories
+﻿using Niveau.Areas.Admin.Models.Accounts;
+
+namespace Niveau.Areas.Admin.Models.Repositories
 {
     public interface IAccountsRepository
     {

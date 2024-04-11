@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.Admin.Pages.Account.Manage
 {

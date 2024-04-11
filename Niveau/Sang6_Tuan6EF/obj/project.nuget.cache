@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dfBp61ufSwb8R+BMiH6E0r+chXBsOMxlso2T264GzUMNiAUVlCGAfKpBvnQ7H2aQ7IcypHKjDU2z6+x0NwN7kQ==",
+  "dgSpecHash": "HoDGSv63Ax0hi9xnLUnuOP40dMoCe0ShLtJBx6ZDcDClyXEMOhQ1bh/KaAv+Z9k/u/Ges8ciLQdlAzH7ETfG7Q==",
   "success": true,
   "projectFilePath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\boxed.aspnetcore\\9.0.1\\boxed.aspnetcore.9.0.1.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

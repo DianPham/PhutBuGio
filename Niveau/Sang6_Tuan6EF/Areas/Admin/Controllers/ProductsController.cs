@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Boxed.AspNetCore;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Niveau.Areas.Admin.Models;
@@ -29,6 +30,7 @@ namespace Niveau.Areas.Admin.Controllers
             return View(products);
         }
         [AllowAnonymous]
+        [HttpGet("Shop/", Name = "Index")]
         public async Task<IActionResult> Index()
         {
             var products = await _productRepository.GetAllAsync();
@@ -97,14 +99,25 @@ namespace Niveau.Areas.Admin.Controllers
         //Nhớ tạo folder images trong wwwroot
 
         // Hiển thị thông tin chi tiết sản phẩm
+        [HttpGet("Shop/{id:int}/{title}", Name = "Details")]
         [AllowAnonymous]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(int id, string title)
         {
             var product = await _productRepository.GetByIdAsync(id);
             if (product == null)
             {
                 return NotFound();
             }
+
+            string friendlyTitle = FriendlyUrlHelper.GetFriendlyTitle(title);
+
+            if (!string.Equals(friendlyTitle, title, StringComparison.Ordinal))
+            {
+                // If the title is null, empty or does not match the friendly title, return a 301 Permanent
+                // Redirect to the correct friendly URL.
+                return this.RedirectToRoutePermanent("Details", new { id = id, title = friendlyTitle });
+            }
+
             return View(product);
         }
         // Hiển thị form cập nhật sản phẩm
@@ -136,7 +149,7 @@ namespace Niveau.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 var existingProduct = await _productRepository.GetByIdAsync(id); // Giả định có phương thức GetByIdAsync
-                                                     // Giữ nguyên thông tin hình ảnh nếu không có hình mới được
+                                                                                 // Giữ nguyên thông tin hình ảnh nếu không có hình mới được
 
                 if (imageUrl == null)
                 {

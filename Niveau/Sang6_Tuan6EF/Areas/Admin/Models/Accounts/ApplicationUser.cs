@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace Niveau.Areas.Admin.Models
+namespace Niveau.Areas.Admin.Models.Accounts
 {
     public class ApplicationUser : IdentityUser
     {

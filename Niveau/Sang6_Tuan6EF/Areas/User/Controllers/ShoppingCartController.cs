@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
-using Niveau.Areas.Admin.Models;
 using Niveau.Areas.User.Models.ShoppingCart;
 using Niveau.Areas.User.Models;
 using Niveau.Areas.User.Extentions;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.User.Controllers
 {

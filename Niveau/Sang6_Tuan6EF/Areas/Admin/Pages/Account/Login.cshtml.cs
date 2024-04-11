@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.Admin.Pages.Account
 {

@@ -17,7 +17,8 @@ namespace Niveau.Areas.User.Controllers
             _logger = logger;
             _productRepository = productRepository;
         }
-
+        [HttpGet("Home")]
+        [HttpGet("")]
         public async Task<IActionResult> Index()
         {
             var product = await _productRepository.GetAllAsync();

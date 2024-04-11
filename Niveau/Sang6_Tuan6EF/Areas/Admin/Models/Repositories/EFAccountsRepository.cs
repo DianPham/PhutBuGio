@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Niveau.Areas.Admin.Models.Accounts;
 using Niveau.Areas.User.Models;
 
 namespace Niveau.Areas.Admin.Models.Repositories

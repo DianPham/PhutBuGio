@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.Admin.Pages.Account
 {

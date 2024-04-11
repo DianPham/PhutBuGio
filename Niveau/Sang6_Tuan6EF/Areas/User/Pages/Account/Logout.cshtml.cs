@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using Niveau.Areas.Admin.Models;
+using Niveau.Areas.Admin.Models.Accounts;
 
 namespace Niveau.Areas.User.Pages.Account
 {
