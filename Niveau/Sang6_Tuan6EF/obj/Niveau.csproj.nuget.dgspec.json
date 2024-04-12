@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {}
+    "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/Niveau.csproj": {}
   },
   "projects": {
-    "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {
+    "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/Niveau.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+        "projectUniqueName": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/Niveau.csproj",
         "projectName": "Niveau",
-        "projectPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
-        "packagesPath": "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\",
-        "outputPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\obj\\",
+        "projectPath": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/Niveau.csproj",
+        "packagesPath": "/Users/nguyentran/.nuget/packages/",
+        "outputPath": "/Users/nguyentran/Documents/GitHub/DL/Niveau/Sang6_Tuan6EF/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL.DESKTOP-TETDMA3\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/nguyentran/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -96,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }

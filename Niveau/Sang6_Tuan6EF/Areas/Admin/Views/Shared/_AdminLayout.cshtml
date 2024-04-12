@@ -35,7 +35,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="~/AdminLTE/dist/img/Niveau.jpg" alt="NiveauLogo" height="60" width="60">
+            <span class="text-primary font-weight-bold border px-3 mr-1">
+                N
+            </span>
         </div>
 
         <!-- Navbar -->
@@ -86,7 +88,9 @@
         <aside style="background-color: #182952;" class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="https://localhost:7030/Admin" class="brand-link">
-                <img src="~/AdminLTE/dist/img/Niveau.jpg" alt="Niveau Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="text-primary font-weight-bold border px-3 mr-1">
+                    N
+                </span>
                 <span class="brand-text font-weight-light">Niveau</span>
             </a>
 
@@ -113,33 +117,10 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Widgets
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Charts
-                                </p>
-                            </a>
-                        </li>
+                        
                         <li href="https://localhost:7030/Admin/Products/List" class="nav-item" id="QLSP">
                             <a asp-controller="Products" asp-action="List" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="fa-solid fa-shirt"></i>
                                 <p>
                                     Quản lý sản phẩm
                                 </p>
@@ -147,7 +128,7 @@
                         </li>
                         <li href="https://localhost:7030/Admin/Employees" class="nav-item" id="QLNV">
                             <a asp-controller="Employees" asp-action="Index" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="fa-solid fa-users"> </i>
                                 <p>
                                     Quản lý nhân viên
                                 </p>
@@ -155,7 +136,7 @@
                         </li>
                         <li href="https://localhost:7030/Admin/Accounts" class="nav-item">
                             <a asp-controller="Accounts" asp-action="Index" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="fa-solid fa-address-card"></i>
                                 <p>
                                     Quản lý tài khoản
                                 </p>
@@ -223,9 +204,9 @@
     <!-- AdminLTE App -->
     <script src="~/AdminLTE/dist/js/adminlte.js"></script>
     @*     <!-- AdminLTE for demo purposes -->
-    <script src="~/AdminLTE/dist/js/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="~/AdminLTE/dist/js/pages/dashboard.js"></script> *@
+        <script src="~/AdminLTE/dist/js/demo.js"></script>
+        <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+        <script src="~/AdminLTE/dist/js/pages/dashboard.js"></script> *@
 
     <script src="~/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src=".~/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -239,10 +220,10 @@
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="https://kit.fontawesome.com/dced0ce4ba.js" crossorigin="anonymous"></script>
 
 
-    <script>
-        $(function () {
+    <script>$(function () {
             $("#example1").DataTable({
                 "responsive": true, "lengthChange": false, "autoWidth": false
             }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
@@ -255,8 +236,7 @@
                 "autoWidth": false,
                 "responsive": true,
             });
-        });
-    </script>
+        });</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

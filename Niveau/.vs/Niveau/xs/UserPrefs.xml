@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sang6_Tuan6EF/appsettings.json">
+    <Files>
+      <File FileName="Sang6_Tuan6EF/Areas/User/Views/Shared/_Layout.cshtml" />
+      <File FileName="Sang6_Tuan6EF/appsettings.Development.json" />
+      <File FileName="Sang6_Tuan6EF/Program.cs" />
+      <File FileName="Sang6_Tuan6EF/appsettings.json" Line="3" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Niveau" expanded="True">
+            <Node name="Niveau">
+              <Node name="Areas" expanded="True">
+                <Node name="User" expanded="True">
+                  <Node name="Views" expanded="True">
+                    <Node name="ShoppingCart" expanded="True" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Niveau PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
