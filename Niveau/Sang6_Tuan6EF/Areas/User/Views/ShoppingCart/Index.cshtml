@@ -1,7 +1,7 @@
 ﻿@model Niveau.Areas.User.Models.ShoppingCart.ShoppingCart
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AuthorizeLayout.cshtml";
+    Layout = "~/Areas/User/Views/Shared/_AuthorizeLayout.cshtml";
 }
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
@@ -28,38 +28,43 @@
                     {
                         <div class="card rounded-3 mb-4">
                             <div class="card-body p-4">
-                                <div class="row d-flex justify-content-between align-items-center">
+                                <div class="row align-items-center">
                                     <div class="col-md-2 col-lg-2 col-xl-2">
-                                        <img src="@item.ImageUrl"
-                                             class="img-fluid rounded-3" alt="@item.Name">
+                                        <img src="@item.ImageUrl" class="img-fluid rounded-3" alt="@item.Name">
                                     </div>
                                     <div class="col-md-3 col-lg-3 col-xl-3">
                                         <p class="lead fw-normal mb-2">@item.Name</p>
                                         <p><span class="text-muted">Size: </span>M <span class="text-muted">Color: </span>Grey</p>
                                     </div>
-                                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-
-                                        <button class="btn decrease" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                            <i class="fas fa-minus">-</i>
-                                        </button>
-
-                                        <input id="form1" min="0" name="quantity" value="@item.Quantity" type="number"
-                                               class="form-control" />
-
-                                        <button class="btn increase"
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                            <i class="fas fa-plus">+</i>
-                                        </button>
+                                    <div class="col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
+                                        <div class="quantity">
+                                            <button class="btn btn-outline-primary decrease">-</button>
+                                            <span>@item.Quantity</span>
+                                            <button class="btn btn-outline-primary increase">+</button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                        <h5 class="mb-0">$@item.Price</h5>
+                                    <div class="col-md-2 col-lg-2 col-xl-2">
+                                        <div class="price">
+                                            <h5>$@item.Price</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-lg-2 col-xl-2">
+                                        <div class="total">
+                                            <h5>$@(item.Price * item.Quantity)</h5>
+                                        </div>
                                     </div>
                                     <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                        <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                        <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId">
+                                            <button class="btn btn-outline-dark">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                     }
                 }
                 else
@@ -69,23 +74,114 @@
                     </div>
                 }
 
-
                 <div class="card mb-4">
                     <div class="card-body p-4 d-flex flex-row">
-                        <span class="text-muted px-lg-5">Total</span>@Model.Items.Sum(p=> p.Price)
-
+                        <div id="totalAmount">
+                            <span class="text-muted px-lg-5">Total: </span>
+                        </div>
                     </div>
                 </div>
 
+                @* <div class="card mb-4">
+                <div class="card-body p-4 d-flex flex-row">
+                <span class="text-muted px-lg-5">Total: </span>
+                </div>
+                </div>  *@
+
                 <div class="card">
+                    @* onclick="clearCart()" type="button" class="btn btn-danger btn-block btn-lg" *@
                     <div class="card-body">
-                        <button asp-controller="ShoppingCart" asp-action="ClearCart" type="button" class="btn btn-danger btn-block btn-lg">Clear Cart</button>
-                        <button asp-controller="ShoppingCart" asp-action="Checkout" asp-route-order="@Model" type="button" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
-                    </div>
+                        <button asp-controller="ShoppingCart" asp-action="ClearCart" onclick="clearCart()" type="button" class="btn btn-danger btn-block btn-lg">
+                            Clear Cart
+                        </button>
+                        @* <div class="">
+                            <form asp-controller="ShoppingCart" asp-action="Checkout" method="get">
+                                <button type="submit" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+                            </form>
+                        </div> *@
+                        <a href="@Url.Action("Payment", "ShoppingCart")" type="button" class="btn btn-warning btn-block btn-lg">Thanh toán</a>
+
+                        
                 </div>
 
             </div>
         </div>
     </div>
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </section>
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function clearCart() {
+        // Xóa tất cả các sản phẩm trong giỏ hàng
+        var cartItems = document.querySelectorAll('.card');
+        cartItems.forEach(function (item) {
+            item.remove();
+        });
+
+        // Hiển thị thông báo rằng giỏ hàng đã được xóa
+        alert("Your cart has been cleared.");
+    }
+
+</script>
+
+@section scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Gọi hàm tính tổng tiền khi trang được tải
+            calculateTotal();
+
+            // Lấy tất cả các nút tăng và giảm
+            const increaseButtons = document.querySelectorAll('.increase');
+            const decreaseButtons = document.querySelectorAll('.decrease');
+
+            // Lặp qua mỗi nút tăng và giảm để gắn sự kiện
+            increaseButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const quantityElement = button.parentElement.querySelector('span');
+                    let quantity = parseInt(quantityElement.textContent);
+                    quantity++;
+                    quantityElement.textContent = quantity;
+
+                    updateTotal(button);
+                });
+            });
+
+            decreaseButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const quantityElement = button.parentElement.querySelector('span');
+                    let quantity = parseInt(quantityElement.textContent);
+                    if (quantity > 1) {
+                        quantity--;
+                        quantityElement.textContent = quantity;
+
+                        updateTotal(button);
+                    }
+                });
+            });
+
+            // Hàm tính tổng tiền
+            function calculateTotal() {
+                const totalCells = document.querySelectorAll('.total h5');
+                let totalAmount = 0;
+                totalCells.forEach(cell => {
+                    totalAmount += parseFloat(cell.textContent.replace('$', ''));
+                });
+                document.getElementById('totalAmount').textContent = 'Total Amount: $' + totalAmount.toFixed(2);
+                document.getElementById('hiddenTotalAmount').value = totalAmount.toFixed(2);
+            }
+            // Hàm cập nhật tổng tiền của sản phẩm
+            function updateTotal(button) {
+                const row = button.closest('.card'); // Tìm thẻ cha gần nhất có class 'card'
+                const quantityElement = row.querySelector('.quantity span');
+                const priceElement = row.querySelector('.price h5');
+                const totalElement = row.querySelector('.total h5');
+                const quantity = parseInt(quantityElement.textContent);
+                const price = parseFloat(priceElement.textContent.replace('$', '')); // Loại bỏ ký tự '$'
+                totalElement.textContent = '$' + (price * quantity).toFixed(2);
+
+                calculateTotal();
+            }
+        });
+    </script>
+}
+
