@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Niveau.Areas.Admin.Models.Products.Coupon>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Category</h1>
+<a href="@Url.Action("Create")" class="btn btn-primary m-2">Create New</a>
+<div class="card">
+
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Value</th>
+                    <th>Unit</th>
+                    <th>Expiry Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var coupon in Model.OrderByDescending(p => p.IsActive))
+                {
+                    <tr>
+                        <td>@coupon.Code</td>
+                        <td>@coupon.Discount</td>
+                        <td>@(coupon.Type == 0 ? "%" : "USD") </td>
+                        <td>@coupon.ExpiryDate</td>
+                        <td style="color: @(coupon.IsActive ? "green" : "red");">
+                            @((coupon.IsActive ? "Active" : "Disabled"))
+                        </td>
+                        <td>
+
+                            <a asp-action="Details" asp-route-id="@coupon.CouponId">View</a> |
+
+                            <a asp-action="Edit" asp-route-id="@coupon.CouponId">Edit</a> |
+
+                            <a asp-action="Delete" asp-route-id="@coupon.CouponId">Delete</a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

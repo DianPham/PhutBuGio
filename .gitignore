@@ -277,3 +277,4 @@ Niveau/Sang6_Tuan6EF/bin/
 Niveau/Sang6_Tuan6EF/obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
+/Niveau/Sang6_Tuan6EF/appsettings.json

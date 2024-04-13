@@ -46,10 +46,7 @@
                     <a class="nav-link text-white" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="https://localhost:7030/Admin" class="nav-link text-white">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link text-white">Contact</a>
+                    <a asp-area="User" asp-controller="Home" asp-action="Index" class="nav-link text-white">Home</a>
                 </li>
             </ul>
             <!-- Right navbar links -->
@@ -115,52 +112,28 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                             with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Dashboard
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/widgets.html" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Widgets
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
-                                <p>
-                                    Charts
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item" id="QLSP">
+                        with font-awesome or any other icon font library -->
+                        <li href="https://localhost:7030/Admin/Products/List" class="nav-item" id="QLSP">
                             <a asp-controller="Products" asp-action="List" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="fa-solid fa-shirt"></i>
                                 <p>
-                                    Quản lý sản phẩm
+                                    Product
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item" id="QLNV">
+                        <li href="https://localhost:7030/Admin/Employees" class="nav-item" id="QLNV">
                             <a asp-controller="Employees" asp-action="Index" class="nav-link">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <i class="fa-solid fa-users"> </i>
                                 <p>
-                                    Quản lý nhân viên
+                                    Employee
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a asp-controller="Accounts" asp-action="Index" class="nav-link active">
-                                <i class="nav-icon fas fa-chart-pie"></i>
+                        <li href="https://localhost:7030/Admin/Accounts" class="nav-item">
+                            <a asp-controller="Accounts" asp-action="Index" class="nav-link">
+                                <i class="fa-solid fa-address-card"></i>
                                 <p>
-                                    Quản lý tài khoản
+                                    Account
                                 </p>
                             </a>
                         </li>
@@ -242,6 +215,7 @@
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="~/AdminLTE/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <script src="https://kit.fontawesome.com/dced0ce4ba.js" crossorigin="anonymous"></script>
 
 
     <script>
@@ -258,11 +232,7 @@
                 "autoWidth": false,
                 "responsive": true,
             });
-        });
-    </script>
+        });</script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
-
-

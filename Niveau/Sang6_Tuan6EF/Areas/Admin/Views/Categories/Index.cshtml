@@ -15,20 +15,20 @@
         </tr>
     </thead>
     <tbody>
-        <a href="@Url.Action("Create")" class="btn btn-primary m-2">Create New</a>
+        <a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
         <a asp-controller="Products" asp-action="List" class="btn btn-primary m-2">Product</a>
-        @foreach (var category in Model)
+        @foreach (var product in Model)
         {
             <tr>
-                <td>@category.Id</td>
-                <td>@category.Name</td>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
                 <td>
 
-                    <a asp-action="Details" asp-route-id="@category.Id">View</a> |
+                    <a class="btn btn-success" asp-action="Display" asp-route-id="@product.Id"><i class="fa-solid fa-eye"></i> View</a> |
 
-                    <a asp-action="Edit" asp-route-id="@category.Id">Edit</a> |
+                    <a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
 
-                    <a asp-action="Delete" asp-route-id="@category.Id">Delete</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>
 
                 </td>
             </tr>

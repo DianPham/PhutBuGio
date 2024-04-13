@@ -4,37 +4,46 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Products</h2>
-<table class="table">
-    <a href="@Url.Action("Create")" class="btn btn-primary m-2">Create New</a>
-    <a asp-controller="Categories" asp-action="Index" class="btn btn-primary m-2">Category</a>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var product in Model)
-        {
-            <tr>
-                <td>@product.Name</td>
-                <td>@product.Price</td>
-                <td>@product.Description</td>
-                <td>@product.Category?.Name</td>
-                <td>
+<h2>Product</h2>
+<a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
+<a asp-controller="Categories" asp-action="Index" class="btn btn-primary m-2"><i class="fa-solid fa-list"></i> Category</a>
 
-                    <a class="btn btn-primary" asp-action="Details" asp-route-id="@product.Id">View</a> |
+<div class="card">
 
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@product.Id">Edit</a> |
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.Name</td>
+                        <td>@product.Price</td>
+                        <td>@product.Description</td>
+                        <td>@product.Category?.Name</td>
+                        <td>
 
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                            <a class="btn btn-success" asp-action="Details" asp-route-id="@product.Id"><i class="fa-solid fa-eye"></i> View</a> |
 
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@product.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+
+</div>

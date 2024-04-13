@@ -1360,7 +1360,6 @@ C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\staticwebassets.buil
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\staticwebassets.development.json
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\scopedcss\bundle\Niveau.styles.css
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\scopedcss\projectbundle\Niveau.bundle.scp.css
-C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.csproj.CopyComplete
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.dll
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\refint\Niveau.dll
 C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.pdb
@@ -1941,3 +1940,5 @@ D:\PhutBuGio\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\refint\Niveau.dll
 D:\PhutBuGio\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.pdb
 D:\PhutBuGio\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.genruntimeconfig.cache
 D:\PhutBuGio\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\ref\Niveau.dll
+C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.sourcelink.json
+C:\Dian\KiemTraGiuaKy\Niveau\Sang6_Tuan6EF\obj\Debug\net6.0\Niveau.csproj.Up2Date

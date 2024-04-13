@@ -11,100 +11,108 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Account List</h2>
+<h2>Account</h2>
+<a asp-area="Admin" asp-page="/Account/Register" class="btn btn-primary m-t-4"><i class="fa-solid fa-plus"></i> Create New</a>
 <div class="row px-xl-5">
     <div class="col">
         <div class="nav nav-tabs justify-content-center border-secondary mb-4">
-            <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Staff</a>
-            <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Customer</a>
+            <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">STAFF</a>
+            <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">CUSTOMER</a>
         </div>
         <div class="tab-content">
             <div class="tab-pane fade show active" id="tab-pane-1">
-                <h4 class="mb-3">Staff</h4>
-                <table class="table">
-                    <a asp-area="Admin" asp-page="/Account/Register" class="btn btn-primary">Create New</a>
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>FirstName</th>
-                            <th>LastName</th>
-                            <th>Email</th>
-                            <th>Role</th>
-                            <th></th>
-                            <!-- Add more columns if needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var account in Model)
-                        {
-                            if ((account.Roles.FirstOrDefault() == "Admin") || (account.Roles.FirstOrDefault() == "Employee"))
-                            {
+                <div class="card">
+
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
                                 <tr>
-                                    <td>@account.User.Id</td>
-                                    <td>@account.User.FirstName</td>
-                                    <td>@account.User.LastName</td>
-                                    <td>@account.User.Email</td>
-                                    <td>@account.Roles.FirstOrDefault()</td>
-                                    <td>
-
-                                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.User.Id">View</a> |
-
-                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id">Edit</a> |
-
-                                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id">Delete</a>
-
-                                    </td>
+                                    <th>FirstName</th>
+                                    <th>LastName</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th></th>
                                     <!-- Add more columns if needed -->
                                 </tr>
-                            }
-                        }
-                    </tbody>
-                </table>
+                            </thead>
+                            <tbody>
+                                @foreach (var account in Model)
+                                {
+                                    if ((account.Roles.FirstOrDefault() == "Admin") || (account.Roles.FirstOrDefault() == "Employee"))
+                                    {
+                                        <tr>
+                                            <td>@account.User.FirstName</td>
+                                            <td>@account.User.LastName</td>
+                                            <td>@account.User.Email</td>
+                                            <td>@account.Roles.FirstOrDefault()</td>
+                                            <td>
+
+                                                <a class="btn btn-success" asp-action="Details" asp-route-id="@account.User.Id"><i class="fa-solid fa-eye"></i> View</a> |
+
+                                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
+
+                                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id"><i class="fa-solid fa-trash"></i> Delete</a>
+
+                                            </td>
+                                            <!-- Add more columns if needed -->
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
 
             </div>
             <div class="tab-pane fade" id="tab-pane-2">
-                <h4 class="mb-3">User</h4>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>FirstName</th>
-                            <th>LastName</th>
-                            <th>Email</th>
-                            <th>Role</th>
-                            <th></th>
-                            <!-- Add more columns if needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var account in Model)
-                        {
-                            if (account.Roles.FirstOrDefault() == "User")
-                            {
+                <div class="card">
+
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped">
+                            <thead>
                                 <tr>
-                                    <td>@account.User.Id</td>
-                                    <td>@account.User.FirstName</td>
-                                    <td>@account.User.LastName</td>
-                                    <td>@account.User.Email</td>
-                                    <td>@account.Roles.FirstOrDefault()</td>
-                                    <td>
-
-                                        <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.User.Id">View</a> |
-
-                                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id">Edit</a> |
-
-                                        <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id">Delete</a>
-
-                                    </td>
+                                    <th>FirstName</th>
+                                    <th>LastName</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th></th>
                                     <!-- Add more columns if needed -->
                                 </tr>
-                            }
-                        }
-                    </tbody>
-                </table>
+                            </thead>
+                            <tbody>
+                                @foreach (var account in Model)
+                                {
+                                    if (account.Roles.FirstOrDefault() == "User")
+                                    {
+                                        <tr>
+                                            <td>@account.User.FirstName</td>
+                                            <td>@account.User.LastName</td>
+                                            <td>@account.User.Email</td>
+                                            <td>@account.Roles.FirstOrDefault()</td>
+                                            <td>
+
+                                                <a class="btn btn-primary" asp-action="Details" asp-route-id="@account.User.Id">View</a> |
+
+                                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@account.User.Id">Edit</a> |
+
+                                                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@account.User.Id">Delete</a>
+
+                                            </td>
+                                            <!-- Add more columns if needed -->
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 
 

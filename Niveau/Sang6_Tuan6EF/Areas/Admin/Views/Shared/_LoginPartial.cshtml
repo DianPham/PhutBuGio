@@ -5,24 +5,24 @@
 @inject UserManager<ApplicationUser> UserManager
 
 <ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-            <a id="manage" class="nav-link text-black" @* asp-area="Admin" asp-page="/Account/Manage/Index" *@ title="Manage">Hello @UserManager.GetUserName(User)!</a>
-    </li>
-    <li class="nav-item">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <a id="manage" class="nav-link text-white" @* asp-area="Admin" asp-page="/Account/Manage/Index" *@ title="Manage">Hello @UserManager.GetUserName(User)!</a>
+        </li>
+        <li class="nav-item">
             <form id="logoutForm" class="form-inline" asp-area="Admin" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-                <button id="logout" type="submit" class="nav-link btn btn-link text-black">Logout</button>
-        </form>
-    </li>
-}
-else
-{
-    <li class="nav-item">
-            <a class="nav-link text-black" id="register" asp-area="Admin" asp-page="/Account/Register">Register</a>
-    </li>
-    <li class="nav-item">
-            <a class="nav-link text-black" id="login" asp-area="Admin" asp-page="/Account/Login">Login</a>
-    </li>
-}
+                <button id="logout" type="submit" class="nav-link btn btn-link text-white">Logout</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-white" id="register" asp-area="Admin" asp-page="/Account/Register">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" id="login" asp-area="Admin" asp-page="/Account/Login">Login</a>
+        </li>
+    }
 </ul>
