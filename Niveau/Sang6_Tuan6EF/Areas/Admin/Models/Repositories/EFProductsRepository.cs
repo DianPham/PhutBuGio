@@ -81,5 +81,17 @@ namespace Niveau.Areas.Admin.Models.Repositories
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Product>> SearchAsync(string term)
+        {
+            if (!string.IsNullOrEmpty(term))
+            {
+                return await _context.Products.Where(p => p.Name.Contains(term)).ToListAsync();
+            }
+            else
+            {
+                return Enumerable.Empty<Product>();
+            }
+        }
     }
 }

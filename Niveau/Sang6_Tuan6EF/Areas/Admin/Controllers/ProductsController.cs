@@ -193,5 +193,26 @@ namespace Niveau.Areas.Admin.Controllers
             await _productRepository.DeleteAsync(id);
             return RedirectToAction(nameof(List));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Disable(int id)
+        {
+            var product = await _productRepository.GetByIdAsync(id);
+            if (product != null)
+            {
+                product.IsActive = false; // Assuming 'IsActive' is a property to toggle enable/disable
+                await _productRepository.UpdateAsync(product);
+                return Json(new { success = true });
+            }
+            return Json(new { success = false, message = "Product not found." });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Search(string term)
+        {
+            var products = await _productRepository.SearchAsync(term); // Ensure this method can handle partial input and search accordingly
+            var productNames = products.Select(p => p.Name).ToList();
+            return Json(productNames);
+        }
     }
 }

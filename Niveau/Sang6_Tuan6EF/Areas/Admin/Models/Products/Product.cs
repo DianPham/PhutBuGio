@@ -14,5 +14,6 @@ namespace Niveau.Areas.Admin.Models.Products
         public List<ProductImage>? Images { get; set; }
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
+        public bool IsActive { get; set; } = true;
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7rgdVSy9DM1qOg42Qg8MQLPydFQg8KpXA5eJA5w1kxU=",
+  "Hash": "4g0i/aHXLoIlWHHGADAOf1hPEKgu02Ur/QwPBp8NUlQ=",
   "Source": "Niveau",
   "BasePath": "_content/Niveau",
   "Mode": "Default",
@@ -3055,6 +3055,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AdminLTE\\dist\\img\\icons.png"
+    },
+    {
+      "Identity": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\AdminLTE\\dist\\img\\Niveau.jpg",
+      "SourceId": "Niveau",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\",
+      "BasePath": "_content/Niveau",
+      "RelativePath": "AdminLTE/dist/img/Niveau.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AdminLTE\\dist\\img\\Niveau.jpg"
     },
     {
       "Identity": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\wwwroot\\AdminLTE\\dist\\img\\photo1.png",

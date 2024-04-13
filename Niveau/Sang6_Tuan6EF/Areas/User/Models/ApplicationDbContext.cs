@@ -48,7 +48,10 @@ namespace Niveau.Areas.User.Models
                 EmailConfirmed = false,
                 UserName = "admin@gmail.com",
                 FirstName = "seed",
-                LastName = "admin"
+                LastName = "admin",
+                NormalizedEmail = "ADMIN@GMAIL.COM",
+                NormalizedUserName = "ADMIN@GMAIL.COM",
+                LockoutEnabled = true,
             };
 
             //set user password

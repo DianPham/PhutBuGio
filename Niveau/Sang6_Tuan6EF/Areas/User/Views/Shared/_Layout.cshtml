@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <meta charset="utf-8">
     <title>Men's Fashion Sale Website'</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -26,6 +29,7 @@
 </head>
 
 <body>
+
     <!-- Topbar Start -->
     <div class="container-fluid">
 
@@ -305,6 +309,30 @@
     <!-- Template Javascript -->
     <script src="~/UserLTE/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            var url = '@Url.Action("Search", "Products", new { area = "Admin" })';
+
+            $("#searchProduct").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: url,
+                        dataType: "json",
+                        data: { term: request.term },
+                        success: function (data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    console.log("Selected: " + ui.item.label);
+                }
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

@@ -17,19 +17,20 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-
+builder.Services.AddScoped<IProductsRepository, EFProductsRepository>();
+builder.Services.AddScoped<ICategoriesRepository, EFCategoriesRepository>();
+builder.Services.AddScoped<IAccountsRepository, EFAccountsRepository>();
+builder.Services.AddScoped<ICouponsRepository, EFCouponsRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 //builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddScoped<IProductsRepository, EFProductsRepository>();
-builder.Services.AddScoped<ICategoriesRepository, EFCategoriesRepository>();
-builder.Services.AddScoped<IAccountsRepository, EFAccountsRepository>();
-builder.Services.AddScoped<ICouponsRepository, EFCouponsRepository>();
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders()
 .AddDefaultUI()
