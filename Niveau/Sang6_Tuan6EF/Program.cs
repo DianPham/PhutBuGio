@@ -6,8 +6,20 @@ using Niveau.Areas.Admin.Models.Accounts;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddScoped<IProductsRepository, EFProductsRepository>();
+builder.Services.AddScoped<ICategoriesRepository, EFCategoriesRepository>();
+builder.Services.AddScoped<IAccountsRepository, EFAccountsRepository>();
+builder.Services.AddScoped<ICouponsRepository, EFCouponsRepository>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+{
+    googleOptions.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    googleOptions.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+    googleOptions.Scope.Add("profile");
+    googleOptions.Scope.Add("email");
+});
 
 // Đặt trước AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
@@ -17,10 +29,7 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
-builder.Services.AddScoped<IProductsRepository, EFProductsRepository>();
-builder.Services.AddScoped<ICategoriesRepository, EFCategoriesRepository>();
-builder.Services.AddScoped<IAccountsRepository, EFAccountsRepository>();
-builder.Services.AddScoped<ICouponsRepository, EFCouponsRepository>();
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
