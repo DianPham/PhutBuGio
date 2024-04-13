@@ -33,7 +33,7 @@ namespace Niveau.Areas.Admin.Controllers
         [HttpGet("Shop/", Name = "Index")]
         public async Task<IActionResult> Index()
         {
-            var products = await _productRepository.GetAllAsync();
+            var products = await _productRepository.GetAllActiveAsync();
             return View(products);
         }
         // Hiển thị form thêm sản phẩm mới
@@ -195,12 +195,12 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Disable(int id)
+        public async Task<IActionResult> Status(int id, bool state)
         {
             var product = await _productRepository.GetByIdAsync(id);
             if (product != null)
             {
-                product.IsActive = false; // Assuming 'IsActive' is a property to toggle enable/disable
+                product.IsActive = state; // Assuming 'IsActive' is a property to toggle enable/disable
                 await _productRepository.UpdateAsync(product);
                 return Json(new { success = true });
             }

@@ -18,6 +18,13 @@ namespace Niveau.Areas.Admin.Models.Repositories
                              .Include(p => p.Images) // Assuming Product has a navigation property called ProductImages
                              .ToListAsync();
         }
+        public async Task<IEnumerable<Product>> GetAllActiveAsync()
+        {
+            return await _context.Products
+                             .Include(p => p.Images)
+                             .Where(p => p.IsActive)// Assuming Product has a navigation property called ProductImages
+                             .ToListAsync();
+        }
         public async Task<Product> GetByIdAsync(int id)
         {
             return await _context.Products
