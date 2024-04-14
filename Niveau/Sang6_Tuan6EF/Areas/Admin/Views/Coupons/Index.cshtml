@@ -6,7 +6,7 @@
 }
 
 <h1>Category</h1>
-<a href="@Url.Action("Create")" class="btn btn-primary m-2">Create New</a>
+<a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
 <div class="card">
 
     <div class="card-body">
@@ -35,11 +35,11 @@
                         </td>
                         <td>
 
-                            <a asp-action="Details" asp-route-id="@coupon.CouponId">View</a> |
+                            <a class="btn btn-success" asp-action="Details" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-eye"></i>View</a> |
 
-                            <a asp-action="Edit" asp-route-id="@coupon.CouponId">Edit</a> |
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-pen-to-square"></i>Edit</a> |
 
-                            <a asp-action="Delete" asp-route-id="@coupon.CouponId">Delete</a>
+                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-trash"></i>Delete</a>
 
                         </td>
                     </tr>

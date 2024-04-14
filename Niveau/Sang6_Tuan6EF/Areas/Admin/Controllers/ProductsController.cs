@@ -99,9 +99,8 @@ namespace Niveau.Areas.Admin.Controllers
         //Nhớ tạo folder images trong wwwroot
 
         // Hiển thị thông tin chi tiết sản phẩm
-        [HttpGet("Shop/{id:int}/{title}", Name = "Details")]
         [AllowAnonymous]
-        public async Task<IActionResult> Details(int id, string title)
+        public async Task<IActionResult> Details(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
             if (product == null)
@@ -109,14 +108,6 @@ namespace Niveau.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            string friendlyTitle = FriendlyUrlHelper.GetFriendlyTitle(title);
-
-            if (!string.Equals(friendlyTitle, title, StringComparison.Ordinal))
-            {
-                // If the title is null, empty or does not match the friendly title, return a 301 Permanent
-                // Redirect to the correct friendly URL.
-                return this.RedirectToRoutePermanent("Details", new { id = id, title = friendlyTitle });
-            }
 
             return View(product);
         }

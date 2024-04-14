@@ -12,6 +12,7 @@
     <title>Product</title>
 </head>
 <body>
+    <h1>Product</h1>
     <a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
     <a asp-controller="Categories" asp-action="Index" class="btn btn-primary m-2"><i class="fa-solid fa-list"></i> Category</a>
     <div class="card">
@@ -28,7 +29,7 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody >
+                <tbody>
                     @foreach (var product in Model.OrderByDescending(p => p.IsActive))
                     {
                         <tr>
@@ -45,7 +46,7 @@
 
                                 <a class="btn btn-primary" asp-action="Edit" asp-route-id="@product.Id"><i class="fa-solid fa-pen-to-square"></i> Edit</a> |
 
-                                @if(product.IsActive == true)
+                                @if (product.IsActive == true)
                                 {
                                     <div style="display: inline-block;">
                                         <a data-status="false" data-product-id="@product.Id" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-trash"></i> Disable</a> |
@@ -60,7 +61,7 @@
                                         <a data-status="true" data-product-id="@product.Id" class="btn active toggleStatusButton"><i class="fa-solid fa-trash"></i> Active</a> |
 
                                         <a id="deleteButton" style="display: inline-block;"
-                                           class="btn btn-danger"  asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>
+                                           class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>
                                     </div>
                                 }
 
@@ -68,7 +69,7 @@
                         </tr>
                     }
                 </tbody>
-            </table>           
+            </table>
         </div>
     </div>
 </body>
