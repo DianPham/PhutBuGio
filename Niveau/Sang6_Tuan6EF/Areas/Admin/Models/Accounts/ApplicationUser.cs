@@ -11,6 +11,8 @@ namespace Niveau.Areas.Admin.Models.Accounts
         public string LastName { get; set; }
         public string? Address { get; set; }
         public string? PhoneNumber { get; set; }
+        public bool Status {  get; set; } = true;
+        public string? Message { get; set; }
 
     }
 }

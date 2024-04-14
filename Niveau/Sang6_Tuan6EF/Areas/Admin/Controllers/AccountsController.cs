@@ -105,6 +105,19 @@ namespace Niveau.Areas.Admin.Controllers
             await _repository.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Status(string id, bool state)
+        {
+            var product = await _repository.GetByIdAsync(id);
+            if (product != null)
+            {
+                product.Status = state; // Assuming 'IsActive' is a property to toggle enable/disable
+                await _repository.UpdateAsync(product);
+                return Json(new { success = true });
+            }
+            return Json(new { success = false, message = "Product not found." });
+        }
     }
 }
 

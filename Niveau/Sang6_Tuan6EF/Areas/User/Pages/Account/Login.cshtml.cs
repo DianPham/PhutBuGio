@@ -15,11 +15,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Niveau.Areas.Admin.Models.Accounts;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 
 namespace Niveau.Areas.User.Pages.Account
 {
     public class LoginModel : PageModel
     {
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
 
@@ -113,10 +115,21 @@ namespace Niveau.Areas.User.Pages.Account
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var appUser = await _userManager.FindByEmailAsync(Input.Email);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    if(appUser.Status)
+                    {
+                        _logger.LogInformation("User logged in.");
+                        return LocalRedirect(returnUrl);
+                    }
+                    else
+                    {
+                        _logger.LogWarning("Invalid login attempt.");
+                        TempData["DisableHeader"] = "Your account has been disabled";
+                        TempData["DisableMessage"] = appUser.Message;
+                        return Page();
+                    }
                 }
                 if (result.RequiresTwoFactor)
                 {

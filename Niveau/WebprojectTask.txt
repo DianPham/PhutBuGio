@@ -1,0 +1,51 @@
+Admin-Side:
+Account: User account chỉ được xem thông tin, reset mật khẩu, không được xóa, hiện modal thêm thông báo lý do disble
+Admin: Phân quyền theo chức năng
+
+User-Side:
+Reset password (https://www.yogihosting.com/aspnet-core-identity-password-reset/)
+Ajac product load
+Product Pagination
+Categories tab load dynamically
+Nút login của FB và google
+Tích hợp CKFinder
+Autocomplete
+Tích hợp gửi mail tự động
+
+
+*Hoàn thành:
+Facebook login
+thêm chức năng disable account
+
+
+
+Log làm việc cần lưu ý:
+15/04: chỉnh sửa ApplicationUser (thêm Status)
+
+Thêm key cho GG & FB authentication:
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DIAN;Database=Niveau;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true;"
+  },
+
+
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "DefaultRole": "Admin",
+  "Authentication": {
+    "Google": {
+      "ClientId": "171684323277-t4qokag309dohcor9uoti9fhcfvnvs9j.apps.googleusercontent.com",
+      "ClientSecret": "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"
+    },
+    "Facebook": {
+      "AppId": "441808755022377",
+      "AppSecret": "b7ab472819d2d1746fe2cdd8a6246ec2"
+    }
+  }
+} 
