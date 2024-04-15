@@ -236,12 +236,22 @@ namespace Niveau.Areas.Admin.Controllers
             return Json(new { success = false, message = "Product not found." });
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Search(string term)
+        [HttpGet("suggest")]
+        public async Task<IActionResult> Suggest(string term)
         {
-            var products = await _productRepository.SearchAsync(term); // Ensure this method can handle partial input and search accordingly
-            var productNames = products.Select(p => p.Name).ToList();
-            return Json(productNames);
+            // Ensure the term is not null and trim it to avoid leading/trailing spaces issues
+            if (string.IsNullOrWhiteSpace(term))
+            {
+                return Ok(null); // or return BadRequest("Term is required.");
+            }
+
+            // Trim and optionally make lowercase for case-insensitive matching
+            term = term.Trim().ToLower();
+
+            // Query the database directly for the matching suggestion
+            var suggestion = await _productRepository.SearchAsync(term);
+
+            return Json(suggestion);
         }
     }
 }
