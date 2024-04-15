@@ -27,6 +27,7 @@ builder.Services.AddAuthentication().AddGoogle(googleOptions =>
     googleOptions.Scope.Add("email");
 });
 
+
 // Đặt trước AddControllersWithViews();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -50,7 +51,16 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders()
 .AddDefaultUI()
 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login"; // Set here for Identity
+    options.AccessDeniedPath = "/AccessDenied";
+});
 builder.Services.AddRazorPages();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

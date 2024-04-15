@@ -19,16 +19,18 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pag
 
 namespace Niveau.Areas.User.Pages.Account
 {
+    [Area("User")]
     public class LoginModel : PageModel
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, UserManager<ApplicationUser> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _userManager = userManager;
         }
 
         /// <summary>
@@ -86,7 +88,8 @@ namespace Niveau.Areas.User.Pages.Account
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
         }
-
+        [HttpGet]
+        [Route("Login")]
         public async Task OnGetAsync(string returnUrl = null)
         {
             if (!string.IsNullOrEmpty(ErrorMessage))
@@ -114,39 +117,43 @@ namespace Niveau.Areas.User.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 var appUser = await _userManager.FindByEmailAsync(Input.Email);
-                if (result.Succeeded)
+
+                if (appUser.Status)
                 {
-                    if(appUser.Status)
+                    var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                    if (result.Succeeded)
                     {
                         _logger.LogInformation("User logged in.");
                         return LocalRedirect(returnUrl);
                     }
+                    if (result.RequiresTwoFactor)
+                    {
+                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                    }
+                    if (result.IsLockedOut)
+                    {
+                        _logger.LogWarning("User account locked out.");
+                        return RedirectToPage("./Lockout");
+                    }
                     else
                     {
-                        _logger.LogWarning("Invalid login attempt.");
-                        TempData["DisableHeader"] = "Your account has been disabled";
-                        TempData["DisableMessage"] = appUser.Message;
+                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                         return Page();
                     }
                 }
-                if (result.RequiresTwoFactor)
-                {
-                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                }
-                if (result.IsLockedOut)
-                {
-                    _logger.LogWarning("User account locked out.");
-                    return RedirectToPage("./Lockout");
-                }
+
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    _logger.LogWarning("Your account has been disabled.");
+                    _logger.LogWarning(appUser.Message);
+                    ModelState.AddModelError(string.Empty, "Your account has been disabled.");
+                    ModelState.AddModelError(string.Empty, "Reason: " + appUser.Message);
                     return Page();
                 }
-            }
 
+
+            }
             // If we got this far, something failed, redisplay form
             return Page();
         }
