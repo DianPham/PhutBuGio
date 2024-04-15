@@ -47,7 +47,7 @@ namespace Niveau.Areas.Admin.Controllers
 				.ToList();
 
 			var totalProducts = products.Count();
-			var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
+			var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize
 
 			var viewModel = new ProductListViewModel
 			{
