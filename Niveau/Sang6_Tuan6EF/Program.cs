@@ -50,6 +50,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders()
 .AddDefaultUI()
 .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Login"; // Set here for Identity
+    options.AccessDeniedPath = "/AccessDenied";
+});
 builder.Services.AddRazorPages();
 var app = builder.Build();
 

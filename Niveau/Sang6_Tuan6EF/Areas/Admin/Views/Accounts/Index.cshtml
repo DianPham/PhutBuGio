@@ -39,7 +39,7 @@
                                         <th>Email</th>
                                         <th>Role</th>
                                         <th>Actions</th>
-                                        <th></th>
+
                                         <!-- Add more columns if needed -->
                                     </tr>
                                 </thead>
@@ -87,7 +87,7 @@
                                         <th>Role</th>
                                         <th>Status</th>
                                         <th>Actions</th>
-                                        <th></th>
+
                                         <!-- Add more columns if needed -->
                                     </tr>
                                 </thead>
@@ -113,7 +113,7 @@
                                                     @if (account.User.Status == true)
                                                     {
                                                         <div style="display: inline-block;">
-                                                            <a data-status="false" data-user-id="@account.User.Id" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-trash"></i> Disable</a>
+                                                            <a data-status="false" data-user-id="@account.User.Id" data-user-email="@account.User.Email" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-trash"></i> Disable</a>
 
                                                         </div>
                                                     }
@@ -125,8 +125,7 @@
                                                     }
 
                                                     <!-- The Modal -->
-                                                    
-                                                <!-- Add more columns if needed -->
+                                                    <!-- Add more columns if needed -->
                                             </tr>
                                         }
                                     }
@@ -139,7 +138,7 @@
                 </div>
 
             </div>
-            
+
             </td>
         </div>
     </div>
@@ -147,22 +146,15 @@
         <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Sửa thông tin sách</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="exampleModalLabel">Lý do khóa tài khoản</h5>
                 </div>
                 <div class="modal-body">
-                    <form id="editBookForm">
+                    <form id="editAccountForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="editBookName" class="form-label">Tên sách</label>
-                                    <input type="text" class="form-control" id="editBookName" placeholder="Nhập tên sách">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="editPrice" class="form-label">Giá</label>
-                                    <input type="text" class="form-control" id="editPrice" placeholder="Nhập giá">
+                                    <label for="editAccountName" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="emailph" placeholder="Email" readonly>
                                 </div>
                             </div>
                         </div>
@@ -194,35 +186,53 @@
 
  <script>
     $(document).ready(function () {
+        // Attach click event to button to show the modal
         $('#accountListContainer').on('click', '.toggleStatusButton', function () {
+            var modal = new bootstrap.Modal(document.getElementById('modalDisableAccount'), {
+                keyboard: false
+            });
             var accountId = $(this).data('user-id');
+            var accountEmail = $(this).data('user-email');
             var desiredStatus = $(this).data('status');
+
             var confirmActionText = desiredStatus ? 'activate' : 'disable';
 
 
-            var modal = document.getElementById("modalDisableAccount");
-
-            // Get the button that opens the modal
-            var btn = document.getElementByClassName("toggleStatusButton");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsById("close")[0];
-
             var confirmAction = confirm('Are you sure you want to ' + confirmActionText + ' this account?');
 
-            if (confirmAction) {
-                // When the user clicks the button, open the modal
-                $('#modalDisableAccount').modal('show');
+            if (confirmAction && !desiredStatus) {
+                $('#emailph').val(accountEmail);
+                modal.show();
+                $('#btnEditChanges').on('click', function () {
+                    var description = $('#editDescription').val(); // Get the value of the description field
 
+                    if (!description.trim()) {
+                        // If description is empty, alert the user
+                        alert('Please enter a description.');
+                    } else {
+                        $.ajax({
+                            url: '@Url.Action("Status", "Accounts", new { area = "Admin" })', // Make sure this URL is rendered correctly
+                            type: 'POST',
+                            data: { id: accountId, state: desiredStatus, message: description },
+                            success: function (response) {
+                                $('#accountListContainer').load(location.href + ' #accountListContainer'); // Reload part of the page
+                            },
+                            error: function (xhr, status, error) {
+                                var errorMsg = desiredStatus ? 'activating' : 'disabling';
+                                console.error('Error ' + errorMsg + ' product:', error);
+                            }
+                        });
+                        modal.hide();
+                        console.log('Description is valid, perform your action here');
 
+                    }
+                });
             }
-        });
-    });
-</script>
-@* $.ajax({
+            else if (desiredStatus) {
+                $.ajax({
                     url: '@Url.Action("Status", "Accounts", new { area = "Admin" })', // Make sure this URL is rendered correctly
                     type: 'POST',
-                    data: { id: accountId, state: desiredStatus },
+                    data: { id: accountId, state: desiredStatus, message: null },
                     success: function (response) {
                         $('#accountListContainer').load(location.href + ' #accountListContainer'); // Reload part of the page
                     },
@@ -230,22 +240,57 @@
                         var errorMsg = desiredStatus ? 'activating' : 'disabling';
                         console.error('Error ' + errorMsg + ' product:', error);
                     }
-                }); *@
- <script>
+                });
+                console.log('Description is valid, perform your action here');
+
+            }
+
+            $('#close').on('click', function () {
+                modal.hide();
+                console.log("Modal closed. Resetting form or clearing data.");
+                // Reset the form or specific fields if necessary
+                $('#editAccountForm').trigger('reset');
+            });
+        });
+
+        // Save changes button click event
 
 
+        // Optionally, you can handle the modal close click to clear form or reset states
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
+    });
+</script>
 
-    // When the user clicks anywhere outside of the modal, close it
+@*  <script>
+    $(document).ready(function () {
+        $('#accountListContainer').on('click', '.toggleStatusButton', function () {
+            var modal = new bootstrap.Modal(document.getElementById('modalDisableAccount'), {
+                keyboard: false
+            });
+            var accountId = $(this).data('user-id');
+            var desiredStatus = $(this).data('status');
+            var confirmActionText = desiredStatus ? 'activate' : 'disable';
+
+
+            var confirmAction = confirm('Are you sure you want to ' + confirmActionText + ' this account?');
+
+            if (confirmAction) {
+                modal.show();
+
+                $('#btnEditChanges').on('click', function ()){
+                    if ()
+                }
+
+            }
+        });
+    });
+
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
-</script>
+
+</script> *@
 
 

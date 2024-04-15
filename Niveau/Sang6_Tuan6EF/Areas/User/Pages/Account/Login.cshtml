@@ -92,21 +92,6 @@
 </body>
 </html>
 @section Scripts {
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var alertHeader = '@TempData["DisableHeader"]';
-            var alertMessage = '@TempData["DisableMessage"]';
-
-            if (alertHeader && alertMessage) {
-                Swal.fire({
-                    title: alertHeader,
-                    text: alertMessage,
-                    icon: 'error', // You can change this to 'success', 'warning', 'info', etc.
-                    confirmButtonText: 'OK'
-                });
-            }
-        });
-    </script>
 
     <partial name="_ValidationScriptsPartial" />
 }

@@ -107,12 +107,13 @@ namespace Niveau.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Status(string id, bool state)
+        public async Task<IActionResult> Status(string id, bool state, string message)
         {
             var product = await _repository.GetByIdAsync(id);
             if (product != null)
             {
                 product.Status = state; // Assuming 'IsActive' is a property to toggle enable/disable
+                product.Message = message;
                 await _repository.UpdateAsync(product);
                 return Json(new { success = true });
             }
