@@ -51,7 +51,7 @@
                     <div class="input-group">
                         <input type="text" id="productSearch" class="form-control" placeholder="Search for products">
                         <div class="input-group-append">
-                            <button type="submit" id="searchbtn" class="input-group-text bg-transparent text-primary">
+                            <button id="searchbtn" class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
@@ -268,16 +268,6 @@
                 <div class="row pb-3">
                     <div class="col-12 pb-1">
                         <div class="d-flex align-items-center justify-content-between mb-4">
-                            <form action="">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search by name">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text bg-transparent text-primary">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </form>
                             <div class="dropdown ml-4">
                                 <button class="btn border dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
@@ -312,44 +302,45 @@
                                 </div>
                             </div>
                         }
-                    </div>
-                    <div class="col-12 pb-1">
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination justify-content-center mb-3">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                @if (Model.TotalPages > 1)
-                                {
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            @for (int i = 1; i <= Model.TotalPages; i++)
-                                            {
-                                                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
-                                                    <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
-                                                </li>
-                                            }
-                                        </ul>
-                                    </nav>
-                                }
-                                else
-                                {
-                                    <li class="page-item active">
-                                        <a class="page-link">1</a>
+                        <div class="col-12 pb-1">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center mb-3">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
                                     </li>
-                                }
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    @if (Model.TotalPages > 1)
+                                    {
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                @for (int i = 1; i <= Model.TotalPages; i++)
+                                                {
+                                                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                                                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </nav>
+                                    }
+                                    else
+                                    {
+                                        <li class="page-item active">
+                                            <a class="page-link">1</a>
+                                        </li>
+                                    }
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
+
                 </div>
             </div>
             <!-- Shop Product End -->
@@ -422,7 +413,7 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="~/UserLTE/lib/easing/easing.min.js"></script>
     <script src="~/UserLTE/lib/owlcarousel/owl.carousel.min.js"></script>
@@ -542,21 +533,20 @@
         });
     });
 </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script>
+<script>
     $(document).ready(function () {
-        $('#searchbtn').click(function () {
+        // Bind click event to the search button
+        $('#searchbtn').on('click', function (event) {
+            event.preventDefault();  // Prevent the default form submission
+
             var searchTerm = $('#productSearch').val();
             $.ajax({
-                url: '@Url.Action("Search", "Products", new { area = "Admin" })', // Ensure this points to your search action
+                url: '@Url.Action("Search", "Products", new { area = "Admin" })', // Verify the correct URL
                 type: 'GET',
-                data: { searchTerm: searchTerm },
+                data: { page: 1, searchTerm: searchTerm },
                 success: function (data) {
                     console.log("Data received:", data);
-                    $('#searchResultsContainer').html('<p>Can you see this static content?</p>');
                     $('#ProductContainer').html(data);
-                    $('#searchResultsContainer').html('<p>Can you see this static content?</p>');
                 },
                 error: function () {
                     alert('Error searching products.');
@@ -569,10 +559,9 @@
             clearTimeout(this.delay);
             this.delay = setTimeout(function () {
                 $(this).trigger('search');
-            }.bind(this), 800); // Adjust delay as needed
+            }.bind(this), 1100); // Reduced delay for faster response
         }).on('search', function () {
             $('#searchbtn').click();
         });
     });
 </script>
-

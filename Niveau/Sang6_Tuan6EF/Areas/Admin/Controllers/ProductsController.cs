@@ -11,6 +11,7 @@ namespace Niveau.Areas.Admin.Controllers
     [Area("Admin")]
     public class ProductsController : Controller
     {
+        int productPerPage = 5; // Số lượng sản phẩm mỗi trang
 
         private readonly IProductsRepository _productRepository;
         private readonly ICategoriesRepository _categoryRepository;
@@ -33,16 +34,16 @@ namespace Niveau.Areas.Admin.Controllers
         [HttpGet("Shop/page/{page:int}", Name = "Index")]
         public async Task<IActionResult> Index(int page = 1)
         {
-            int pageSize = 5;  // Số lượng sản phẩm mỗi trang
+  
             var products = await _productRepository.GetAllActiveAsync();
 
             var totalProducts = products.Count();
-            var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
+            var totalPages = (int)Math.Ceiling(totalProducts / (double)productPerPage);
 
             var paginatedProducts = products
                 .OrderBy(p => p.Id)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
+                .Skip((page - 1) * productPerPage)
+                .Take(productPerPage)
                 .ToList();
             var viewModel = new ProductListViewModel
             {
@@ -55,9 +56,7 @@ namespace Niveau.Areas.Admin.Controllers
             return View(viewModel);
         }
 
-        [AllowAnonymous]
-
-        public async Task<IActionResult> Search(string searchTerm)
+        public async Task<IActionResult> Search(int page = 1, string searchTerm = null)
         {
             var products = await _productRepository.GetAllActiveAsync();
 
@@ -66,8 +65,23 @@ namespace Niveau.Areas.Admin.Controllers
                 products = products.Where(p => p.Name.Contains(searchTerm) || p.Description.Contains(searchTerm));
             }
 
-            //return PartialView("_SearchResults", products);
-            return Content("<p>Test successful</p>", "text/html");
+            var totalProducts = products.Count();
+            var totalPages = (int)Math.Ceiling(totalProducts / (double)productPerPage);
+
+            var paginatedProducts = products
+                .OrderBy(p => p.Id)
+                .Skip((page - 1) * productPerPage)
+                .Take(productPerPage)
+                .ToList();
+            var viewModel = new ProductListViewModel
+            {
+                Products = paginatedProducts,
+                CurrentPage = page,
+                TotalPages = totalPages,
+                /*  SearchTerm = searchTerm */// Thêm thuộc tính SearchTerm vào ViewModel để hiển thị trên giao diện người dùng
+            };
+
+            return PartialView("_SearchResults", viewModel);
         }
 
         // Hiển thị form thêm sản phẩm mới
