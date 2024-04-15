@@ -49,7 +49,7 @@
                                 @if (product.IsActive == true)
                                 {
                                     <div style="display: inline-block;">
-                                        <a data-status="false" data-product-id="@product.Id" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-trash"></i> Disable</a> |
+                                        <a data-status="false" data-product-id="@product.Id" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-ban"></i>  Disable</a> |
 
                                         <a id="deleteButton" style="display:none;"
                                            class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>
@@ -58,7 +58,7 @@
                                 else
                                 {
                                     <div style="display: inline-block;">
-                                        <a data-status="true" data-product-id="@product.Id" class="btn active toggleStatusButton"><i class="fa-solid fa-trash"></i> Active</a> |
+                                        <a data-status="true" data-product-id="@product.Id" class="btn active toggleStatusButton"><i class="fa-regular fa-circle-check"></i> Active</a> |
 
                                         <a id="deleteButton" style="display: inline-block;"
                                            class="btn btn-danger" asp-action="Delete" asp-route-id="@product.Id"><i class="fa-solid fa-trash"></i> Delete</a>

@@ -106,5 +106,17 @@ namespace Niveau.Areas.Admin.Controllers
             await _couponRepository.DeleteAsync(id);
             return RedirectToAction(nameof(Index));
         }
+        [HttpPost]
+        public async Task<IActionResult> Status(int id, bool state)
+        {
+            var coupon = await _couponRepository.GetByIdAsync(id);
+            if (coupon != null)
+            {
+                coupon.IsActive = state; // Assuming 'IsActive' is a property to toggle enable/disable
+                await _couponRepository.UpdateAsync(coupon);
+                return Json(new { success = true });
+            }
+            return Json(new { success = false, message = "Coupon not found." });
+        }
     }
 }

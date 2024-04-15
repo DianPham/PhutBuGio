@@ -2,50 +2,107 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Category</h1>
-<a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
-<div class="card">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <div class="card-body">
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Code</th>
-                    <th>Value</th>
-                    <th>Unit</th>
-                    <th>Expiry Date</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
+    <title>Coupon</title>
+</head>
+<body>
+    <h1>Coupon</h1>
+    <a href="@Url.Action("Create")" class="btn btn-primary m-2"><i class="fa-solid fa-plus"></i> Create New</a>
+    <div class="card">
 
-                @foreach (var coupon in Model.OrderByDescending(p => p.IsActive))
-                {
+        <div id="couponListContainer" class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
                     <tr>
-                        <td>@coupon.Code</td>
-                        <td>@coupon.Discount</td>
-                        <td>@(coupon.Type == 0 ? "%" : "USD") </td>
-                        <td>@coupon.ExpiryDate</td>
-                        <td style="color: @(coupon.IsActive ? "green" : "red");">
-                            @((coupon.IsActive ? "Active" : "Disabled"))
-                        </td>
-                        <td>
-
-                            <a class="btn btn-success" asp-action="Details" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-eye"></i>View</a> |
-
-                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-pen-to-square"></i>Edit</a> |
-
-                            <a class="btn btn-danger" asp-action="Delete" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-trash"></i>Delete</a>
-
-                        </td>
+                        <th>Code</th>
+                        <th>Value</th>
+                        <th>Unit</th>
+                        <th>Expiry Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
                     </tr>
-                }
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    @foreach (var coupon in Model.OrderByDescending(p => p.IsActive))
+                    {
+                        <tr>
+                            <td>@coupon.Code</td>
+                            <td>@coupon.Discount</td>
+                            <td>@(coupon.Type == 0 ? "%" : "USD") </td>
+                            <td>@coupon.ExpiryDate</td>
+                            <td style="color: @(coupon.IsActive ? "green" : "red");">
+                                @((coupon.IsActive ? "Active" : "Disabled"))
+                            </td>
+                            <td>
 
-</div>
+                                <a class="btn btn-success" asp-action="Details" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-eye"></i>View</a> |
+
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-pen-to-square"></i>Edit</a> |
+
+                                @if (coupon.IsActive == true)
+                                {
+                                    <div style="display: inline-block;">
+                                        <a data-status="false" data-coupon-id="@coupon.CouponId" class="btn btn-danger toggleStatusButton"><i class="fa-solid fa-ban"></i>Disable</a>
+
+                                        <a id="deleteButton" style="display:none;"
+                                           class="btn btn-danger" asp-action="Delete" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-trash"></i> Delete</a>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div style="display: inline-block;">
+                                        <a data-status="true" data-coupon-id="@coupon.CouponId" class="btn active toggleStatusButton"><i class="fa-regular fa-circle-check"></i> Active</a> |
+
+                                        <a id="deleteButton" style="display: inline-block;"
+                                           class="btn btn-danger" asp-action="Delete" asp-route-id="@coupon.CouponId"><i class="fa-solid fa-trash"></i> Delete</a>
+                                    </div>
+                                }
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .active {
+        background-color: green; /* Green background for the active state */
+        color: white; /* White text color for better readability */
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        $('#couponListContainer').on('click', '.toggleStatusButton', function () {
+            var couponId = $(this).data('coupon-id');
+            var desiredStatus = $(this).data('status');
+            var confirmActionText = desiredStatus ? 'activate' : 'disable';
+
+            var confirmAction = confirm('Are you sure you want to ' + confirmActionText + ' this coupon?');
+
+            if (confirmAction) {
+                $.ajax({
+                    url: '@Url.Action("Status", "Coupons", new { area = "Admin" })', // Make sure this URL is rendered correctly
+                    type: 'POST',
+                    data: { id: couponId, state: desiredStatus },
+                    success: function (response) {
+                        $('#couponListContainer').load(location.href + ' #couponListContainer'); // Reload part of the page
+                    },
+                    error: function (xhr, status, error) {
+                        var errorMsg = desiredStatus ? 'activating' : 'disabling';
+                        console.error('Error ' + errorMsg + ' coupon:', error);
+                    }
+                });
+            }
+        });
+    });
+</script>
