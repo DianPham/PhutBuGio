@@ -98,11 +98,11 @@ namespace Niveau.Areas.Admin.Models.Repositories
         public async Task<IEnumerable<string>> SearchAsync(string term)
         {
             var products = await GetAllActiveAsync();
-            var queryResult = products.
-                                Where(p => p.Name.ToLower().StartsWith(term)) // Case insensitive search
-                                .OrderBy(p => p.Name) // Order by name
-                                .Select(p => p.Name)    // Select only the product name
-                                .ToList();// Get the first result or null if no match
+            var queryResult = products
+                .Where(p => p.Name.ToLower().Contains(term.ToLower())) // Tìm kiếm không phân biệt chữ hoa/thường cho bất kỳ từ nào
+                .OrderBy(p => p.Name) // Sắp xếp theo tên
+                .Select(p => p.Name) // Chọn chỉ tên sản phẩm
+                .ToList();
             return queryResult;
         }
     }
