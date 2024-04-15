@@ -12,5 +12,6 @@ namespace Niveau.Areas.Admin.Models.Repositories
         Task DeleteAsync(int id);
 
         Task<IEnumerable<Product>> SearchAsync(string term);
+        Task<IEnumerable<Product>> GetProductsBySubcategoryId(int subcategoryId);
     }
 }

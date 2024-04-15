@@ -100,5 +100,12 @@ namespace Niveau.Areas.Admin.Models.Repositories
                 return Enumerable.Empty<Product>();
             }
         }
+
+        public async Task<IEnumerable<Product>> GetProductsBySubcategoryId(int subcategoryId)
+        {
+            return await _context.Products
+                  .Where(p => p.CategoryId == subcategoryId)
+                  .ToListAsync();
+        }
     }
 }

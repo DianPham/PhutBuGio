@@ -95,5 +95,10 @@ namespace Niveau.Areas.Admin.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+        public async Task<IActionResult> Filter(int subcategoryId)
+        {
+            var products = await _productRepository.GetProductsBySubcategoryId(subcategoryId);
+            return View(products);
+        }
     }
 }
