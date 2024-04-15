@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.User.Models;
+using System.Drawing.Printing;
 
 namespace Niveau.Areas.Admin.Models.Repositories
 {
@@ -80,6 +82,13 @@ namespace Niveau.Areas.Admin.Models.Repositories
             var product = await _context.Products.FindAsync(id);
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Product>> GetProductsBySubcategoryId(int subcategoryId)
+        {
+            return await _context.Products
+                             .Where(p => p.CategoryId == subcategoryId) 
+                             .ToListAsync();
         }
     }
 }

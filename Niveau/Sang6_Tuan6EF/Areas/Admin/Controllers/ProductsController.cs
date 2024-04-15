@@ -1,20 +1,23 @@
 ﻿using Boxed.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
+using Niveau.Areas.User.Models;
+using PagedList;
 
 namespace Niveau.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ProductsController : Controller
     {
-
-        private readonly IProductsRepository _productRepository;
+		private readonly IProductsRepository _productRepository;
         private readonly ICategoriesRepository _categoryRepository;
-        public ProductsController(IProductsRepository productRepository,
+		public ProductsController(IProductsRepository productRepository,
         ICategoriesRepository categoryRepository)
         {
             _productRepository = productRepository;
@@ -29,15 +32,33 @@ namespace Niveau.Areas.Admin.Controllers
             var products = await _productRepository.GetAllAsync();
             return View(products);
         }
-        [AllowAnonymous]
-        [HttpGet("Shop/", Name = "Index")]
-        public async Task<IActionResult> Index()
-        {
-            var products = await _productRepository.GetAllAsync();
-            return View(products);
-        }
-        // Hiển thị form thêm sản phẩm mới
-        [Authorize(Roles = "Admin, Employee")]
+		[AllowAnonymous]
+		[HttpGet("Shop/", Name = "Index")]
+		public async Task<IActionResult> Index(int page = 1)
+		{
+			//int pageNumber = page ?? 1;
+			int pageSize = 9;  // The number of products per page
+			var products = await _productRepository.GetAllAsync();
+
+			var paginatedProducts = products
+			    .OrderBy(p => p.Id)
+				.Skip((page - 1) * pageSize)
+				.Take(pageSize)
+				.ToList();
+
+			var totalProducts = products.Count();
+			var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
+
+			var viewModel = new ProductListViewModel
+			{
+				Products = paginatedProducts,
+				CurrentPage = page,
+				TotalPages = totalPages
+			};
+			return View(viewModel);
+		}
+		// Hiển thị form thêm sản phẩm mới
+		[Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Create()
         {
             var categories = await _categoryRepository.GetAllAsync();
@@ -193,5 +214,34 @@ namespace Niveau.Areas.Admin.Controllers
             await _productRepository.DeleteAsync(id);
             return RedirectToAction(nameof(List));
         }
+
+        public async Task<IActionResult> Page(int page)
+        {
+
+            return RedirectToAction("Index",page);
+        }
+
+        /*public async Task<IActionResult> Page(string sortOrder, string currentFilter, string searchString, int? page)
+        {
+
+            ViewBag.CurrentSort = sortOrder;
+
+            if (searchString != null)
+            {
+                page = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            int pageSize = 6;
+            int pageNumber = (page ?? 1);
+            var products = await _productRepository.GetAllAsync();
+            var pagedProducts = products.ToPagedList(pageNumber, pageSize);
+            return View(pagedProducts);
+        }*/
     }
 }
+
+

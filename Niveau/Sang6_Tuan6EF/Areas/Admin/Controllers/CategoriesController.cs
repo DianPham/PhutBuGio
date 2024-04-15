@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
@@ -11,8 +12,7 @@ namespace Niveau.Areas.Admin.Controllers
     {
         private readonly IProductsRepository _productRepository;
         private readonly ICategoriesRepository _categoryRepository;
-        public CategoriesController(IProductsRepository productRepository, ICategoriesRepository
-        categoryRepository)
+        public CategoriesController(IProductsRepository productRepository, ICategoriesRepository categoryRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
@@ -95,5 +95,12 @@ namespace Niveau.Areas.Admin.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Filter(int subcategoryId)
+        {
+            var products = await _productRepository.GetProductsBySubcategoryId(subcategoryId);
+            return View(products);
+        }
+
     }
 }

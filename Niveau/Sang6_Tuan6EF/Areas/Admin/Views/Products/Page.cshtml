@@ -1,0 +1,49 @@
+﻿@model Niveau.Areas.Admin.Models.Products.ProductListViewModel;
+
+@foreach (var product in Model.Products)
+{
+    <p>@product.Name</p>
+    // Display other product details
+}
+
+@if (Model.TotalPages > 1)
+{
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("List", new { page = i })">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}
+
+@*
+@model IPagedList<Niveau.Areas.Admin.Models.Products.Product>
+@using PagedList.Mvc;
+@using PagedList
+@{
+    ViewBag.Title = "Index";
+}
+@(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index",
+        new { page }))
+@using (Html.BeginForm("Index", "ProductsController", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+@Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+
+@Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+ *@

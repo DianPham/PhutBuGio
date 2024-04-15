@@ -76,24 +76,24 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">Áo Nam <i class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
-                                <a href="" class="dropdown-item">Áo Polo</a>
-                                <a href="" class="dropdown-item">Áo Sơ Mi</a>
-                                <a href="" class="dropdown-item">Áo Thể Thao</a>
-                                <a href="" class="dropdown-item">Áo Thun</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="1" class="dropdown-item">Áo Polo</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="2" class="dropdown-item">Áo Sơ Mi</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="3" class="dropdown-item">Áo Thể Thao</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="4" class="dropdown-item">Áo Thun</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-toggle="dropdown">Quần Nam <i class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
-                                <a href="" class="dropdown-item">Quần Kaki</a>
-                                <a href="" class="dropdown-item">Quần Lót</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="5" class="dropdown-item">Quần Kaki</a>
+                                <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="6" class="dropdown-item">Quần Lót</a>
                             </div>
                         </div>
-                        <a href="" class="nav-item nav-link">Mũ</a>
-                        <a href="" class="nav-item nav-link">Túi xách</a>
-                        <a href="" class="nav-item nav-link">Thắt Lưng</a>
-                        <a href="" class="nav-item nav-link">Set Quần Áo</a>
-                        <a href="" class="nav-item nav-link">Giày</a>
+                        <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="7" class="nav-item nav-link">Mũ</a>
+                        <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="8" class="nav-item nav-link">Túi xách</a>
+                        <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="9" class="nav-item nav-link">Thắt Lưng</a>
+                        <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="10" class="nav-item nav-link">Set Quần Áo</a>
+                        <a asp-area="Admin" asp-controller="Categories" asp-action="Filter" asp-route-subcategoryId="11" class="nav-item nav-link">Giày</a>
                     </div>
                 </nav>
             </div>
@@ -316,6 +316,7 @@
     <script src="~/UserLTE/mail/contact.js"></script>
 
     <!-- Template Javascript -->
+    <script src="~/UserLTE/js/filter.js"></script>
     <script src="~/UserLTE/js/main.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

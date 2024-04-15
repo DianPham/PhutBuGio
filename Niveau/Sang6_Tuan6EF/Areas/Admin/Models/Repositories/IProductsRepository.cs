@@ -9,5 +9,7 @@ namespace Niveau.Areas.Admin.Models.Repositories
         Task AddAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(int id);
+
+        Task<IEnumerable<Product>> GetProductsBySubcategoryId(int subcategoryId);
     }
 }
