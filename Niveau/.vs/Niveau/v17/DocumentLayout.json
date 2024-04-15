@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoAnWeb\\Niveau\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\repositories\\efproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\repositories\\efproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\repositories\\iproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\repositories\\iproductsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\models\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\models\\products\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\wwwroot\\js\\autocomplete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\wwwroot\\js\\autocomplete.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\ordercompleted.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\models\\shoppingcart\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|d:\\doanweb\\niveau\\sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B53A5218-F985-4BDB-98B6-1374FC1431F5}|Sang6_Tuan6EF\\Niveau.csproj|solutionrelative:sang6_tuan6ef\\areas\\user\\views\\shoppingcart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Program.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Program.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Program.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowCMAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T06:46:28.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACgAAAAAAAAAAAAAAEQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T03:21:18.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductsRepository.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\IProductsRepository.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\IProductsRepository.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\IProductsRepository.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\IProductsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T02:44:01.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EFProductsRepository.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\EFProductsRepository.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\EFProductsRepository.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\EFProductsRepository.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Repositories\\EFProductsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:25:13.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T02:41:35.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAEEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T03:18:59.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\appsettings.Development.json",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\appsettings.Development.json",
+              "RelativeToolTip": "Sang6_Tuan6EF\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-13T01:58:18.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\Product.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\Product.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:36:53.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\ProductImage.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\ProductImage.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\ProductImage.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Models\\Products\\ProductImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T06:43:10.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "autocomplete.js",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\wwwroot\\js\\autocomplete.js",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\wwwroot\\js\\autocomplete.js",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\wwwroot\\js\\autocomplete.js",
+              "RelativeToolTip": "Sang6_Tuan6EF\\wwwroot\\js\\autocomplete.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-13T05:23:12.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T12:17:13.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Sang6_Tuan6EF\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-13T06:49:37.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwBUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T02:40:41.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:02:24.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T03:50:03.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T04:38:36.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderCompleted.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\OrderCompleted.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T01:55:57.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T01:55:58.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Checkout.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Checkout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T01:55:58.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Models\\ShoppingCart\\ShoppingCart.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T01:55:58.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AQIAAFQAAAAAAAAAAIBJwGUAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-13T01:55:58.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "Sang6_Tuan6EF\\Areas\\User\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAIBJwKYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T01:55:58.915Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -33,6 +33,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddDefaultTokenProviders()
 .AddDefaultUI()
 .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddTransient<IProductsRepository, EFProductsRepository>();//
 builder.Services.AddRazorPages();
 var app = builder.Build();
 

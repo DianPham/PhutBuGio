@@ -2,6 +2,11 @@
 using Niveau.Areas.Admin.Models.Repositories;
 using System.Diagnostics;
 using Niveau.Areas.Admin.Models;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
+using Niveau.Areas.Admin.Models.Products;
+using X.PagedList;
 
 
 namespace Niveau.Controllers

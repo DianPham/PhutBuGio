@@ -1,4 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Mvc.Localization;
+@using Niveau.Areas.Admin.Models.Repositories;
+
+@inject IProductsRepository ProductRepository
+
+@{
+    var productNames = await ProductRepository.GetAllProductNames();
+}
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -23,6 +31,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/UserLTE/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -41,13 +50,19 @@
                 </a>
             </div>
             <div class="col-lg-6 col-6 text-left">
-                <form action="">
+                <form asp-area="Admin" asp-controller="Products" asp-action="Index" method="get">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
+                        <input type="text" list="products" class="form-control" placeholder="Search for products" name="searchString">
+                        <datalist id="products">
+                            @foreach (var productName in productNames)
+                            {
+                                <option value="@productName">@productName</option>
+                            }
+                        </datalist>
                         <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                            <button type="submit" class="input-group-text bg-transparent text-primary" style="border: none;">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -110,22 +125,22 @@
                             <a href="" class="nav-item nav-link active">Home</a>
                             <a asp-area="Admin" asp-controller="Products" asp-action="Index" class="nav-item nav-link">Shop</a>
                             @* <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                </div>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                            <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                            <a href="checkout.html" class="dropdown-item">Checkout</a>
+                            </div>
                             </div> *@
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            @if(User.IsInRole("Admin"))
+                            @if (User.IsInRole("Admin"))
                             {
                                 <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="nav-item nav-link">Admin Panel</a>
                             }
                             <partial name="_LoginPartial" />
                         </div>
-                        
+
                     </div>
                 </nav>
                 <div id="header-carousel" class="carousel slide" data-ride="carousel">

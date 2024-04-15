@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 using Niveau.Areas.Admin.Models;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
+using System.Diagnostics;
+using X.PagedList;
 
 namespace Niveau.Areas.Admin.Controllers
 {
@@ -29,13 +32,25 @@ namespace Niveau.Areas.Admin.Controllers
             var products = await _productRepository.GetAllAsync();
             return View(products);
         }
+
         [AllowAnonymous]
         [HttpGet("Shop/", Name = "Index")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
             var products = await _productRepository.GetAllAsync();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(p => p.Name.Contains(searchString) || p.Description.Contains(searchString));
+            }
+
+            var productNames = await _productRepository.GetAllProductNames();
+            ViewBag.ProductNames = productNames;
             return View(products);
         }
+
+
+
         // Hiển thị form thêm sản phẩm mới
         [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Create()
@@ -186,12 +201,6 @@ namespace Niveau.Areas.Admin.Controllers
             }
             return View(product);
         }
-        // Xử lý xóa sản phẩm
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _productRepository.DeleteAsync(id);
-            return RedirectToAction(nameof(List));
-        }
+
     }
 }

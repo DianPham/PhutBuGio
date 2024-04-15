@@ -18,6 +18,12 @@ namespace Niveau.Areas.Admin.Models.Repositories
                              .Include(p => p.Images) // Assuming Product has a navigation property called ProductImages
                              .ToListAsync();
         }
+
+        public async Task<IEnumerable<Product>> GetProductsByNameAsync(string productName)
+        {
+            return await _context.Products.Where(p => p.Name.Contains(productName)).ToListAsync();
+        }
+
         public async Task<Product> GetByIdAsync(int id)
         {
             return await _context.Products
@@ -80,6 +86,23 @@ namespace Niveau.Areas.Admin.Models.Repositories
             var product = await _context.Products.FindAsync(id);
             _context.Products.Remove(product);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Product>> SearchProductsAsync(string searchString)
+        {
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                return await _context.Products.Where(p => p.Name.Contains(searchString)).ToListAsync();
+            }
+            else
+            {
+                return Enumerable.Empty<Product>();
+            }
+        }
+        public async Task<IEnumerable<string>> GetAllProductNames()
+        {
+            // Retrieve all product names from the database
+            return await _context.Products.Select(p => p.Name).ToListAsync();
         }
     }
 }
