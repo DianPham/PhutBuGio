@@ -9,7 +9,6 @@ Ajac product load
 Categories tab load dynamically
 Nút login của FB và google
 Tích hợp CKFinder
-Autocomplete
 Tích hợp gửi mail tự động
 
 
@@ -17,6 +16,7 @@ Tích hợp gửi mail tự động
 Facebook login
 thêm chức năng disable account
 Product Pagination
+Autocomplete
 
 
 Log làm việc cần lưu ý:

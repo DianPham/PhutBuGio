@@ -10,7 +10,7 @@ namespace Niveau.Areas.Admin.Models.Repositories
         Task AddAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(int id);
+        Task<IEnumerable<string>> SearchAsync(string term);
 
-        Task<IEnumerable<Product>> SearchAsync(string term);
     }
 }

@@ -8,6 +8,8 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
     <meta charset="utf-8">
     <title>Men's Fashion Sale Website</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -48,8 +50,8 @@
             <div class="col-lg-6 col-6 text-left">
                 <form action="">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products">
-                        <div class="input-group-append">
+                        <input type="text" id="productSearch" class="form-control" placeholder="Search for products">
+                        <div style="display: inline-block;" class="input-group-append">
                             <span class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
                             </span>
@@ -425,3 +427,107 @@
 </body>
 
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/corejs-typeahead/1.3.1/typeahead.bundle.min.js"></script>
+
+<style>
+    .twitter-typeahead{
+        display: block;
+        width: 90%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border: 1px solid #EDF1FF;
+        border-radius: 0;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .tt-input {
+        display: inline-block;
+        position: absolute !important;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #EDF1FF;
+        border-radius: 0;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    .tt-hint{
+        opacity: 1 !important;
+    }
+
+    /* Container for the match list */
+    .tt-menu {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        width: 100%;
+    }
+
+    /* Individual suggestion item */
+    .tt-suggestion {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+
+    }
+
+        /* Suggestion item on hover */
+        .tt-suggestion:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Suggestion item when it's being navigated via keyboard (i.e., arrow up/down) */
+        .tt-suggestion.tt-cursor,
+        .tt-suggestion:focus {
+            color: #fff;
+            background-color: #D19C97;
+        }
+
+        /* If the suggestion includes a header, subtext, or is divided into sections */
+        .tt-suggestion .tt-header {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tt-suggestion .tt-subtext {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+    .input-group-text {
+        display:block !important;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+        // Instantiate the Bloodhound suggestion engine
+        var products = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.whitespace,
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            remote: {
+                url: '@Url.Action("Suggest", "Products", new { area = "Admin" })?term=%QUERY',
+                wildcard: '%QUERY' // This is the placeholder for the query put in by the user
+            }
+        });
+
+        // Initialize the Typeahead UI
+        $('#productSearch').typeahead(null, {
+            name: 'products',
+            source: products
+        });
+    });
+</script>

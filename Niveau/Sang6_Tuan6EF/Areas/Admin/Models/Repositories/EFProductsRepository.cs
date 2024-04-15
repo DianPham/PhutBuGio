@@ -89,16 +89,15 @@ namespace Niveau.Areas.Admin.Models.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Product>> SearchAsync(string term)
+        public async Task<IEnumerable<string>> SearchAsync(string term)
         {
-            if (!string.IsNullOrEmpty(term))
-            {
-                return await _context.Products.Where(p => p.Name.Contains(term)).ToListAsync();
-            }
-            else
-            {
-                return Enumerable.Empty<Product>();
-            }
+            var products = await GetAllActiveAsync();
+            var queryResult = products.
+                                Where(p => p.Name.ToLower().StartsWith(term)) // Case insensitive search
+                                .OrderBy(p => p.Name) // Order by name
+                                .Select(p => p.Name)    // Select only the product name
+                                .ToList();// Get the first result or null if no match
+            return queryResult;
         }
     }
 }
