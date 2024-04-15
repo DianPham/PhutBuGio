@@ -1,6 +1,7 @@
 Admin-Side:
 Account: User account chỉ được xem thông tin, reset mật khẩu, không được xóa, hiện modal thêm thông báo lý do disble
 Admin: Phân quyền theo chức năng
+Product: resize lại ảnh khi updload
 
 User-Side:
 Reset password (https://www.yogihosting.com/aspnet-core-identity-password-reset/)

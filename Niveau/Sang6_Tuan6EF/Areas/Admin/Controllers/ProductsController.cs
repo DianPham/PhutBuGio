@@ -30,11 +30,30 @@ namespace Niveau.Areas.Admin.Controllers
             return View(products);
         }
         [AllowAnonymous]
-        [HttpGet("Shop/", Name = "Index")]
-        public async Task<IActionResult> Index()
+        [HttpGet("Shop/page/{page:int}", Name = "Index")]
+        public async Task<IActionResult> Index(int page = 1)
         {
+
+            int pageSize = 5;  // The number of products per page
             var products = await _productRepository.GetAllActiveAsync();
-            return View(products);
+
+            var paginatedProducts = products
+                .OrderBy(p => p.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            var totalProducts = products.Count();
+            var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
+
+            var viewModel = new ProductListViewModel
+            {
+                Products = paginatedProducts,
+                CurrentPage = page,
+                TotalPages = totalPages
+            };
+
+            return View(viewModel);
         }
         // Hiển thị form thêm sản phẩm mới
         [Authorize(Roles = "Admin, Employee")]
@@ -99,7 +118,7 @@ namespace Niveau.Areas.Admin.Controllers
         //Nhớ tạo folder images trong wwwroot
 
         // Hiển thị thông tin chi tiết sản phẩm
-        [AllowAnonymous]
+        [Authorize(Roles = "Admin, Employee")]
         public async Task<IActionResult> Details(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);
@@ -107,7 +126,26 @@ namespace Niveau.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+            return View(product);
+        }
+        [HttpGet("Shop/{id:int}/{title}", Name = "User_Details")]
+        [AllowAnonymous]
+        public async Task<IActionResult> User_Details(int id, string title)
+        {
+            var product = await _productRepository.GetByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
 
+            string friendlyTitle = FriendlyUrlHelper.GetFriendlyTitle(title);
+
+            if (!string.Equals(friendlyTitle, title, StringComparison.Ordinal))
+            {
+                // If the title is null, empty or does not match the friendly title, return a 301 Permanent
+                // Redirect to the correct friendly URL.
+                return this.RedirectToRoutePermanent("Details", new { id = id, title = friendlyTitle });
+            }
 
             return View(product);
         }
