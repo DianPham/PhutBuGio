@@ -6,7 +6,6 @@ Product: resize lại ảnh khi updload
 User-Side:
 Reset password (https://www.yogihosting.com/aspnet-core-identity-password-reset/)
 Ajac product load
-Product Pagination
 Categories tab load dynamically
 Nút login của FB và google
 Tích hợp CKFinder
@@ -17,7 +16,7 @@ Tích hợp gửi mail tự động
 *Hoàn thành:
 Facebook login
 thêm chức năng disable account
-
+Product Pagination
 
 
 Log làm việc cần lưu ý:
