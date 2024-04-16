@@ -35,7 +35,7 @@
 
         <div class="row align-items-center py-3 px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                <a href="https://localhost:7030" class="text-decoration-none">
+                <a asp-area="User" asp-controller="Home" asp-action="Index" class="text-decoration-none">
                     <h1 class="m-0 display-5 font-weight-semi-bold">
                         <span class="text-primary font-weight-bold border px-3 mr-1">
                             N
@@ -111,7 +111,7 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="" class="nav-item nav-link active">Home</a>
+                            <a asp-area="User" asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
                             <a asp-area="Admin" asp-controller="Products" asp-action="Index" asp-route-page="1" class="nav-item nav-link">Shop</a>
                             @* <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -254,7 +254,7 @@
                         <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
                         <div class="d-flex flex-column justify-content-start">
                             <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-dark mb-2" asp-area="Admin" asp-controller="Products" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" asp-area="Admin" asp-controller="Products" asp-action="Index" asp-route-page="1"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
                             <a class="text-dark mb-2" asp-area="User" asp-controller="ShoppingCart" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
                             <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                         </div>

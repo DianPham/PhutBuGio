@@ -57,7 +57,7 @@
         </div>
         <div class="col-md-6 col-md-offset-2">
             <section>
-                <h3>Use another service to log in.</h3>
+                <h3>Use another service to Log in</h3>
                 <hr />
                 @{
                     if ((Model.ExternalLogins?.Count ?? 0) == 0)
@@ -74,13 +74,14 @@
                     else
                     {
                         <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                            <div>
-                                <p>
-                                    @foreach (var provider in Model.ExternalLogins!)
-                                    {
-                                        <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                    }
-                                </p>
+                            <div class="text-center">
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="w-100 btn btn-ml btn-primary mb-3" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">
+                                        <i class="fab fa-@provider.Name.ToLower()"></i> Log in with @provider.Name
+                                    </button>
+                                    <br />
+                                }
                             </div>
                         </form>
                     }
