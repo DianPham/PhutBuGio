@@ -28,7 +28,7 @@
                             </div>
                             @* asp-controller="ShoppingCart" asp-action="AddToCart"
                                 asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
-                            <a class="btn btn-outline-dark toggleStatusButton"
+                            <a class="btn btn-outline-dark toggleButton"
                                data-product-id="@item.Id">
 
                                 <i class="bi-cart-fill me-1"></i> Add to Cart
@@ -44,7 +44,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#productCartContainer').on('click', '.toggleStatusButton', function () {
+        $('#productCartContainer').on('click', '.toggleButton', function () {
             var productId = $(this).data('product-id');
             var quantity = 1;
 
@@ -53,7 +53,7 @@
                     type: 'POST',
                     data: { productId: productId, quantity: quantity },
                     success: function () {
-                        toastr.success("Cập nhật giỏ hàng thành công.", "", {
+                        toastr.success("Thêm giỏ hàng thành công.", "", {
                             timeOut: 2000,
                             progressBar: true,
                             closeButton: true

@@ -293,7 +293,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="ProductContainer">
                         @foreach (var product in Model.Products)
                         {
                             <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
@@ -309,7 +308,7 @@
                                     </div>
                                     <div class="card-footer d-flex justify-content-between bg-light border">
                                         <a asp-controller="Products" asp-action="User_Details" asp-route-id="@product.Id" asp-route-title="@product.Name" class="btn btn-sm text-dark p-0"><i class="fas fa-eye text-primary mr-1"></i>View Detail</a>
-                                        <a data-product-id="@product.Id" class="btn btn-sm text-dark p-0 toggleStatusButton"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                                        <a data-product-id="@product.Id" class="btn btn-sm text-dark p-0 toggleButton"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +448,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#productCartContainer').on('click', '.toggleStatusButton', function () {
+        $('#productCartContainer').on('click', '.toggleButton', function () {
             var productId = $(this).data('product-id');
             var quantity = 1;
 
@@ -458,7 +457,7 @@
                 type: 'POST',
                 data: { productId: productId, quantity: quantity },
                 success: function () {
-                    toastr.success("Cập nhật giỏ hàng thành công.", "", {
+                    toastr.success("Thêm giỏ hàng thành công.", "", {
                         timeOut: 2000,
                         progressBar: true,
                         closeButton: true
