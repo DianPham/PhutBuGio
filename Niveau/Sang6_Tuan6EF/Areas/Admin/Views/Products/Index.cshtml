@@ -30,6 +30,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/UserLTE/css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,9 +53,9 @@
                     <div class="input-group">
                         <input type="text" id="productSearch" class="form-control" placeholder="Search for products">
                         <div class="input-group-append">
-                            <span class="input-group-text bg-transparent text-primary">
+                            <button id="searchbtn" class="input-group-text bg-transparent text-primary">
                                 <i class="fa fa-search"></i>
-                            </span>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -119,10 +121,10 @@
                             <a class="nav-item nav-link active">Shop</a>
                             <div class="nav-item dropdown">
                                 @* <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                    <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                    </div> *@
+                                <div class="dropdown-menu rounded-0 m-0">
+                                <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                                <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                </div> *@
                             </div>
                             <a asp-area="User" asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
                         </div>
@@ -291,7 +293,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div id="ProductContainer">
                         @foreach (var product in Model.Products)
                         {
                             <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
@@ -312,6 +314,7 @@
                                 </div>
                             </div>
                         }
+
 
 
                     <div class="col-12 pb-1">
@@ -449,27 +452,27 @@
             var productId = $(this).data('product-id');
             var quantity = 1;
 
-                $.ajax({
-                    url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Make sure this URL is rendered correctly
-                    type: 'POST',
-                    data: { productId: productId, quantity: quantity },
-                    success: function () {
-                        toastr.success("Cập nhật giỏ hàng thành công.", "", {
-                            timeOut: 2000,
-                            progressBar: true,
-                            closeButton: true
-                        });
-                        location.reload();
+            $.ajax({
+                url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Make sure this URL is rendered correctly
+                type: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function () {
+                    toastr.success("Cập nhật giỏ hàng thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: true,
+                        closeButton: true
+                    });
+                    location.reload();
 
-                    },
-                    error: function () {
-                        toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
-                            timeOut: 2000,
-                            progressBar: true,
-                            closeButton: true
-                        });
-                    }
-                });
+                },
+                error: function () {
+                    toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: true,
+                        closeButton: true
+                    });
+                }
+            });
 
         });
     });
@@ -574,6 +577,39 @@
         $('#productSearch').typeahead(null, {
             name: 'products',
             source: products
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Bind click event to the search button
+        $('#searchbtn').on('click', function (event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            var searchTerm = $('#productSearch').val();
+            $.ajax({
+                url: '@Url.Action("Search", "Products", new { area = "Admin" })', // Verify the correct URL
+                type: 'GET',
+                data: { page: 1, searchTerm: searchTerm },
+                success: function (data) {
+                    console.log("Data received:", data);
+                    $('#ProductContainer').html(data);
+                },
+                error: function () {
+                    alert('Error searching products.');
+                }
+            });
+        });
+
+        // Optional: Trigger search on input change after a delay
+        $('#productSearch').on('input', function () {
+            clearTimeout(this.delay);
+            this.delay = setTimeout(function () {
+                $(this).trigger('search');
+            }.bind(this), 1100); // Reduced delay for faster response
+        }).on('search', function () {
+            $('#searchbtn').click();
         });
     });
 </script>
