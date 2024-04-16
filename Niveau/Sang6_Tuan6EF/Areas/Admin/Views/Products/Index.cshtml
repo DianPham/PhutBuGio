@@ -121,10 +121,10 @@
                             <a class="nav-item nav-link active">Shop</a>
                             <div class="nav-item dropdown">
                                 @* <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                </div> *@
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                    </div> *@
                             </div>
                             <a asp-area="User" asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
                         </div>
@@ -317,130 +317,131 @@
 
 
 
-                    <div class="col-12 pb-1">
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination justify-content-center mb-3">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                @if (Model.TotalPages > 1)
-                                {
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                            @for (int i = 1; i <= Model.TotalPages; i++)
-                                            {
-                                                <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
-                                                    <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
-                                                </li>
-                                            }
-                                        </ul>
-                                    </nav>
-                                }
-                                else
-                                {
-                                    <li class="page-item active">
-                                        <a class="page-link">1</a>
+                        <div class="col-12 pb-1">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination justify-content-center mb-3">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
                                     </li>
-                                }
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <!-- Shop Product End -->
-        </div>
-    </div>
-    <!-- Shop End -->
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
-        <div class="row px-xl-5 pt-5">
-            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <a href="" class="text-decoration-none">
-                    <h1 class="mb-4 display-5 font-weight-semi-bold">
-                        <span class="text-primary font-weight-bold border border-white px-3 mr-1">
-                            Y
-                        </span>
-                        Fashion
-                    </h1>
-                </a>
-                <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>VinHomes Grand Park, Nguyễn Xiển, Long Thạnh Mỹ, Thủ Đức, TP.HCM</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>menfashionsale@gmail.com</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0334 345 678</p>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-dark mb-2" asp-area="Admin" asp-controller="Products" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
-                            <a class="text-dark mb-2" asp-area="User" asp-controller="ShoppingCart" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                            <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                                    @if (Model.TotalPages > 1)
+                                    {
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                @for (int i = 1; i <= Model.TotalPages; i++)
+                                                {
+                                                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                                                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </nav>
+                                    }
+                                    else
+                                    {
+                                        <li class="page-item active">
+                                            <a class="page-link">1</a>
+                                        </li>
+                                    }
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-5">
-                        <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                </div>
+                <!-- Shop Product End -->
+            </div>
+        </div>
+        <!-- Shop End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+            <div class="row px-xl-5 pt-5">
+                <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                    <a href="" class="text-decoration-none">
+                        <h1 class="mb-4 display-5 font-weight-semi-bold">
+                            <span class="text-primary font-weight-bold border border-white px-3 mr-1">
+                                Y
+                            </span>
+                            Fashion
+                        </h1>
+                    </a>
+                    <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>VinHomes Grand Park, Nguyễn Xiển, Long Thạnh Mỹ, Thủ Đức, TP.HCM</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>menfashionsale@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>0334 345 678</p>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                                <a class="text-dark mb-2" asp-area="Admin" asp-controller="Products" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                                <a class="text-dark mb-2" asp-area="User" asp-controller="ShoppingCart" asp-action="Index"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                                <a class="text-dark mb-2" asp-area="User" asp-controller="Home" asp-action="Contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
-                                       required="required" />
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
-                            </div>
-                        </form>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                           required="required" />
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row border-top border-light mx-xl-5 py-4">
-            <div class="col-md-6 px-xl-0">
-                <p class="mb-md-0 text-center text-md-left text-dark">
-                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Men's Fashion'</a>. All Rights Reserved.
+            <div class="row border-top border-light mx-xl-5 py-4">
+                <div class="col-md-6 px-xl-0">
+                    <p class="mb-md-0 text-center text-md-left text-dark">
+                        &copy; <a class="text-dark font-weight-semi-bold" href="#">Men's Fashion'</a>. All Rights Reserved.
 
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed by <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">Men's Fashion'</a>
-                </p>
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed by <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">Men's Fashion'</a>
+                    </p>
+                </div>
+                <div class="col-md-6 px-xl-0 text-center text-md-right">
+                    <img class="img-fluid" src="~/UserLTE/img/payments.png" alt="">
+                </div>
             </div>
-            <div class="col-md-6 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="~/UserLTE/img/payments.png" alt="">
-            </div>
         </div>
-    </div>
-    <!-- Footer End -->
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="~/UserLTE/lib/easing/easing.min.js"></script>
-    <script src="~/UserLTE/lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="~/UserLTE/lib/easing/easing.min.js"></script>
+        <script src="~/UserLTE/lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="~/UserLTE/mail/jqBootstrapValidation.min.js"></script>
-    <script src="~/UserLTE/mail/contact.js"></script>
+        <!-- Contact Javascript File -->
+        <script src="~/UserLTE/mail/jqBootstrapValidation.min.js"></script>
+        <script src="~/UserLTE/mail/contact.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="~/UserLTE/js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="~/UserLTE/js/main.js"></script>
 </body>
 
 </html>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

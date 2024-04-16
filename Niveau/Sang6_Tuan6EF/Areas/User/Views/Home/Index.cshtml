@@ -2,8 +2,10 @@
 @{
     ViewData["Title"] = "Home Page";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
-    
+
 }
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <section class="py-2">
@@ -28,9 +30,9 @@
                                 asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
                             <a class="btn btn-outline-dark toggleStatusButton"
                                data-product-id="@item.Id">
-                                
-                                    <i class="bi-cart-fill me-1"></i> Add to Cart
-                                
+
+                                <i class="bi-cart-fill me-1"></i> Add to Cart
+
                             </a>
                         </div>
                     </div>
@@ -67,7 +69,7 @@
                         });
                     }
                 });
-            
+
         });
     });
 </script>
