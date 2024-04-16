@@ -2,11 +2,12 @@
 @{
     ViewData["Title"] = "Home Page";
     Layout = "~/Areas/User/Views/Shared/_Layout.cshtml";
-    int numOfQuatity = 1;
+    
 }
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <section class="py-2">
-    <div class="container px-4 px-lg-5 mt-5">
+    <div id="productCartContainer" class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justifycontent-center">
             @foreach (var item in Model)
             {
@@ -24,12 +25,12 @@
                                 <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
                             </div>
                             @* asp-controller="ShoppingCart" asp-action="AddToCart"
-                        asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
-                            <a asp-controller="ShoppingCart" asp-action="AddToCart"
-                               asp-route-productId="@item.Id" asp-route-quantity="@numOfQuatity">
-                                <button class="btn btn-outline-dark">
+                                asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
+                            <a class="btn btn-outline-dark toggleStatusButton"
+                               data-product-id="@item.Id">
+                                
                                     <i class="bi-cart-fill me-1"></i> Add to Cart
-                                </button>
+                                
                             </a>
                         </div>
                     </div>
@@ -38,3 +39,35 @@
         </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function () {
+        $('#productCartContainer').on('click', '.toggleStatusButton', function () {
+            var productId = $(this).data('product-id');
+            var quantity = 1;
+
+                $.ajax({
+                    url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Make sure this URL is rendered correctly
+                    type: 'POST',
+                    data: { productId: productId, quantity: quantity },
+                    success: function () {
+                        toastr.success("Cập nhật giỏ hàng thành công.", "", {
+                            timeOut: 2000,
+                            progressBar: true,
+                            closeButton: true
+                        });
+                        location.reload();
+
+                    },
+                    error: function () {
+                        toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
+                            timeOut: 2000,
+                            progressBar: true,
+                            closeButton: true
+                        });
+                    }
+                });
+            
+        });
+    });
+</script>

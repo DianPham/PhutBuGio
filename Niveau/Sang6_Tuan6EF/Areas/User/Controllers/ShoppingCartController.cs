@@ -34,7 +34,7 @@ namespace Niveau.Areas.User.Controllers
 
         public async Task<IActionResult> AddToCart(int productId, int quantity)
         {
-            var product = await GetProductFromDatabase(productId);
+            var product = await _productRepository.GetByIdAsync(productId);
             var cartItem = new CartItem
             {
                 ProductId = productId,
@@ -47,7 +47,7 @@ namespace Niveau.Areas.User.Controllers
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return RedirectToAction("Index", "Home");
+            return Ok();
         }
 
         //tìm sản phẩm trong DB dựa vào productID
