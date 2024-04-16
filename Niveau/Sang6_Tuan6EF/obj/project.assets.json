@@ -8666,19 +8666,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\": {}
+    "C:\\Users\\USER PC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+      "projectUniqueName": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
       "projectName": "Niveau",
-      "projectPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
-      "packagesPath": "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\",
-      "outputPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\obj\\",
+      "projectPath": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+      "packagesPath": "C:\\Users\\USER PC\\.nuget\\packages\\",
+      "outputPath": "F:\\PhutBuGio\\Niveau\\Sang6_Tuan6EF\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\DELL.DESKTOP-TETDMA3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8686,6 +8691,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8777,7 +8783,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

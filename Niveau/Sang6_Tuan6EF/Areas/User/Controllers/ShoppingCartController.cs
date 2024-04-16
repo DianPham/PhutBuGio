@@ -14,6 +14,8 @@ using NiveauOther;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Niveau.Areas.User.Controllers
 {
@@ -21,6 +23,8 @@ namespace Niveau.Areas.User.Controllers
     [Authorize]
     public class ShoppingCartController : Controller
     {
+        public static int _cartId = 0; // madonhang xu ly
+        public static int _totalPrice = 0; // so tien duoc xu ly của _cartId
         private readonly IProductsRepository _productRepository;
         private readonly ApplicationDbContext _context;
         //quản lý đăng nhập người dùng
@@ -106,54 +110,14 @@ namespace Niveau.Areas.User.Controllers
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-
+            int momoPrice = Convert.ToInt32(order.TotalPrice);
+            string MaDonHang = order.Id.ToString();
             HttpContext.Session.Remove("Cart");
-            /*await Payment(order.TotalPrice);*/
 
-            return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
-        }
-        public static string codeThanhToanTransferFromMoMo;
-        public static string soTienTransferFromMoMo;
-        public static string idTourTransferFromMoMo;
-        public static string payurlTEst;
-        public async Task<IActionResult> InitiatePayment(decimal totalAmount)
-        {
-            // Tạo request và chuyển hướng đến MoMo
-            // Đoạn code tạo request và chuyển hướng đã được giải thích ở câu trả lời trước
-            // Bạn có thể sao chép và paste đoạn code từ câu trước vào đây
-            // Ví dụ:
-            string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
-            string partnerCode = "MOMOOJOI20210710";
-            string accessKey = "iPXneGmrJH0G8FOP";
-            string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
-            string orderInfo = "Thanh toán phí mua hàng.";
-            string returnUrl = "https://localhost:7030/ShoppingCart/OrderCompleted";
-            string notifyUrl = "https://yourdomain.com/Home/SavePayment";
-
-            string amount = totalAmount.ToString();
-            string orderId = DateTime.Now.Ticks.ToString(); // Mã đơn hàng duy nhất
-            string requestId = DateTime.Now.Ticks.ToString();
-            string extraData = "";
-
-            // Tạo chữ ký
-            string rawSignature = "partnerCode=" + partnerCode + "&accessKey=" + accessKey +
-                "&requestId=" + requestId + "&amount=" + amount +
-                "&orderId=" + orderId + "&orderInfo=" + orderInfo + "&returnUrl=" + returnUrl +
-                "&notifyUrl=" + notifyUrl + "&extraData=" + extraData;
-            string signature = CalculateHMACSHA256Hash(rawSignature, serectkey);
-
-            // Tạo URL redirect đến MoMo
-            string redirectUrl = endpoint + "?partnerCode=" + partnerCode +
-                "&accessKey=" + accessKey + "&requestId=" + requestId +
-                "&amount=" + amount + "&orderId=" + orderId +
-                "&orderInfo=" + orderInfo + "&returnUrl=" + HttpUtility.UrlEncode(returnUrl) +
-                "&notifyUrl=" + HttpUtility.UrlEncode(notifyUrl) +
-                "&extraData=" + HttpUtility.UrlEncode(extraData) + "&signature=" + signature;
-
-            // Chuyển hướng đến trang thanh toán MoMo
-            return Redirect(redirectUrl);
+            return Redirect(Payment(momoPrice, MaDonHang));
         }
 
+        // Bắt đầu phần xử lý thanh toán MOMO
         private string CalculateHMACSHA256Hash(string input, string key)
         {
             using (HMACSHA256 hmac = new HMACSHA256(Encoding.UTF8.GetBytes(key)))
@@ -163,25 +127,24 @@ namespace Niveau.Areas.User.Controllers
             }
         }
 
-        public async Task<IActionResult> Payment(decimal totalMOMO)
+        public string Payment(int totalMOMO, string MaDonHang)
         {
             //request params need to request to MoMo system
             string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
             string partnerCode = "MOMOOJOI20210710";
             string accessKey = "iPXneGmrJH0G8FOP";
             string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
-            string orderInfo = "Thanh toán online";
-            string returnUrl = "https://localhost:7030/ShoppingCart/OrderCompleted";
+            string orderInfo = "Thanh toán online cho Đơn hàng " + MaDonHang;
+            string returnUrl = "https://localhost:44356/ShoppingCart/XulyKQMomo?MaDonHang=" + MaDonHang;
             string notifyurl = "https://4c8d-2001-ee0-5045-50-58c1-b2ec-3123-740d.ap.ngrok.io/Home/SavePayment"; //lưu ý: notifyurl không được sử dụng localhost, có thể sử dụng ngrok để public localhost trong quá trình test
 
-            string amount = "10000";
+            string amount = totalMOMO.ToString();
             string orderid = DateTime.Now.Ticks.ToString(); //mã đơn hàng
             string requestId = DateTime.Now.Ticks.ToString();
             string extraData = "";
 
-            // truyen du lieu sang paymentconfirm
-            soTienTransferFromMoMo = amount.ToString();
-            codeThanhToanTransferFromMoMo = orderid.ToString();
+
+
             //Before sign HMAC SHA256 signature
             string rawHash = "partnerCode=" +
                 partnerCode + "&accessKey=" +
@@ -200,30 +163,90 @@ namespace Niveau.Areas.User.Controllers
 
             //build body json request
             JObject message = new JObject
-     {
-         { "partnerCode", partnerCode },
-         { "accessKey", accessKey },
-         { "requestId", requestId },
-         { "amount",amount},
-         { "orderId", orderid },
-         { "orderInfo", orderInfo },
-         { "returnUrl", returnUrl },
-         { "notifyUrl", notifyurl },
-         { "extraData", extraData },
-         { "requestType", "captureMoMoWallet" },
-         { "signature", signature }
-     };
+            {
+                { "partnerCode", partnerCode },
+                { "accessKey", accessKey },
+                { "requestId", requestId },
+                { "amount",amount},
+                { "orderId", orderid },
+                { "orderInfo", orderInfo },
+                { "returnUrl", returnUrl },
+                { "notifyUrl", notifyurl },
+                { "extraData", extraData },
+                { "requestType", "captureMoMoWallet" },
+                { "signature", signature }
+            };
 
             string responseFromMomo = PaymentRequest.sendPaymentRequest(endpoint, message.ToString());
 
             JObject jmessage = JObject.Parse(responseFromMomo);
-            payurlTEst = jmessage.ToString();
-            return Redirect(jmessage.GetValue("payUrl").ToString());
+
+
+            return jmessage.GetValue("payUrl").ToString();
+
         }
+        //===================================================================
+
 
         public IActionResult OrderCompleted()
         {
+            ViewBag.madonhang = _cartId;
+            ViewBag.sotien = _totalPrice;
             return View();
+        }
+        public IActionResult NoneSuccses()
+        {
+            ViewBag.madonhang = _cartId;
+            return View();
+        }
+        //==========================================
+        public SqlConnection connection = new SqlConnection(@"Server=LAPTOP-VVVS6ML6;Database=Webbanhangp2;Trusted_Connection=True;TrustServerCertificate=True");
+        public void CheckConnection()
+        {
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+        }
+
+        public void SetTrangThaiDonHang(int id, int status)
+        {
+            if (connection.State != ConnectionState.Open)
+                connection.Open();
+            string sql = string.Format("UPDATE Orders SET status = {0} WHERE Id = {1}", status, id);
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read() == true)
+            {
+                if (!reader.IsClosed)
+                    reader.Close();
+            }
+            if (!reader.IsClosed)
+                reader.Close();
+            connection.Close();
+        }
+
+
+        public async Task<IActionResult> XulyKQMomo()
+        {
+            string q = HttpContext.Request.Query["errorCode"];
+            var sotien = HttpContext.Request.Query["amount"];
+            var madonhang = HttpContext.Request.Query["MaDonHang"];
+
+            // gán cho biến local truy cập Id và số tiền để thông báo ở view tiếp theo
+
+            _totalPrice = Convert.ToInt32(sotien);
+            _cartId = Convert.ToInt32(madonhang);
+            if (q.ToString() == "0")
+            {
+                SetTrangThaiDonHang(Convert.ToInt32(madonhang), 1);
+                return RedirectToAction("OrderCompleted");// trả về trang thanh toán thành công
+            }
+            else
+            {
+                SetTrangThaiDonHang(Convert.ToInt32(madonhang), 0);
+                return RedirectToAction("NoneSuccses");// trả về trang thánh toán thất bại
+            }
         }
     }
 }

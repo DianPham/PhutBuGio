@@ -1,0 +1,12 @@
+﻿@model int
+@{
+    int id = ViewBag.madonhang;
+}
+<h2>Thanh toán Thất bại cho đơn hàng @id.ToString() !<br /></h2>
+
+<a asp-controller="Home" asp-action="Index">
+    <button class="btn btn-outline-dark">
+        <i>Tiếp tục mua sắm</i>
+    </button>
+
+</a>

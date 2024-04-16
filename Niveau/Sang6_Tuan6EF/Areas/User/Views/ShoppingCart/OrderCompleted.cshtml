@@ -1,7 +1,19 @@
-﻿@model Niveau.Areas.User.Models.ShoppingCart.Order
+﻿@model int
 @{
     ViewData["Title"] = "OrderCompleted";
     Layout = "~/Areas/User/Views/Shared/_AuthorizeLayout.cshtml";
+    int id = ViewBag.madonhang;
+    int sotien = ViewBag.sotien;
 }
+
+<h2>Thanh toán thành công cho đơn hàng @id.ToString() !</h2>
+<h2>Số tiền: @sotien VNĐ</h2>
+
+<a asp-controller="Home" asp-action="Index">
+    <button class="btn btn-outline-dark">
+        <i>Tiếp tục mua sắm</i>
+    </button>
+
+</a>
 
 
