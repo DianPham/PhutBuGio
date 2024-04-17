@@ -137,24 +137,26 @@
             // Lặp qua mỗi nút tăng và giảm để gắn sự kiện
             increaseButtons.forEach(button => {
                 button.addEventListener('click', function () {
-                    const quantityElement = button.parentElement.querySelector('span');
+                    const row = button.closest('.card'); // Tìm thẻ cha gần nhất có class 'card'
+                    const quantityElement = row.querySelector('.quantity span');
                     let quantity = parseInt(quantityElement.textContent);
                     quantity++;
                     quantityElement.textContent = quantity;
 
-                    updateTotal(button);
+                    updateTotal(row); // Cập nhật tổng tiền sau khi thay đổi số lượng
                 });
             });
 
             decreaseButtons.forEach(button => {
                 button.addEventListener('click', function () {
-                    const quantityElement = button.parentElement.querySelector('span');
+                    const row = button.closest('.card'); // Tìm thẻ cha gần nhất có class 'card'
+                    const quantityElement = row.querySelector('.quantity span');
                     let quantity = parseInt(quantityElement.textContent);
                     if (quantity > 1) {
                         quantity--;
                         quantityElement.textContent = quantity;
 
-                        updateTotal(button);
+                        updateTotal(row); // Cập nhật tổng tiền sau khi thay đổi số lượng
                     }
                 });
             });
@@ -167,11 +169,10 @@
                     totalAmount += parseFloat(cell.textContent.replace('$', ''));
                 });
                 document.getElementById('totalAmount').textContent = 'Total Amount: $' + totalAmount.toFixed(2);
-                document.getElementById('hiddenTotalAmount').value = totalAmount.toFixed(2);
             }
+
             // Hàm cập nhật tổng tiền của sản phẩm
-            function updateTotal(button) {
-                const row = button.closest('.card'); // Tìm thẻ cha gần nhất có class 'card'
+            function updateTotal(row) {
                 const quantityElement = row.querySelector('.quantity span');
                 const priceElement = row.querySelector('.price h5');
                 const totalElement = row.querySelector('.total h5');
@@ -179,9 +180,11 @@
                 const price = parseFloat(priceElement.textContent.replace('$', '')); // Loại bỏ ký tự '$'
                 totalElement.textContent = '$' + (price * quantity).toFixed(2);
 
-                calculateTotal();
+                calculateTotal(); // Tính toán lại tổng tiền
             }
         });
+
     </script>
 }
+
 
