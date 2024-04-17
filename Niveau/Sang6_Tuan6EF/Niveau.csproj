@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Boxed.AspNetCore" Version="9.0.1" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.67.0.3287" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
@@ -30,6 +31,17 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\User\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Areas\User\Pages\Account\ForgotPassword.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\User\Pages\Account\Logout.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

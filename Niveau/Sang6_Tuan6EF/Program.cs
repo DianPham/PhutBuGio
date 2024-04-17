@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Niveau.Areas.Admin.Models.Repositories;
 using Niveau.Areas.User.Models;
 using Niveau.Areas.Admin.Models.Accounts;
+using Niveau.Areas.Admin.Models.Email;
+using System.Configuration;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +41,9 @@ builder.Services.AddSession(options =>
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddSingleton<IEmailSender, EmailService>();
 
 
 //builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)

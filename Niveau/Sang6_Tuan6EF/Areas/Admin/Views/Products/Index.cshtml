@@ -611,5 +611,13 @@
         }).on('search', function () {
             $('#searchbtn').click();
         });
+
+        // Trigger the search when the Enter key is pressed
+        $('#productSearch').on('keypress', function (event) {
+            if (event.which === 13) { // 13 is the Enter key
+                event.preventDefault(); // Prevent the default Enter key action
+                $('#searchbtn').click();
+            }
+        });
     });
 </script>

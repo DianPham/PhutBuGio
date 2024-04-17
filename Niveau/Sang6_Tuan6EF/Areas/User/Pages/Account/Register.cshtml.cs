@@ -27,6 +27,7 @@ namespace Niveau.Areas.User.Pages.Account
 {
     public class RegisterModel : PageModel
     {
+        private readonly IWebHostEnvironment _env;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -41,7 +42,8 @@ namespace Niveau.Areas.User.Pages.Account
             IUserStore<ApplicationUser> userStore,
             SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IWebHostEnvironment env)
         {
             _roleManager = roleManager;
             _userManager = userManager;
@@ -50,6 +52,8 @@ namespace Niveau.Areas.User.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _env = env;
+
         }
 
         /// <summary>
@@ -164,17 +168,20 @@ namespace Niveau.Areas.User.Pages.Account
                     {
                         await _userManager.AddToRoleAsync(user, SD.Role_Customer);
                     }
+                    
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                    var encodedCode = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
+                        "Pages/Account/ConfirmEmail",
                         pageHandler: null,
-                        values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
+                        values: new { area = "User", userId = userId, code = encodedCode, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    var templatePath = Path.Combine(_env.WebRootPath, "Emails", "WelcomeEmailTemplate.cshtml");
+                    var emailBody = System.IO.File.ReadAllText(templatePath);
+
+                    await _emailSender.SendEmailAsync(Input.Email, "Knock Knock!", emailBody);
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -209,6 +216,7 @@ namespace Niveau.Areas.User.Pages.Account
                     $"override the register page in /Areas/Identity/Pages/Account/Register.cshtml");
             }
         }
+
 
         private IUserEmailStore<ApplicationUser> GetEmailStore()
         {

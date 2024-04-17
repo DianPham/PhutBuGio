@@ -3,6 +3,11 @@
     public class ShoppingCart
     {
         //danh sách các sản phẩm trong giỏ hàng
+        public string Id { get; set; }
+        public ShoppingCart(string Id)
+        {
+            this.Id = Id;
+        }
         public List<CartItem> Items { get; set; } = new List<CartItem>();
         //các hàm thêm/ xóa sản phẩm trong giỏ hàng
         public void AddItem(CartItem item)
@@ -22,6 +27,17 @@
         public void RemoveItem(int productId)
         {
             Items.RemoveAll(i => i.ProductId == productId);
+        }
+
+        public decimal totalPrice()
+        {
+            decimal total = 0;
+
+            foreach (var item in Items)
+            {
+                total += item.Price;
+            }
+            return total;
         }
     }
 }

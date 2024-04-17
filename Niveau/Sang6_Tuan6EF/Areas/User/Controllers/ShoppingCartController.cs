@@ -48,7 +48,7 @@ namespace Niveau.Areas.User.Controllers
                 ImageUrl = product.ImageUrl,
 
             };
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
             return Ok();
@@ -62,7 +62,7 @@ namespace Niveau.Areas.User.Controllers
         }
         public IActionResult Index()
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
             /*if (cart == null || !cart.Items.Any())
             {
                 // Xử lý giỏ hàng trống...
@@ -135,7 +135,7 @@ namespace Niveau.Areas.User.Controllers
             string accessKey = "iPXneGmrJH0G8FOP";
             string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
             string orderInfo = "Thanh toán online cho Đơn hàng " + MaDonHang;
-            string returnUrl = "https://localhost:44356/ShoppingCart/XulyKQMomo?MaDonHang=" + MaDonHang;
+            string returnUrl = "https://localhost:7030/ShoppingCart/XulyKQMomo?MaDonHang=" + MaDonHang;
             string notifyurl = "https://4c8d-2001-ee0-5045-50-58c1-b2ec-3123-740d.ap.ngrok.io/Home/SavePayment"; //lưu ý: notifyurl không được sử dụng localhost, có thể sử dụng ngrok để public localhost trong quá trình test
 
             string amount = totalMOMO.ToString();
