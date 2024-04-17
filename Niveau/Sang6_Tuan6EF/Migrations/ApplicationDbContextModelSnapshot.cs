@@ -257,7 +257,7 @@ namespace Niveau.Migrations
                         {
                             Id = "0e337acc-137a-49e7-b9fa-8e741e9792ed",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d3f97307-5f92-4abf-bd3a-e29b162b1bd9",
+                            ConcurrencyStamp = "daa4d004-dd1b-46f6-ac37-8f5fc485abd2",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "seed",
@@ -265,9 +265,9 @@ namespace Niveau.Migrations
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBIWrLVEFwcu9G1KHM3cXA66I3MhxzcESCzKupHrPB+9cmecBz937KRXmc3RTFxw4Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEENUGe8/cET5S3EOi1Co03E40d91CdcUHtXus7vBNpy8EibrewE0HFeivJvwGHTVLw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5cf01f06-6776-40bb-9693-b904cdf6f927",
+                            SecurityStamp = "62be947d-a036-4fa4-a73d-8b6b9f4bfe22",
                             Status = true,
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"

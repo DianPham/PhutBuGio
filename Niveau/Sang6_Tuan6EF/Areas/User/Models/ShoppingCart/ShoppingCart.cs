@@ -4,6 +4,10 @@
     {
         //danh sách các sản phẩm trong giỏ hàng
         public string Id { get; set; }
+        public ShoppingCart()
+        {
+
+        }
         public ShoppingCart(string Id)
         {
             this.Id = Id;

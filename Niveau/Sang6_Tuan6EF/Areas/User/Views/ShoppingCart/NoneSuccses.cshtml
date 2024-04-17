@@ -1,12 +1,12 @@
 ﻿@model int
 @{
-    int id = ViewBag.madonhang;
+    Layout = "~/Areas/User/Views/Shared/_AuthorizeLayout.cshtml";
 }
-<h2>Thanh toán Thất bại cho đơn hàng @id.ToString() !<br /></h2>
+<h2>Thanh toán Thất bại !</h2>
 
-<a asp-controller="Home" asp-action="Index">
+<a asp-controller="ShoppingCart" asp-action="Index">
     <button class="btn btn-outline-dark">
-        <i>Tiếp tục mua sắm</i>
+        <i>Quay lại giỏ hàng</i>
     </button>
 
 </a>

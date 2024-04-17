@@ -1,19 +1,40 @@
-﻿@model int
+﻿@using Niveau.Areas.User.Models.ShoppingCart
+@model int
 @{
     ViewData["Title"] = "OrderCompleted";
     Layout = "~/Areas/User/Views/Shared/_AuthorizeLayout.cshtml";
-    int id = ViewBag.madonhang;
-    int sotien = ViewBag.sotien;
+    int id = ViewBag.Id;
+    decimal sotien = ViewBag.Sotien;
+    ShoppingCart cart = ViewBag.Cart;
 }
 
-<h2>Thanh toán thành công cho đơn hàng @id.ToString() !</h2>
+<h2>Thanh toán thành công cho đơn hàng @id !</h2>
 <h2>Số tiền: @sotien VNĐ</h2>
 
+<h3>Chi tiết đơn hàng</h3>
+
+<table>
+    <tr>
+        <th>Tên mặt hàng</th>
+        <th>Số lượng</th>
+        <th>Giá</th>
+        <th>Thành tiền</th>
+    </tr>
+    @foreach (var item in cart.Items)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Quantity</td>
+            <td>@item.Price</td>
+            <td>@(item.Price * item.Quantity)</td>
+        </tr>
+    }
+</table>
+<h3></h3>
 <a asp-controller="Home" asp-action="Index">
     <button class="btn btn-outline-dark">
         <i>Tiếp tục mua sắm</i>
     </button>
 
 </a>
-
 

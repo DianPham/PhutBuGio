@@ -25,6 +25,7 @@ namespace Niveau.Areas.User.Controllers
     {
         public static int _cartId = 0; // madonhang xu ly
         public static int _totalPrice = 0; // so tien duoc xu ly của _cartId
+        public static ShoppingCart _cart = new ShoppingCart();
         private readonly IProductsRepository _productRepository;
         private readonly ApplicationDbContext _context;
         //quản lý đăng nhập người dùng
@@ -108,13 +109,14 @@ namespace Niveau.Areas.User.Controllers
                 Price = i.Price
             }).ToList();
 
+            _cart = cart;
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
-            int momoPrice = Convert.ToInt32(order.TotalPrice);
-            string MaDonHang = order.Id.ToString();
             HttpContext.Session.Remove("Cart");
+            _cartId = order.Id;
+            _totalPrice = Convert.ToInt32(order.TotalPrice);
+            return RedirectToAction("OrderCompleted");
 
-            return Redirect(Payment(momoPrice, MaDonHang));
         }
 
         // Bắt đầu phần xử lý thanh toán MOMO
@@ -127,18 +129,22 @@ namespace Niveau.Areas.User.Controllers
             }
         }
 
-        public string Payment(int totalMOMO, string MaDonHang)
+        public async Task<IActionResult> Payment()
         {
+            Order order = new Order();
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+
             //request params need to request to MoMo system
             string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
             string partnerCode = "MOMOOJOI20210710";
             string accessKey = "iPXneGmrJH0G8FOP";
             string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
-            string orderInfo = "Thanh toán online cho Đơn hàng " + MaDonHang;
-            string returnUrl = "https://localhost:7030/ShoppingCart/XulyKQMomo?MaDonHang=" + MaDonHang;
+            string orderInfo = "Thanh toán online cho Đơn hàng ";
+            string returnUrl = "https://localhost:7030/User/ShoppingCart/XulyKQMomo" ;
             string notifyurl = "https://4c8d-2001-ee0-5045-50-58c1-b2ec-3123-740d.ap.ngrok.io/Home/SavePayment"; //lưu ý: notifyurl không được sử dụng localhost, có thể sử dụng ngrok để public localhost trong quá trình test
 
-            string amount = totalMOMO.ToString();
+            string amount = Convert.ToInt32(order.TotalPrice).ToString();
             string orderid = DateTime.Now.Ticks.ToString(); //mã đơn hàng
             string requestId = DateTime.Now.Ticks.ToString();
             string extraData = "";
@@ -182,7 +188,7 @@ namespace Niveau.Areas.User.Controllers
             JObject jmessage = JObject.Parse(responseFromMomo);
 
 
-            return jmessage.GetValue("payUrl").ToString();
+            return Redirect(jmessage.GetValue("payUrl").ToString());
 
         }
         //===================================================================
@@ -190,17 +196,19 @@ namespace Niveau.Areas.User.Controllers
 
         public IActionResult OrderCompleted()
         {
-            ViewBag.madonhang = _cartId;
-            ViewBag.sotien = _totalPrice;
+            ViewBag.id = _cartId;
+            ViewBag.Sotien = _totalPrice;
+            ViewBag.Cart = _cart;
             return View();
         }
         public IActionResult NoneSuccses()
         {
-            ViewBag.madonhang = _cartId;
+
             return View();
         }
+
         //==========================================
-        public SqlConnection connection = new SqlConnection(@"Server=LAPTOP-VVVS6ML6;Database=Webbanhangp2;Trusted_Connection=True;TrustServerCertificate=True");
+        public SqlConnection connection = new SqlConnection(@"Server=LAPTOP-VVVS6ML6;Database=Niveau;Trusted_Connection=True;TrustServerCertificate=True");
         public void CheckConnection()
         {
             if (connection.State != ConnectionState.Open)
@@ -231,22 +239,23 @@ namespace Niveau.Areas.User.Controllers
         {
             string q = HttpContext.Request.Query["errorCode"];
             var sotien = HttpContext.Request.Query["amount"];
-            var madonhang = HttpContext.Request.Query["MaDonHang"];
+            // var madonhang = HttpContext.Request.Query["MaDonHang"];
 
             // gán cho biến local truy cập Id và số tiền để thông báo ở view tiếp theo
 
             _totalPrice = Convert.ToInt32(sotien);
-            _cartId = Convert.ToInt32(madonhang);
+            //_cartId = Convert.ToInt32(madonhang);
             if (q.ToString() == "0")
             {
-                SetTrangThaiDonHang(Convert.ToInt32(madonhang), 1);
-                return RedirectToAction("OrderCompleted");// trả về trang thanh toán thành công
+                //SetTrangThaiDonHang(Convert.ToInt32(madonhang), 1);
+                return RedirectToAction("Checkout");// trả về trang checkout
             }
             else
             {
-                SetTrangThaiDonHang(Convert.ToInt32(madonhang), 0);
+                //SetTrangThaiDonHang(Convert.ToInt32(madonhang), 0);
                 return RedirectToAction("NoneSuccses");// trả về trang thánh toán thất bại
             }
         }
+
     }
 }
