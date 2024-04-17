@@ -116,9 +116,9 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a asp-controller="Home" asp-action="Index" asp-area="default" class="nav-item nav-link">Home</a>
-                            <a asp-controller="Products" asp-action="Index" asp-area="Admin" class="nav-item nav-link">Shop</a>
-                            <a asp-area="Admin" asp-controller="Products" asp-action="Details" class="nav-item nav-link active">Product Detail</a>
+                            <a asp-controller="Home" asp-action="Index" asp-area="User" class="nav-item nav-link">Home</a>
+                            <a asp-area="Admin" asp-controller="Products" asp-action="Index" asp-route-page="1" class="nav-item nav-link">Shop</a>
+                            <a asp-area="Admin" asp-controller="Products" asp-action="User_Details" class="nav-item nav-link active">Product Detail</a>
                             @* <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu rounded-0 m-0">

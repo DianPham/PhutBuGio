@@ -170,7 +170,7 @@ namespace Niveau.Areas.Admin.Controllers
             {
                 // If the title is null, empty or does not match the friendly title, return a 301 Permanent
                 // Redirect to the correct friendly URL.
-                return this.RedirectToRoutePermanent("Details", new { id = id, title = friendlyTitle });
+                return this.RedirectToRoutePermanent("User_Details", new { id = id, title = friendlyTitle });
             }
 
             return View(product);
