@@ -18,6 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Routing.Template;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Niveau.Areas.Admin.Models;
@@ -160,7 +161,7 @@ namespace Niveau.Areas.User.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    if(!String.IsNullOrEmpty(Input.Role))
+                    if (!String.IsNullOrEmpty(Input.Role))
                     {
                         await _userManager.AddToRoleAsync(user, Input.Role);
                     }
@@ -168,7 +169,7 @@ namespace Niveau.Areas.User.Pages.Account
                     {
                         await _userManager.AddToRoleAsync(user, SD.Role_Customer);
                     }
-                    
+
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var encodedCode = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -216,6 +217,7 @@ namespace Niveau.Areas.User.Pages.Account
             }
             return template;
         }
+
         private ApplicationUser CreateUser()
         {
             try
