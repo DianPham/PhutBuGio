@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using Niveau.Areas.Admin.Models.Accounts;
+using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Niveau.Areas.Identity.Pages.Account
 {
@@ -44,7 +46,7 @@ namespace Niveau.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [EmailAddress]
+ 
             public string Email { get; set; }
 
             [Required]
@@ -71,7 +73,32 @@ namespace Niveau.Areas.Identity.Pages.Account
 
             ReturnUrl = returnUrl;
         }
+        //==============================================================
+        // check sdt chuyen qua Email
+        public SqlConnection connection = new SqlConnection(@"Server=LAPTOP-VVVS6ML6;Database=Niveau;Trusted_Connection=True;TrustServerCertificate=True");
+        public void CheckConnection()
+        {
+            if (connection.State != ConnectionState.Open)
+            {
+                connection.Open();
+            }
+        }
+        public string TimKiem(string sdt)
+        {
+            string ten = string.Empty;
+            CheckConnection();
+            string sql = string.Format("SELECT * FROM AspNetUsers WHERE PhoneNumber = '{0}'", sdt);
 
+            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            while (sdr.Read())
+            {
+                ten = sdr["UserName"].ToString();
+            }
+            connection.Close();
+            return ten;
+        }
+        //========================================================
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
@@ -99,6 +126,15 @@ namespace Niveau.Areas.Identity.Pages.Account
                 }
                 else
                 {
+                    // check lại nếu không phải Email thì ktra có phải là Phone Number có trong csdl không
+                    string ck = TimKiem(Input.Email.ToString());
+                    result = await _signInManager.PasswordSignInAsync(ck, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                    if (result.Succeeded)
+                    {
+                        _logger.LogInformation("User logged in.");
+                        return LocalRedirect(returnUrl);
+                    }
+                    //==
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     return Page();
                 }
