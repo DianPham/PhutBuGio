@@ -8666,19 +8666,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ductu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+      "projectUniqueName": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
       "projectName": "Niveau",
-      "projectPath": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\DoAnWeb\\Niveau\\Sang6_Tuan6EF\\obj\\",
+      "projectPath": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+      "packagesPath": "C:\\Users\\ductu\\.nuget\\packages\\",
+      "outputPath": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ductu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8698,11 +8698,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8777,7 +8772,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
