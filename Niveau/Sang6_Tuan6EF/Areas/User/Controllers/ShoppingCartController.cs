@@ -52,15 +52,10 @@ namespace Niveau.Areas.User.Controllers
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
             cart.AddItem(cartItem);
             HttpContext.Session.SetObjectAsJson("Cart", cart);
-            return Ok();
+            return Json(new { TotalItems = CalculateTotalItems() });
         }
 
         //tìm sản phẩm trong DB dựa vào productID
-        private async Task<Product> GetProductFromDatabase(int productID)
-        {
-            var product = await _productRepository.GetByIdAsync(productID);
-            return product;
-        }
         public IActionResult Index()
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
@@ -71,6 +66,23 @@ namespace Niveau.Areas.User.Controllers
             }*/
             return View(cart);
         }
+
+        private int CalculateTotalItems()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart != null && cart.Items != null)
+            {
+                return cart.Items.Sum(item => item.Quantity);
+            }
+            return 0;
+        }
+
+        public IActionResult GetTotalItemsInCart()
+        {
+            int totalItems = CalculateTotalItems();
+            return Ok(totalItems);
+        }
+
         public IActionResult RemoveFromCart(int productId)
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");

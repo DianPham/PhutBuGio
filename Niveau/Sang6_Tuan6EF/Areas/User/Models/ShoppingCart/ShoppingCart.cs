@@ -33,15 +33,5 @@
             Items.RemoveAll(i => i.ProductId == productId);
         }
 
-        public decimal totalPrice()
-        {
-            decimal total = 0;
-
-            foreach (var item in Items)
-            {
-                total += item.Price;
-            }
-            return total;
-        }
     }
 }

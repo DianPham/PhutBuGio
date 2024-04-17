@@ -8,6 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <section class="py-2">
     <div id="productCartContainer" class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justifycontent-center">
@@ -27,7 +28,7 @@
                                 <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
                             </div>
                             @* asp-controller="ShoppingCart" asp-action="AddToCart"
-                                asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
+                        asp-router-productId="@item.Id" asp-router-quantity="@numOfQuatity"*@
                             <a class="btn btn-outline-dark toggleButton"
                                data-product-id="@item.Id">
 
@@ -43,30 +44,46 @@
 </section>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        $.ajax({
+            url: '@Url.Action("GetTotalItemsInCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+            type: 'GET',
+            data: {},
+            success: function (data) {
+                $('#cartTotal').text(data.toString());
+
+            },
+            error: function () {
+                $('#cartTotal').text(0);
+            }
+        });
+    });
     $(document).ready(function () {
         $('#productCartContainer').on('click', '.toggleButton', function () {
             var productId = $(this).data('product-id');
             var quantity = 1;
 
-                $.ajax({
-                    url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Make sure this URL is rendered correctly
-                    type: 'POST',
-                    data: { productId: productId, quantity: quantity },
-                    success: function () {
-                        toastr.success("Thêm giỏ hàng thành công.", "", {
-                            timeOut: 2000,
-                            progressBar: true,
-                            closeButton: true
-                        });
-                    },
-                    error: function () {
-                        toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
-                            timeOut: 2000,
-                            progressBar: true,
-                            closeButton: true
-                        });
-                    }
-                });
+            $.ajax({
+                url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Make sure this URL is rendered correctly
+                type: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function (response) {
+                    toastr.success("Thêm giỏ hàng thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                    $('#cartTotal').text(response.totalItems.toString());
+                },
+                error: function () {
+                    toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                }
+            });
 
         });
     });

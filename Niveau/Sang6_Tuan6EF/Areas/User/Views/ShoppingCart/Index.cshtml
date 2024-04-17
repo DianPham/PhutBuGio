@@ -136,6 +136,18 @@
                 });
             });
 
+            $.ajax({
+                url: '@Url.Action("GetTotalItemsInCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+                type: 'GET',
+                data: {},
+                success: function (data) {
+                    $('#cartTotal').text(data.toString());
+                },
+                error: function () {
+                    $('#cartTotal').text(0);
+                }
+            });
+
             decreaseButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     const row = button.closest('.card'); // Tìm thẻ cha gần nhất có class 'card'

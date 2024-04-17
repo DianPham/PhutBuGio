@@ -10,6 +10,7 @@ Categories tab load dynamically
 Nút login của FB và google
 Tích hợp CKFinder
 Tích hợp gửi mail tự động
+Check lại cách passing của quantity trong cart
 
 
 *Hoàn thành:

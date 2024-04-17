@@ -56,12 +56,14 @@
                 </form>
             </div>
             <div class="col-lg-3 col-6 text-right">
-                <form class="d-flex">
-                    <button class="btn btn-outline-primary" type="submit" asp-controller="ShoppingCart" asp-action="Index">
-                        <i class="fas fa-shopping-cart text-primary"></i>
-                        Cart
-                    </button>
-                </form>
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a asp-area="User" asp-controller="ShoppingCart" asp-action="Index" id="AddToCartBtn" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span id="cartTotal" class="badge">0</span>
+                </a>
             </div>
         </div>
     </div>

@@ -57,12 +57,14 @@
                 </form>
             </div>
             <div class="col-lg-3 col-6 text-right">
-                <form class="d-flex">
-                    <button class="btn btn-outline-primary" type="submit" asp-controller="ShoppingCart" asp-action="Index">
-                        <i class="fas fa-shopping-cart text-primary"></i>
-                        Cart
-                    </button>
-                </form>
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a asp-area="User" asp-controller="ShoppingCart" asp-action="Index" id="AddToCartBtn" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span id="cartTotal" class="badge">0</span>
+                </a>
             </div>
         </div>
     </div>
@@ -336,6 +338,53 @@
 </body>
 
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        $.ajax({
+            url: '@Url.Action("GetTotalItemsInCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+            type: 'GET',
+            data: {},
+            success: function (data) {
+                $('#cartTotal').text(data.toString());
+
+            },
+            error: function () {
+                $('#cartTotal').text(0);
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#addToCart').on('click', function (event) {
+            event.preventDefault();  // Prevent the default form submission
+            var productId = $(this).data('product-id');
+            var quantity = $('#quantity').val();
+            $.ajax({
+                url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+                type: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function (response) {
+                    toastr.success("Thêm giỏ hàng thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                    $('#cartTotal').text(response.totalItems.toString());
+
+                },
+                error: function () {
+                    toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                }
+            });
+        });
+    }
+</script>
 
 
 

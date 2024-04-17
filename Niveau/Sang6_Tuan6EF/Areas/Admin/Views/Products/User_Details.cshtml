@@ -15,6 +15,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <!-- Favicon -->
     <link href="~/UserLTE/~/UserLTE/img/favicon.ico" rel="icon">
@@ -64,9 +66,9 @@
                     <i class="fas fa-heart text-primary"></i>
                     <span class="badge">0</span>
                 </a>
-                <a asp-area="User" asp-controller="ShoppingCart" asp-action="Index" class="btn border">
+                <a asp-area="User" asp-controller="ShoppingCart" asp-action="Index" id="AddToCartBtn" class="btn border">
                     <i class="fas fa-shopping-cart text-primary"></i>
-                    <span class="badge">0</span>
+                    <span id="cartTotal" class="badge">0</span>
                 </a>
             </div>
         </div>
@@ -239,7 +241,7 @@
                                 <i class="fa fa-minus"></i>
                             </button>
                         </div>
-                        <input type="text" class="form-control bg-secondary text-center" value="1">
+                        <input type="text" id="quantity" class="form-control bg-secondary text-center" value="1">
                         <div class="input-group-btn">
                             <button class="btn btn-primary btn-plus @quantity++">
 
@@ -247,8 +249,8 @@
                             </button>
                         </div>
                     </div>                  
-@*                     <button asp-area="User" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="Id" asp-route-quantity="@quantity" class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
- *@                </div>
+                    <button id="addToCart" data-product-id="@Model.Id" class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
+                </div>
                 <div class="d-flex pt-2">
                     <p class="text-dark font-weight-medium mb-0 mr-2">Share on:</p>
                     <div class="d-inline-flex">
@@ -547,3 +549,49 @@
 </body>
 
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        $.ajax({
+            url: '@Url.Action("GetTotalItemsInCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+            type: 'GET',
+            data: {},
+            success: function (data) {
+                $('#cartTotal').text(data.toString());
+
+            },
+            error: function () {
+                $('#cartTotal').text(0);
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('#addToCart').on('click', function (event) {
+            event.preventDefault();  // Prevent the default form submission
+            var productId = $(this).data('product-id');
+            var quantity = $('#quantity').val();
+            $.ajax({
+                url: '@Url.Action("AddToCart", "ShoppingCart", new { area = "User" })', // Verify the correct URL
+                type: 'POST',
+                data: { productId: productId, quantity: quantity },
+                success: function (response) {
+                    toastr.success("Thêm giỏ hàng thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                    $('#cartTotal').text(response.totalItems.toString());
+
+                },
+                error: function () {
+                    toastr.error("Lỗi... Thêm sản phẩm vào giỏ hàng không thành công.", "", {
+                        timeOut: 2000,
+                        progressBar: false,
+                        closeButton: true
+                    });
+                }
+            });
+        });
+    }
+</script>
