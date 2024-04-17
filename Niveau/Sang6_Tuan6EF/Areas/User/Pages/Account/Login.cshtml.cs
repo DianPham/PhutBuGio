@@ -72,7 +72,6 @@ namespace Niveau.Areas.User.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
-            [EmailAddress]
             public string Email { get; set; }
 
             /// <summary>
@@ -109,7 +108,7 @@ namespace Niveau.Areas.User.Pages.Account
         }
         //==============================================================
         // check sdt chuyen qua Email
-        public SqlConnection connection = new SqlConnection(@"Server=LAPTOP-VVVS6ML6;Database=Niveau;Trusted_Connection=True;TrustServerCertificate=True");
+        public SqlConnection connection = new SqlConnection(@"Server=DIAN;Database=Niveau;Trusted_Connection=True;TrustServerCertificate=True");
         public void CheckConnection()
         {
             if (connection.State != ConnectionState.Open)
@@ -143,45 +142,40 @@ namespace Niveau.Areas.User.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var appUser = await _userManager.FindByEmailAsync(Input.Email);
-
-                if (appUser.Status)
+                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                if (result.Succeeded)
                 {
-                    var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                    _logger.LogInformation("User logged in.");
+                    return LocalRedirect(returnUrl);
+                }
+                if (result.RequiresTwoFactor)
+                {
+                    return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
+                }
+                if (result.IsLockedOut)
+                {
+                    _logger.LogWarning("User account locked out.");
+                    return RedirectToPage("./Lockout");
+                }
+                else
+                {
+                    // check lại nếu không phải Email thì ktra có phải là Phone Number có trong csdl không
+                    string ck = TimKiem(Input.Email.ToString());
+                    result = await _signInManager.PasswordSignInAsync(ck, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                     if (result.Succeeded)
                     {
                         _logger.LogInformation("User logged in.");
                         return LocalRedirect(returnUrl);
                     }
-                    if (result.RequiresTwoFactor)
-                    {
-                        return RedirectToPage("./LoginWith2fa", new { ReturnUrl = returnUrl, RememberMe = Input.RememberMe });
-                    }
-                    if (result.IsLockedOut)
-                    {
-                        _logger.LogWarning("User account locked out.");
-                        return RedirectToPage("./Lockout");
-                    }
-                    else
-                    {
-
-                        ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                        return Page();
-                        string ck = TimKiem(Input.Email.ToString());
-                        result = await _signInManager.PasswordSignInAsync(ck, Input.Password, Input.RememberMe, lockoutOnFailure: false);
-                        if (result.Succeeded)
-                        {
-                            _logger.LogInformation("User logged in.");
-                            return LocalRedirect(returnUrl);
-                        }
-                        _logger.LogWarning("Your account has been disabled.");
-                        _logger.LogWarning(appUser.Message);
-                        ModelState.AddModelError(string.Empty, "Your account has been disabled.");
-                        ModelState.AddModelError(string.Empty, "Reason: " + appUser.Message);
-                        return Page();
-                    }
-                }           
+                    var appUser = await _userManager.FindByEmailAsync(Input.Email);
+                    _logger.LogWarning("Your account has been disabled.");
+                    _logger.LogWarning(appUser.Message);
+                    ModelState.AddModelError(string.Empty, "Your account has been disabled.");
+                    ModelState.AddModelError(string.Empty, "Reason: " + appUser.Message);
+                    return Page();
+                }
             }
+
             // If we got this far, something failed, redisplay form
             return Page();
         }

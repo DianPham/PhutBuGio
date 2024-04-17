@@ -173,13 +173,17 @@ namespace Niveau.Areas.User.Pages.Account
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     var encodedCode = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
-                        "Pages/Account/ConfirmEmail",
+                        "/Account/ConfirmEmail",
                         pageHandler: null,
                         values: new { area = "User", userId = userId, code = encodedCode, returnUrl = returnUrl },
                         protocol: Request.Scheme);
 
                     var templatePath = Path.Combine(_env.WebRootPath, "Emails", "WelcomeEmailTemplate.cshtml");
-                    var emailBody = System.IO.File.ReadAllText(templatePath);
+                    var emailBody = PopulateEmailTemplate(templatePath, new Dictionary<string, string>
+                    {
+                        {"FirstName", user.FirstName},
+                        {"VerificationLink", callbackUrl}
+                    });
 
                     await _emailSender.SendEmailAsync(Input.Email, "Knock Knock!", emailBody);
 
@@ -202,7 +206,16 @@ namespace Niveau.Areas.User.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+        private string PopulateEmailTemplate(string filePath, Dictionary<string, string> values)
+        {
+            string template = System.IO.File.ReadAllText(filePath);
 
+            foreach (var item in values)
+            {
+                template = template.Replace($"{{{{" + item.Key + "}}", item.Value);
+            }
+            return template;
+        }
         private ApplicationUser CreateUser()
         {
             try
