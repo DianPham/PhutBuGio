@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Niveau.Areas.Admin.Models.Products;
 using Niveau.Areas.Admin.Models.Repositories;
+using Niveau.Areas.User.Extentions;
 using System.Collections.Generic;
 using static Niveau.Areas.Admin.Models.Products.Coupon;
 
@@ -89,6 +90,17 @@ namespace Niveau.Areas.Admin.Controllers
             }
             return View(coupon);
         }
+        [HttpPost]
+        public async Task<IActionResult> VerifyDiscountCode(string couponCode)
+        {
+            // Assume a service or method to check the discount and retrieve amount
+            var result = await _couponRepository.VerifyCodeAsync(couponCode);
+            if (result.IsValid)
+            {
+                return Json(new { success = true, id = result.CouponId, discount = result.DiscountAmount, type = result.Type.ToString(), minimum = result.MinimumSpend });
+            }
+            return Json(new { success = false, message = "Invalid or expired discount code." });
+        }
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -117,6 +129,15 @@ namespace Niveau.Areas.Admin.Controllers
                 return Json(new { success = true });
             }
             return Json(new { success = false, message = "Coupon not found." });
+        }
+
+        
+
+        public IActionResult SetDiscountSession(int couponId)
+        {
+            HttpContext.Session.SetObjectAsJson("CouponId", couponId);
+
+            return Ok();
         }
     }
 }

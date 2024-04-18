@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using static Niveau.Areas.Admin.Models.Products.Coupon;
 
 namespace Niveau.Areas.Admin.Models.Products
 {
@@ -38,4 +39,5 @@ namespace Niveau.Areas.Admin.Models.Products
         // Optional: Limit the number of times a coupon can be used
         public int? MaxUses { get; set; }
     }
+    
 }

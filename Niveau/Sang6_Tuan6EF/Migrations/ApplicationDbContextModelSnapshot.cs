@@ -257,7 +257,7 @@ namespace Niveau.Migrations
                         {
                             Id = "0e337acc-137a-49e7-b9fa-8e741e9792ed",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "daa4d004-dd1b-46f6-ac37-8f5fc485abd2",
+                            ConcurrencyStamp = "cb21249a-2860-4dcb-a3f8-eb9c99b83705",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "seed",
@@ -265,9 +265,9 @@ namespace Niveau.Migrations
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEENUGe8/cET5S3EOi1Co03E40d91CdcUHtXus7vBNpy8EibrewE0HFeivJvwGHTVLw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIc/ij70AEmGmLSButoIr41Eb0NZwZ5ITzVXrjnZmyrfaQVOiOJzCRfRLlXfP3Rn2Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "62be947d-a036-4fa4-a73d-8b6b9f4bfe22",
+                            SecurityStamp = "7283ac6a-295c-48a3-831b-8219140aba1f",
                             Status = true,
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com"
@@ -475,6 +475,9 @@ namespace Niveau.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CouponId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Notes")
                         .HasColumnType("nvarchar(max)");

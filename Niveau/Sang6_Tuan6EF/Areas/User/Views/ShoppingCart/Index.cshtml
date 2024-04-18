@@ -8,7 +8,7 @@
 
 <section class="h-100" style="background-color: #eee;">
     <div class="container h-100 py-5">
-        <div class="row d-flex justify-content-center align-items-center h-10">
+        <div class="row d-flex justify-content-center align-items-center h-50">
             <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
             <div class="col-10">
                 @if (@Model.Items.Any())
@@ -61,11 +61,30 @@
                     <p class="lead fw-normal mb-2">Your cart still have nothing</p>
                 }
 
+
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center h-10">
+            <div class="col-10">
                 <div class="card mb-4">
                     <div class="card-body p-4 d-flex flex-row">
-                        <div id="totalAmount">
-                            <span class="text-muted px-lg-5">Total: </span>
+                        <div>
+                            <span id="totalAmount" class="text-muted px-lg-5">Total: </span>
                         </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body p-4 d-flex flex-row">
+                        <input id="discountCode" type="text" class="form-control" placeholder="Enter discount code">
+                        <button id="verifyCodeBtn" class="btn btn-primary">Apply</button>
+                    </div>
+                </div>
+
+                <div id="discountDetails" style="display:none;" class="card mb-4">
+                    <div class="card-body">
+                        <p>Original Price: <span id="originalPrice"></span></p>
+                        <p>Total Discount: <span id="totalDiscount"></span></p>
+                        <p>Final Price: <span id="finalPrice"></span></p>
                     </div>
                 </div>
 
@@ -87,14 +106,17 @@
                         </form>
                         </div> *@
                         <button type="button" class="btn btn-disable btn-block btn-lg" id="updateBtn" disabled>Update</button>
-                        <a asp-controller="ShoppingCart" asp-action="Payment" type="button" class="btn btn-warning btn-block btn-lg">Thanh toán</a>
-
+                        <form id="paymentForm" class="pt-2" action="@Url.Action("Payment", "ShoppingCart", new { area = "User" })" method="post">
+                            <input type="hidden" name="totalAmount" id="hiddenFinalPrice">
+                            <button type="submit" class="btn btn-warning btn-block btn-lg" id="PayBtn">Pay Now</button>
+                        </form>
 
                     </div>
 
                 </div>
             </div>
         </div>
+
 </section>
 <style>
     .btn-orange {
@@ -246,9 +268,67 @@
                     toastr.error('Error updating the cart.');
                 });
         });
+        document.getElementById('PayBtn').addEventListener('click', function () {
+            var finalPrice = parseInt($('#finalPrice').text(), 10);
+            if (finalPrice == 0) {
+                $('#hiddenFinalPrice').val(parseInt($('#totalAmount').text(), 10));
+            }
+            else {
+                $('#hiddenFinalPrice').val(finalPrice);
+            }
+            
+        });
+        document.getElementById('verifyCodeBtn').addEventListener('click', function () {
+            const discountCode = String($('#discountCode').val());
+            if (!discountCode) {
+                toastr.warning('Please enter a discount code.');
+                return;
+            }
+            $.ajax({
+                url: '@Url.Action("VerifyDiscountCode", "Coupons", new { area = "Admin" })', // Verify the correct URL
+                type: 'POST',
+                data: { couponCode: discountCode },
+                success: function (data) {
+                    const originalPrice = parseFloat(document.getElementById('totalAmount').textContent.replace('Total Amount: $', ''));
+                    if (originalPrice >= data.minimum) {
+                        toastr.success('Discount code applied successfully!');
+                        document.getElementById('discountDetails').style.display = 'block';
+                        const discount = parseFloat(data.discount);
+                        if (data.type == "Percentage") {
+                            const finalPrice = originalPrice - (originalPrice * discount / 100);
+                            document.getElementById('totalDiscount').textContent = discount.toFixed(2) + '%';
+                            document.getElementById('finalPrice').textContent = finalPrice.toFixed(2);
+                        }
+                        else {
+                            const finalPrice = originalPrice - discount;
+                            document.getElementById('totalDiscount').textContent = discount.toFixed(2) + 'đ';
+                            document.getElementById('finalPrice').textContent = finalPrice.toFixed(2);
+                        }
+                        document.getElementById('originalPrice').textContent = originalPrice.toFixed(2);
+                        $.ajax({
+                            url: '@Url.Action("SetDiscountSession", "Coupons", new { area = "Admin" })', // Verify the correct URL
+                            type: 'POST',
+                            data: { couponId: data.id },
+                            success: function (data) {
+                                console.log("Data received:", data);
+                            },
+                            error: function () {
+                               
+                            }
+                        });
+                    }
+                },
+                error: function () {
+                    
+                }
+            });
+
+          
+        });
 
 
     </script>
+
 }
 
 

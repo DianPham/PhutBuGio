@@ -11,6 +11,7 @@ namespace Niveau.Areas.User.Models.ShoppingCart
         public DateTime OrderDate { get; set; }
         public decimal TotalPrice { get; set; }
         public string ShippingAddress { get; set; }
+        public int? CouponId { get; set; }
         public int? status { get; set; }
         public string? Notes { get; set; }
         [ForeignKey("UserId")]

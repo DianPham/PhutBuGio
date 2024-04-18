@@ -23,6 +23,7 @@ namespace Niveau.Areas.User.Controllers
     [Authorize]
     public class ShoppingCartController : Controller
     {
+        private readonly ICouponsRepository _couponRepository;
         public static int _cartId = 0; // madonhang xu ly
         public static int _totalPrice = 0; // so tien duoc xu ly của _cartId
         public static ShoppingCart _cart = new ShoppingCart();
@@ -30,11 +31,16 @@ namespace Niveau.Areas.User.Controllers
         private readonly ApplicationDbContext _context;
         //quản lý đăng nhập người dùng
         private readonly UserManager<ApplicationUser> _userManager;
-        public ShoppingCartController(IProductsRepository productRepository, ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        public ShoppingCartController(
+            IProductsRepository productRepository, 
+            ApplicationDbContext context, 
+            UserManager<ApplicationUser> userManager,
+            ICouponsRepository couponRepository)
         {
             _productRepository = productRepository;
             _context = context;
             _userManager = userManager;
+            _couponRepository = couponRepository;
         }
 
         public async Task<IActionResult> AddToCart(int productId, int quantity)
@@ -128,7 +134,6 @@ namespace Niveau.Areas.User.Controllers
         }
         //Checkout: dùng để người dùng nhập thông tin về địa chỉ giao hàng/ ghi chú khi đặt hàng
         [HttpGet("Checkout/", Name = "Checkout")]
-        [HttpGet]
         public IActionResult Checkout()
         {
             return View(new Order());
@@ -143,7 +148,15 @@ namespace Niveau.Areas.User.Controllers
                 return RedirectToAction("Index");
             }
 
+            int couponId = HttpContext.Session.GetObjectFromJson<int>("CouponId");
+            if (couponId != 0) {
+                var existingCoupon = await _couponRepository.GetByIdAsync(couponId);
+                existingCoupon.MaxUses--;
+                await _couponRepository.UpdateAsync(existingCoupon);
+            }
+
             var user = await _userManager.GetUserAsync(User);
+            order.CouponId = couponId;
             order.UserId = user.Id;
             order.OrderDate = DateTime.UtcNow;
             order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
@@ -174,10 +187,8 @@ namespace Niveau.Areas.User.Controllers
             }
         }
 
-        public async Task<IActionResult> Payment()
+        public IActionResult Payment(int totalAmount)
         {
-            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            var totalAmount = cart.Items.Sum(i => i.Price * i.Quantity);
 
             //request params need to request to MoMo system
             string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
@@ -185,7 +196,7 @@ namespace Niveau.Areas.User.Controllers
             string accessKey = "iPXneGmrJH0G8FOP";
             string serectkey = "sFcbSGRSJjwGxwhhcEktCHWYUuTuPNDB";
             string orderInfo = "Thanh toán online cho Đơn hàng ";
-            string returnUrl = "https://localhost:7030/User/ShoppingCart/XulyKQMomo" ;
+            string returnUrl = "https://localhost:7030/User/ShoppingCart/XulyKQMomo";
             string notifyurl = "https://4c8d-2001-ee0-5045-50-58c1-b2ec-3123-740d.ap.ngrok.io/Home/SavePayment"; //lưu ý: notifyurl không được sử dụng localhost, có thể sử dụng ngrok để public localhost trong quá trình test
 
             string amount = Convert.ToInt32(totalAmount).ToString();

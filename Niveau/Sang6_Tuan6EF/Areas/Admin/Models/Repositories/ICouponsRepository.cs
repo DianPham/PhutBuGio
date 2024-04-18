@@ -9,5 +9,7 @@ namespace Niveau.Areas.Admin.Models.Repositories
         Task AddAsync(Coupon category);
         Task UpdateAsync(Coupon category);
         Task DeleteAsync(int id);
+        Task<CouponVerificationResult> VerifyCodeAsync(string code);
+        Task<IEnumerable<Coupon>> GetAllActiveAsync();
     }
 }
