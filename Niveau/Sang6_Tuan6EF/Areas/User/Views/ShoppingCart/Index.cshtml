@@ -17,7 +17,7 @@
                     {
                         <div class="card rounded-3 mb-4">
                             <div class="card-body p-4">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center" data-product-id="@item.ProductId">
                                     <div class="col-md-2 col-lg-2 col-xl-2">
                                         <img src="@item.ImageUrl" class="img-fluid rounded-3" alt="@item.Name">
                                     </div>
@@ -28,7 +28,7 @@
                                     <div class="col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center align-items-center">
                                         <div class="quantity">
                                             <button class="btn btn-outline-primary decrease">-</button>
-                                            <span>@item.Quantity</span>
+                                            <span class="cart-quantity">@item.Quantity</span>
                                             <button class="btn btn-outline-primary increase">+</button>
                                         </div>
                                     </div>
@@ -88,6 +88,7 @@
                         <button type="submit" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
                         </form>
                         </div> *@
+                        <button type="button" class="btn btn-disable btn-block btn-lg" id="updateBtn" disabled>Update</button>
                         <a asp-controller="ShoppingCart" asp-action="Payment" type="button" class="btn btn-warning btn-block btn-lg">Thanh toán</a>
 
 
@@ -97,6 +98,18 @@
             </div>
         </div>
 </section>
+<style>
+    .btn-orange {
+        background-color: orange;
+        color: white;
+    }
+
+    .btn-disable {
+        color: white;
+        background-color: gray;
+        pointer-events: none; /* This makes the element non-interactive */
+    }
+</style>
 
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -114,15 +127,24 @@
 </script>
 
 @section scripts {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Gọi hàm tính tổng tiền khi trang được tải
             calculateTotal();
 
+            const updateButton = document.getElementById('updateBtn');
             // Lấy tất cả các nút tăng và giảm
             const increaseButtons = document.querySelectorAll('.increase');
             const decreaseButtons = document.querySelectorAll('.decrease');
 
+            function enableUpdateButton() {
+                updateButton.disabled = false;
+                updateButton.classList.remove('btn-disable');
+                updateButton.classList.add('btn-orange');
+            }
+    
             // Lặp qua mỗi nút tăng và giảm để gắn sự kiện
             increaseButtons.forEach(button => {
                 button.addEventListener('click', function () {
@@ -131,7 +153,7 @@
                     let quantity = parseInt(quantityElement.textContent);
                     quantity++;
                     quantityElement.textContent = quantity;
-
+                    enableUpdateButton();
                     updateTotal(row); // Cập nhật tổng tiền sau khi thay đổi số lượng
                 });
             });
@@ -156,7 +178,7 @@
                     if (quantity > 1) {
                         quantity--;
                         quantityElement.textContent = quantity;
-
+                        enableUpdateButton();
                         updateTotal(row); // Cập nhật tổng tiền sau khi thay đổi số lượng
                     }
                 });
@@ -183,7 +205,50 @@
 
                 calculateTotal(); // Tính toán lại tổng tiền
             }
+
+            document.querySelectorAll('.cart-quantity').forEach(input => {
+                input.addEventListener('change', enableUpdateButton);
+            });
+
         });
+        document.getElementById('updateBtn').addEventListener('click', function () {
+            const updateButton = document.getElementById('updateBtn');
+            const cartItems = document.querySelectorAll('.row[data-product-id]');
+            const updatedCart = [];
+
+            cartItems.forEach(item => {
+                const productId = item.getAttribute('data-product-id');
+                const quantity = parseInt(item.querySelector('.cart-quantity').textContent.trim(), 10);
+
+                updatedCart.push({ productId, quantity });
+            });
+
+            fetch('@Url.Action("UpdateCart", "ShoppingCart", new { area = "User" })', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value // Correct token fetching
+                },
+                body: JSON.stringify({ items: updatedCart })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    toastr.success('Cart updated successfully!');
+                    updateButton.disabled = true;
+                    updateButton.classList.remove('btn-disable');
+                    updateButton.classList.add('btn-orange');
+                })
+                .catch(error => {
+                    console.error('Error updating cart:', error);
+                    toastr.error('Error updating the cart.');
+                });
+        });
+
 
     </script>
 }
