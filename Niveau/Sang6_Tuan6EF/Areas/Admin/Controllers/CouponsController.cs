@@ -101,9 +101,9 @@ namespace Niveau.Areas.Admin.Controllers
         }
         // Xử lý xóa sản phẩm
         [HttpPost, ActionName("DeleteConfirmed")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int CouponId)
         {
-            await _couponRepository.DeleteAsync(id);
+            await _couponRepository.DeleteAsync(CouponId);
             return RedirectToAction(nameof(Index));
         }
         [HttpPost]
