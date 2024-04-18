@@ -55,6 +55,37 @@ namespace Niveau.Areas.User.Controllers
             return Json(new { TotalItems = CalculateTotalItems() });
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateCart([FromBody] CartUpdateModel model)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
+
+            foreach (var item in model.Items)
+            {
+                var cartItem = cart.Items.FirstOrDefault(i => i.ProductId == item.ProductId);
+                if (cartItem != null)
+                {
+                    cartItem.Quantity = item.Quantity;
+                }
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return Json(new { success = true });
+        }
+
+        public class CartUpdateModel
+        {
+            public List<CartItemUpdate> Items { get; set; }
+        }
+
+        public class CartItemUpdate
+        {
+            public int ProductId { get; set; }
+            public int Quantity { get; set; }
+        }
+
         //tìm sản phẩm trong DB dựa vào productID
         public IActionResult Index()
         {
@@ -72,7 +103,7 @@ namespace Niveau.Areas.User.Controllers
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
             if (cart != null && cart.Items != null)
             {
-                return cart.Items.Sum(item => item.Quantity);
+                return cart.Items.Count();
             }
             return 0;
         }
@@ -142,10 +173,9 @@ namespace Niveau.Areas.User.Controllers
         }
 
         public async Task<IActionResult> Payment()
-        {
-            Order order = new Order();
+        {           
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            var totalAmount = cart.Items.Sum(i => i.Price * i.Quantity);
 
             //request params need to request to MoMo system
             string endpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
@@ -156,7 +186,7 @@ namespace Niveau.Areas.User.Controllers
             string returnUrl = "https://localhost:7030/User/ShoppingCart/XulyKQMomo" ;
             string notifyurl = "https://4c8d-2001-ee0-5045-50-58c1-b2ec-3123-740d.ap.ngrok.io/Home/SavePayment"; //lưu ý: notifyurl không được sử dụng localhost, có thể sử dụng ngrok để public localhost trong quá trình test
 
-            string amount = Convert.ToInt32(order.TotalPrice).ToString();
+            string amount = Convert.ToInt32(totalAmount).ToString();
             string orderid = DateTime.Now.Ticks.ToString(); //mã đơn hàng
             string requestId = DateTime.Now.Ticks.ToString();
             string extraData = "";

@@ -33,5 +33,10 @@
             Items.RemoveAll(i => i.ProductId == productId);
         }
 
+        public decimal GetTotalAmount()
+        {           
+            return Items.Sum(p => p.Quantity * p.Price);
+        }
+
     }
 }
