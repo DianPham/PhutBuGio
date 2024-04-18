@@ -1,24 +1,23 @@
 Admin-Side:
-Account: User account chỉ được xem thông tin, reset mật khẩu, 
 Admin: Phân quyền theo chức năng
 Product: resize lại ảnh khi updload
 
 User-Side:
 Reset password (https://www.yogihosting.com/aspnet-core-identity-password-reset/)
-Ajac product load
 Categories tab load dynamically
-Nút login của FB và google
 Tích hợp CKFinder
-Tích hợp gửi mail tự động
 Check lại cách passing của quantity trong cart
 
 
 *Hoàn thành:
+Ajac product load
 Facebook login
 thêm chức năng disable account
 Product Pagination
 Autocomplete
-Account: không được xóa, hiện modal thêm thông báo lý do disble
+Account: User account chỉ được xem thông tin, reset mật khẩu, không được xóa, hiện modal thêm thông báo lý do disble
+Tích hợp gửi mail tự động
+Nút login của FB và google
 
 
 Log làm việc cần lưu ý:

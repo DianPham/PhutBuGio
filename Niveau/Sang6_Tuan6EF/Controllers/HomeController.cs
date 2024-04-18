@@ -19,7 +19,7 @@ namespace Niveau.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var product = await _productRepository.GetAllAsync();
+            var product = await _productRepository.GetAllActiveAsync();
             return View(product);
         }
 

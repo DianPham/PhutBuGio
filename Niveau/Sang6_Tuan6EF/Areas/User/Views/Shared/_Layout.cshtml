@@ -116,23 +116,19 @@
                             <a asp-area="User" asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Home</a>
                             <a asp-area="Admin" asp-controller="Products" asp-action="Index" asp-route-page="1" class="nav-item nav-link">Shop</a>
                             @* <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                </div>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                            <a href="cart.html" class="dropdown-item">Shopping Cart</a>
+                            <a href="checkout.html" class="dropdown-item">Checkout</a>
+                            </div>
                             </div> *@
                             <a asp-area="User" asp-controller="Home" asp-action="Contact" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            @if(User.IsInRole("Admin"))
-                            {
-                                <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="nav-item nav-link">Admin Panel</a>
-                            }
                             <partial name="_LoginPartial" />
                         </div>
-                        
                     </div>
+
                 </nav>
                 <div id="header-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">

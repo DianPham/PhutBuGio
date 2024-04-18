@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XsCKnOEjrRZLSoxCz2rzE+w09joR0X7VIKRVeKaUXRLihgv7zWl7PBIKV9HHSlXup9oLzk2oVAfL0a5oyukjPg==",
+  "dgSpecHash": "T0VLm132xSahgABQuRFZTJIPRb3W2EGwqfdD4vvl6n2L1CyO4Ij2cnrVzohlDlK+4rYEVT2HoC3KaejKKMARXQ==",
   "success": true,
   "projectFilePath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
   "expectedPackageFiles": [
@@ -142,6 +142,7 @@
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\sixlabors.imagesharp\\3.1.4\\sixlabors.imagesharp.3.1.4.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
