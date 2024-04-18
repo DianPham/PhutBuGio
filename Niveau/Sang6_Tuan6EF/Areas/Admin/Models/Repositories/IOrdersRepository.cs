@@ -1,5 +1,4 @@
-﻿using Niveau.Areas.Admin.Models.Products;
-using Niveau.Areas.User.Models.ShoppingCart;
+﻿using Niveau.Areas.User.Models.ShoppingCart;
 
 namespace Niveau.Areas.Admin.Models.Repositories
 {
