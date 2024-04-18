@@ -87,6 +87,7 @@ namespace Niveau.Areas.User.Controllers
 
 
         //tìm sản phẩm trong DB dựa vào productID
+        [HttpGet("Cart/", Name = "Cart")]
         public IActionResult Index()
         {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart") ?? new ShoppingCart(Guid.NewGuid().ToString());
@@ -126,6 +127,7 @@ namespace Niveau.Areas.User.Controllers
             return RedirectToAction("Index");
         }
         //Checkout: dùng để người dùng nhập thông tin về địa chỉ giao hàng/ ghi chú khi đặt hàng
+        [HttpGet("Checkout/", Name = "Checkout")]
         [HttpGet]
         public IActionResult Checkout()
         {

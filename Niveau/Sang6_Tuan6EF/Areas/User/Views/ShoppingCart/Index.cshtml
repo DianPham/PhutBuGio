@@ -8,8 +8,8 @@
 
 <section class="h-100" style="background-color: #eee;">
     <div class="container h-100 py-5">
-        <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
         <div class="row d-flex justify-content-center align-items-center h-10">
+            <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
             <div class="col-10">
                 @if (@Model.Items.Any())
                 {
@@ -58,9 +58,7 @@
                 }
                 else
                 {
-                    <div class="col-md-3 col-lg-3 col-xl-3">
-                        <p class="lead fw-normal mb-2">Your cart still have nothing</p>
-                    </div>
+                    <p class="lead fw-normal mb-2">Your cart still have nothing</p>
                 }
 
                 <div class="card mb-4">
@@ -144,7 +142,7 @@
                 updateButton.classList.remove('btn-disable');
                 updateButton.classList.add('btn-orange');
             }
-    
+
             // Lặp qua mỗi nút tăng và giảm để gắn sự kiện
             increaseButtons.forEach(button => {
                 button.addEventListener('click', function () {

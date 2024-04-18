@@ -91,9 +91,11 @@ namespace Niveau.Areas.Admin.Models.Repositories
 
         public async Task<IEnumerable<Product>> GetProductsBySubcategoryId(int subcategoryId)
         {
-            return await _context.Products
+            var products = await GetAllActiveAsync();
+            var queryResult = products
                   .Where(p => p.CategoryId == subcategoryId)
-                  .ToListAsync();
+                  .ToList();
+            return queryResult;
         }
         public async Task<IEnumerable<string>> SearchAsync(string term)
         {

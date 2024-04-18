@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Boxed.AspNetCore;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Niveau.Areas.Admin.Models;
 using Niveau.Areas.Admin.Models.Products;
@@ -95,9 +96,18 @@ namespace Niveau.Areas.Admin.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-        public async Task<IActionResult> Filter(int subcategoryId)
+        [HttpGet("Category/{subcategoryId:int}/{title}", Name = "Filter")]
+        public async Task<IActionResult> Filter(int subcategoryId, string title)
         {
             var products = await _productRepository.GetProductsBySubcategoryId(subcategoryId);
+            string friendlyTitle = FriendlyUrlHelper.GetFriendlyTitle(title);
+
+            if (!string.Equals(friendlyTitle, title, StringComparison.Ordinal))
+            {
+                // If the title is null, empty or does not match the friendly title, return a 301 Permanent
+                // Redirect to the correct friendly URL.
+                return this.RedirectToRoutePermanent("Filter", new { subcategoryId = subcategoryId, title = friendlyTitle });
+            }
             return View(products);
         }
     }

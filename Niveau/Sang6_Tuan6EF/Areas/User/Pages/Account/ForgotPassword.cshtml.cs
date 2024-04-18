@@ -17,13 +17,15 @@ namespace Niveau.Areas.User.Pages.Account
     [AllowAnonymous]
     public class ForgotPasswordModel : PageModel
     {
+        private readonly IWebHostEnvironment _env;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IEmailSender _emailSender;
 
-        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<ApplicationUser> userManager, IEmailSender emailSender, IWebHostEnvironment env)
         {
             _userManager = userManager;
             _emailSender = emailSender;
+            _env = env;
         }
 
         [BindProperty]
@@ -54,21 +56,40 @@ namespace Niveau.Areas.User.Pages.Account
                 var callbackUrl = Url.Page(
                     "/Account/ResetPassword",
                     pageHandler: null,
-                    values: new { area = "Identity", code },
+                    values: new { area = "User", code },
                     protocol: Request.Scheme);
 
-                var emailContent = $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.";
+                var templatePath = Path.Combine(_env.WebRootPath, "Emails", "ReserPasswordEmail.cshtml");
+                var emailBody = PopulateEmailTemplate(templatePath, new Dictionary<string, string>
+                    {
+                        {"FirstName", user.FirstName},
+                        {"ResetLink", callbackUrl}
+                    });
+
+                await _emailSender.SendEmailAsync(Input.Email, "I'm here!", emailBody);
+
+   /*             var emailContent = $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.";
 
                 await _emailSender.SendEmailAsync(
                     Input.Email,
                     "Reset Password",
                     emailContent);
-                //$"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                //$"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");*/
 
                 return RedirectToPage("./ForgotPasswordConfirmation");
             }
 
             return Page();
+        }
+        private string PopulateEmailTemplate(string filePath, Dictionary<string, string> values)
+        {
+            string template = System.IO.File.ReadAllText(filePath);
+
+            foreach (var item in values)
+            {
+                template = template.Replace($"{{{{" + item.Key + "}}", item.Value);
+            }
+            return template;
         }
     }
 }

@@ -3,6 +3,7 @@ using Niveau.Areas.Admin.Models.Repositories;
 using System.Diagnostics;
 using Niveau.Areas.Admin.Models;
 using Microsoft.AspNetCore.Authorization;
+using Boxed.AspNetCore;
 
 namespace Niveau.Areas.User.Controllers
 {
