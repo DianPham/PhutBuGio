@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {}
+    "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {}
   },
   "projects": {
-    "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {
+    "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+        "projectUniqueName": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
         "projectName": "Niveau",
-        "projectPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
-        "packagesPath": "C:\\Users\\DELL.DESKTOP-TETDMA3\\.nuget\\packages\\",
-        "outputPath": "C:\\Dian\\KiemTraGiuaKy\\Niveau\\Sang6_Tuan6EF\\obj\\",
+        "projectPath": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\Niveau.csproj",
+        "packagesPath": "C:\\Users\\ductu\\.nuget\\packages\\",
+        "outputPath": "D:\\Sales-Website\\Niveau\\Sang6_Tuan6EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL.DESKTOP-TETDMA3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ductu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -121,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
